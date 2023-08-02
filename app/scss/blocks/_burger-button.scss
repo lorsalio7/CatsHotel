@@ -1,0 +1,69 @@
+.burger-button {
+  border: none;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.burger-button__line {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: block;
+  border-radius: 2px;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-mirage);
+  transition: background-color 0.3s ease;
+}
+
+.burger-button--active .burger-button__line {
+  background-color: transparent;
+}
+
+.burger-button__line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -8px;
+  display: block;
+  border-radius: 2px;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-mirage);
+  transition:
+    top 0.3s 0.3s ease,
+    transform 0.3s ease;
+}
+
+.burger-button--active .burger-button__line::before {
+  top: 0;
+  transform: rotate(45deg);
+  transition:
+    top 0.3s ease,
+    transform 0.3s 0.3s ease;
+}
+
+.burger-button__line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  display: block;
+  border-radius: 2px;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-mirage);
+  transition:
+    top 0.3s 0.3s ease,
+    transform 0.3s ease;
+}
+
+.burger-button--active .burger-button__line::after {
+  top: 0;
+  transform: rotate(-45deg);
+  transition:
+    top 0.3s ease,
+    transform 0.3s 0.3s ease;
+}

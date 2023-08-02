@@ -1,0 +1,37 @@
+{
+  "site_navigation": [
+    {
+      "link_url": "#",
+      "link_name": "Почему мы?"
+    },
+    {
+      "link_url": "#",
+      "link_name": "Номера"
+    },
+    {
+      "link_url": "#",
+      "link_name": "Отзывы"
+    },
+    {
+      "link_url": "#",
+      "link_name": "Как нас найти"
+    }
+  ],
+  "socials": [
+    {
+      "link": "#",
+      "image": "ok-ic.svg",
+      "title": "Мы в Одноклассниках"
+    },
+    {
+      "link": "#",
+      "image": "telegram-ic.svg",
+      "title": "Мы в Телеграм"
+    },
+    {
+      "link": "#",
+      "image": "vk-ic.svg",
+      "title": "Мы в Вконтакте"
+    }
+  ]
+}
