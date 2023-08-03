@@ -34,7 +34,20 @@
           </div>
         </div>
       </header>
-      <main class="main"></main>
+      <main class="page__main main">
+        <section class="hero">
+          <div class="hero__container container">
+            <div class="hero__content">
+              <h1 class="hero__title"><span class="hero__caption">Котейка</span>Уютная гостиница для котов и кошек</h1>
+              <p class="hero__place">Санкт-Петербург</p><a class="hero__button button button--shadow button--secondary" href="#">Забронировать</a>
+            </div>
+          </div>
+          <picture class="hero__picture">
+            <source srcset="img/hero-bg.jpg" media="(min-width: 1366px)">
+            <source srcset="img/hero-bg-768.jpg" media="(min-width: 768px)"><img class="hero__image" loading="lazy" src="img/hero-bg-320.jpg" alt="Довольная котейка лежит на кроватке">
+          </picture>
+        </section>
+      </main>
       <footer class="site-footer">This is site footer</footer>
     </div>
     <script src="js/script.min.js" defer></script>

@@ -1,5 +1,9 @@
 .site-header {
-  position: relative;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 50;
   padding: 12px 0;
   background-color: var(--color-white);
 }

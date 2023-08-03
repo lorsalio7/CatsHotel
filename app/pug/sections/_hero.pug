@@ -1,0 +1,12 @@
+section.hero
+  .hero__container.container
+    .hero__content
+      h1.hero__title
+        span.hero__caption Котейка
+        | Уютная гостиница для котов и кошек
+      p.hero__place Санкт-Петербург
+      a(href="#").hero__button.button.button--shadow.button--secondary Забронировать
+  picture.hero__picture
+    source(srcset="img/hero-bg.jpg" media="(min-width: 1366px)")
+    source(srcset="img/hero-bg-768.jpg" media="(min-width: 768px)")
+    img(loading="lazy" src="img/hero-bg-320.jpg" alt="Довольная котейка лежит на кроватке").hero__image

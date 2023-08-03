@@ -1,11 +1,12 @@
 {
-  "extends": ["stylelint-config-standard-scss"],
+  "extends": ["stylelint-config-standard"],
 	"plugins": [
 		"stylelint-scss",
 		"stylelint-order",
 		"stylelint-declaration-block-no-ignored-properties"
 	],
 	"rules": {
+    "declaration-property-value-no-unknown": true,
     "color-function-notation" : "legacy",
 		"order/order": [
 			"custom-properties",
@@ -544,7 +545,7 @@
 		"declaration-bang-space-after": "never",
 		"declaration-bang-space-before": "always",
 		"declaration-block-no-duplicate-properties": true,
-		"declaration-block-no-redundant-longhand-properties": true,
+		"declaration-block-no-redundant-longhand-properties": [true, {"ignoreShorthands": ["inset"]}],
 		"declaration-block-no-shorthand-property-overrides": true,
 		"declaration-block-semicolon-newline-after": "always-multi-line",
 		"declaration-block-semicolon-newline-before": "never-multi-line",

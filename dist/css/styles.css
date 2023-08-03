@@ -391,8 +391,11 @@ template {
   /* #000 */
   --color-primary: rgb(250, 198, 99);
   /* #FAC663 */
+  --color-secondary: rgb(255, 114, 54);
+  /* #FF7236 */
   --color-mirage: rgb(26, 33, 47);
   /* #1A212F */
+  --color-shadow: rgba(26, 32, 47, 10%);
 }
 
 .container {
@@ -518,7 +521,11 @@ body {
 }
 
 .site-header {
-  position: relative;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 50;
   padding: 12px 0;
   background-color: var(--color-white);
 }
@@ -725,9 +732,162 @@ body {
   background-repeat: no-repeat;
 }
 
+.button {
+  border: 2px solid var(--color-secondary);
+  border-radius: 25px;
+  padding: 13px 68px 13px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: normal;
+  text-decoration: none;
+  color: var(--color-white);
+  background-image: url("../img/paw-ic--reverse.svg");
+  background-position: top 50% right 6px;
+  background-size: 36px;
+  background-repeat: no-repeat;
+  background-color: var(--color-secondary);
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out, background-image 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out, background-image 0.3s ease-in-out;
+}
+
+.button--secondary {
+  border: 2px solid var(--color-white);
+  color: var(--color-mirage);
+  background-image: url("../img/paw-ic.svg");
+  background-color: var(--color-white);
+}
+
+.button--shadow {
+  -webkit-box-shadow: 0 5px 25px var(--color-shadow);
+          box-shadow: 0 5px 25px var(--color-shadow);
+}
+
+.page__main {
+  padding-top: 76px;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__container {
+  position: relative;
+  z-index: 2;
+  padding-top: 50px;
+  padding-bottom: 230px;
+}
+
+.hero__content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__content::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  bottom: -100px;
+  z-index: -1;
+  width: 527px;
+  height: 568px;
+  background-image: url("../img/hero-decor.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: rotateZ(125deg);
+      -ms-transform: rotate(125deg);
+          transform: rotateZ(125deg);
+}
+
+.hero__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+.hero__caption {
+  display: inline-block;
+  margin-bottom: 9px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  color: var(--color-mirage);
+}
+
+.hero__place {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.hero__button {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.hero__picture {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.hero__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 10%;
+     object-position: 10%;
+}
+
 .site-footer {
   padding: 30px 0;
   text-align: center;
   color: #fff;
   background-color: #313a6b;
+}
+
+@media (hover: hover) {
+  .button--secondary:focus {
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+    background-image: url("../img/paw-ic--reverse.svg");
+    background-color: var(--color-secondary);
+  }
+
+  .button--secondary:hover {
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+    background-image: url("../img/paw-ic--reverse.svg");
+    background-color: var(--color-secondary);
+  }
 }

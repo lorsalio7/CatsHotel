@@ -1,0 +1,38 @@
+.button {
+  border: 2px solid var(--color-secondary);
+  border-radius: 25px;
+  padding: 13px 68px 13px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: normal;
+  text-decoration: none;
+  color: var(--color-white);
+  background-image: url("../img/paw-ic--reverse.svg");
+  background-position: top 50% right 6px;
+  background-size: 36px;
+  background-repeat: no-repeat;
+  background-color: var(--color-secondary);
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out,
+    border 0.3s ease-in-out,
+    background-image 0.3s ease-in-out;
+}
+
+.button--secondary {
+  border: 2px solid var(--color-white);
+  color: var(--color-mirage);
+  background-image: url("../img/paw-ic.svg");
+  background-color: var(--color-white);
+
+  @include hover-focus {
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+    background-image: url("../img/paw-ic--reverse.svg");
+    background-color: var(--color-secondary);
+  }
+}
+
+.button--shadow {
+  box-shadow: 0 5px 25px var(--color-shadow);
+}
