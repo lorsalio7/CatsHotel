@@ -1,0 +1,29 @@
+.advantages {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: -25px;
+    top: -15px;
+    z-index: -1;
+    width: 112px;
+    height: 109px;
+    background-image: url("../img/paw-up-right-ic.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-flow: column wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item:not(:last-of-type) {
+  margin-bottom: 30px;
+}

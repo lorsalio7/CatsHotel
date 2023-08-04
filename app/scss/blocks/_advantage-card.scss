@@ -1,0 +1,28 @@
+.advantage-card {
+  border-radius: 8px;
+  padding: 115px 25px 25px;
+  box-shadow: 0 0 25px var(--color-card-shadow);
+  background-position: top 25px left 25px;
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-color: var(--color-white);
+}
+
+.advantage-card__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--color-mirage);
+}
+
+.advantage-card__description {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+  color: var(--color-mirage);
+}

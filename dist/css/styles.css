@@ -396,6 +396,8 @@ template {
   --color-mirage: rgb(26, 33, 47);
   /* #1A212F */
   --color-shadow: rgba(26, 32, 47, 10%);
+  --color-card-shadow: rgba(208, 208, 208, 25%);
+  /* #D0D0D0 */
 }
 
 .container {
@@ -766,6 +768,10 @@ body {
   padding-top: 76px;
 }
 
+.page__advantages {
+  margin-bottom: 70px;
+}
+
 .hero {
   position: relative;
   overflow: hidden;
@@ -865,8 +871,81 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 10%;
-     object-position: 10%;
+  -o-object-position: left 10% top 66%;
+     object-position: left 10% top 66%;
+}
+
+.section-title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+  color: var(--color-mirage);
+}
+
+.advantages {
+  position: relative;
+}
+
+.advantages::before {
+  content: "";
+  position: absolute;
+  right: -25px;
+  top: -15px;
+  z-index: -1;
+  width: 112px;
+  height: 109px;
+  background-image: url("../img/paw-up-right-ic.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.advantages__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.advantage-card {
+  border-radius: 8px;
+  padding: 115px 25px 25px;
+  -webkit-box-shadow: 0 0 25px var(--color-card-shadow);
+          box-shadow: 0 0 25px var(--color-card-shadow);
+  background-position: top 25px left 25px;
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-color: var(--color-white);
+}
+
+.advantage-card__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--color-mirage);
+}
+
+.advantage-card__description {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+  color: var(--color-mirage);
 }
 
 .site-footer {
