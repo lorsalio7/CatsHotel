@@ -36,7 +36,7 @@
         </div>
       </header>
       <main class="page__main main">
-        <section class="hero">
+        <section class="page__hero hero">
           <div class="hero__container container">
             <div class="hero__content">
               <h1 class="hero__title"><span class="hero__caption">Котейка</span>Уютная гостиница для котов и кошек</h1>
@@ -50,7 +50,7 @@
         </section>
         <section class="page__advantages advantages">
           <div class="container">
-            <h2 class="section-title">Почему мы?</h2>
+            <h2 class="advantages__title section-title">Почему мы?</h2>
             <ul class="advantages__list">
               <li class="advantages__item advantage-card" style="background-image: url(&quot;../img/thermometer-ic.svg&quot;)">
                 <h3 class="advantage-card__title">Комфортная температура</h3>
@@ -77,6 +77,78 @@
                 <p class="advantage-card__description">В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости.</p>
               </li>
             </ul>
+          </div>
+        </section>
+        <section class="page__rooms rooms">
+          <div class="container">
+            <h2 class="rooms__title section-title">Номера</h2>
+            <div class="rooms__slider rooms-slider splide">
+              <ul class="splide__pagination rooms-slider__pagination"></ul>
+              <div class="splide__track rooms-slider__track">
+                <ul class="rooms-slider__list splide__list">
+                  <li class="rooms-slider__slide splide__slide">
+                    <div class="rooms-slider__text-content">
+                      <h3 class="rooms-slider__title">Эконом плюс</h3>
+                      <dl class="rooms-slider__data-list rooms-slider-data-list">
+                        <div class="rooms-slider-data-list__row">
+                          <dt class="rooms-slider-data-list__title">Площадь -</dt>&nbsp;
+                          <dd class="rooms-slider-data-list__description"> 0,90 м2</dd>
+                        </div>
+                        <div class="rooms-slider-data-list__row">
+                          <dt class="rooms-slider-data-list__title">Размеры (ШхГхВ) </dt>&nbsp;
+                          <dd class="rooms-slider-data-list__description">90х100х180 см</dd>
+                        </div>
+                        <div class="rooms-slider-data-list__row">
+                          <dt class="rooms-slider-data-list__title">Цена за сутки: </dt>&nbsp;
+                          <dd class="rooms-slider-data-list__description">200₽</dd>
+                        </div>
+                      </dl>
+                      <button class="rooms-slider__button button" type="button">Забронировать</button>
+                    </div><img class="rooms-slider__image" src="img/room-slide-1.jpg" width="600" height="404" alt="Пример номера Эконом плюс"/>
+                  </li>
+                  <li class="rooms-slider__slide splide__slide">
+                    <div class="rooms-slider__text-content">
+                      <h3 class="rooms-slider__title">Комфорт</h3>
+                      <dl class="rooms-slider__data-list rooms-slider-data-list">
+                        <div class="rooms-slider-data-list__row">
+                          <dt class="rooms-slider-data-list__title">Площадь - </dt>&nbsp;
+                          <dd class="rooms-slider-data-list__description"> 1,13 м2</dd>
+                        </div>
+                        <div class="rooms-slider-data-list__row">
+                          <dt class="rooms-slider-data-list__title">Размеры (ШхГхВ) </dt>&nbsp;
+                          <dd class="rooms-slider-data-list__description">100х125х180 см</dd>
+                        </div>
+                        <div class="rooms-slider-data-list__row">
+                          <dt class="rooms-slider-data-list__title">Цена за сутки: </dt>&nbsp;
+                          <dd class="rooms-slider-data-list__description">250₽</dd>
+                        </div>
+                      </dl>
+                      <button class="rooms-slider__button button" type="button">Забронировать</button>
+                    </div><img class="rooms-slider__image" src="img/room-slide-2.jpg" width="600" height="404" alt="Пример номера Комфорт"/>
+                  </li>
+                  <li class="rooms-slider__slide splide__slide">
+                    <div class="rooms-slider__text-content">
+                      <h3 class="rooms-slider__title">Сьют</h3>
+                      <dl class="rooms-slider__data-list rooms-slider-data-list">
+                        <div class="rooms-slider-data-list__row">
+                          <dt class="rooms-slider-data-list__title">Площадь - </dt>&nbsp;
+                          <dd class="rooms-slider-data-list__description">1,56 м2</dd>
+                        </div>
+                        <div class="rooms-slider-data-list__row">
+                          <dt class="rooms-slider-data-list__title">Размеры (ШхГхВ) </dt>&nbsp;
+                          <dd class="rooms-slider-data-list__description"> 125х125х180 см</dd>
+                        </div>
+                        <div class="rooms-slider-data-list__row">
+                          <dt class="rooms-slider-data-list__title">Цена за сутки: </dt>&nbsp;
+                          <dd class="rooms-slider-data-list__description">350₽</dd>
+                        </div>
+                      </dl>
+                      <button class="rooms-slider__button button" type="button">Забронировать</button>
+                    </div><img class="rooms-slider__image" src="img/room-slide-3.jpg" width="600" height="404" alt="Пример номера Сьют"/>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
       </main>

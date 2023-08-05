@@ -1,0 +1,13 @@
+mixin roomsSlides(array)
+  each item in array
+    li.rooms-slider__slide.splide__slide
+      .rooms-slider__text-content
+        h3.rooms-slider__title= item.title
+        dl.rooms-slider__data-list.rooms-slider-data-list
+          each data_info in item.data_list
+            .rooms-slider-data-list__row
+              dt.rooms-slider-data-list__title= data_info.title
+              | &nbsp;
+              dd.rooms-slider-data-list__description= data_info.description
+        button(type="button").rooms-slider__button.button Забронировать
+      img(src= item.image width="600" height="404", alt="Пример номера " + item.title).rooms-slider__image

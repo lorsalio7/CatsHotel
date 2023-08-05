@@ -65,5 +65,61 @@
       "title": "Лучшие ветеринары",
       "description": "В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости."
     }
+  ],
+  "rooms_slides": [
+    {
+      "title": "Эконом плюс",
+      "image": "img/room-slide-1.jpg",
+      "data_list": [
+        {
+          "title": "Площадь -",
+          "description": " 0,90 м2"
+        },
+        {
+          "title": "Размеры (ШхГхВ) ",
+          "description": "90х100х180 см"
+        },
+        {
+          "title": "Цена за сутки: ",
+          "description": "200₽"
+        }
+      ]
+    },
+    {
+      "title": "Комфорт",
+      "image": "img/room-slide-2.jpg",
+      "data_list": [
+        {
+          "title": "Площадь - ",
+          "description": " 1,13 м2"
+        },
+        {
+          "title": "Размеры (ШхГхВ) ",
+          "description": "100х125х180 см"
+        },
+        {
+          "title": "Цена за сутки: ",
+          "description": "250₽"
+        }
+      ]
+    },
+    {
+      "title": "Сьют",
+      "image": "img/room-slide-3.jpg",
+      "data_list": [
+        {
+          "title": "Площадь - ",
+          "description": "1,56 м2"
+        },
+        {
+          "title": "Размеры (ШхГхВ) ",
+          "description": " 125х125х180 см"
+        },
+        {
+          "title": "Цена за сутки: ",
+          "description": "350₽"
+        }
+      ]
+    }
   ]
 }

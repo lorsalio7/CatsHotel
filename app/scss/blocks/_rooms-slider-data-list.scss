@@ -1,0 +1,22 @@
+.rooms-slider-data-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.rooms-slider-data-list__row {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 19px;
+  background-image: url("../img/marker.svg");
+  background-position: 0 3px;
+  background-size: 11px;
+  background-repeat: no-repeat;
+}
+
+.rooms-slider-data-list__title,
+.rooms-slider-data-list__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--color-mirage);
+}

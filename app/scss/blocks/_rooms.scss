@@ -1,0 +1,20 @@
+.rooms__title {
+  margin-bottom: 40px;
+}
+
+.rooms__slider {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: -27px;
+    width: 150px;
+    height: 46px;
+    background-image: url("../img/fish-ic.svg");
+    background-position: center;
+    background-size: 150px 46px;
+    background-repeat: no-repeat;
+  }
+}
