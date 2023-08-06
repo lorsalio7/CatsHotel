@@ -1,0 +1,8 @@
+section.page__reviews.reviews
+  .container
+    h2.reviews__title.section-title Отзывы
+    .reviews__slider.reviews-slider.splide
+      ul.reviews-slider__pagination.splide__pagination
+      .splide__track.reviews-slider__track
+        ul.splide__list.reviews-slider__list
+          +reviewsSlides(pugData.reviews_slides)

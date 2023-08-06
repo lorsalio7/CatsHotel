@@ -1,0 +1,27 @@
+.reviews-slider__slide {
+  border-radius: 8px;
+  box-shadow: 0 0 25px var(--color-card-shadow);
+  background-color: var(--color-white);
+}
+
+.reviews-slider__track {
+  overflow: visible;
+}
+
+.reviews-slider__pagination {
+  bottom: -20px;
+}
+
+.reviews-slider__pagination .splide__pagination__page {
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-mercury);
+  opacity: 1;
+}
+
+.reviews-slider__pagination .splide__pagination__page.is-active {
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-primary);
+  transform: scale(1);
+}

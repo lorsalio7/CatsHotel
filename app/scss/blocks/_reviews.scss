@@ -1,0 +1,25 @@
+.reviews {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: -14px;
+    z-index: -1;
+    width: 100px;
+    height: 104px;
+    background-image: url("../img/paw-up-left-ic.svg");
+    background-position: center;
+    background-size: 100px 104px;
+    background-repeat: no-repeat;
+  }
+}
+
+.reviews__title {
+  margin-bottom: 40px;
+}
+
+.reviews__slider {
+  padding-bottom: 30px;
+}

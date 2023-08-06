@@ -1,0 +1,32 @@
+.blockquote {
+  margin: 0;
+  padding: 25px 20px 25px 56px;
+  background-image: url("../img/quote-ic.svg");
+  background-position: left 25px top 28px;
+  background-size: 20px 18px;
+  background-repeat: no-repeat;
+}
+
+.blockquote__text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 140%;
+  color: var(--color-mirage);
+}
+
+.blockquote__footer {
+  display: none;
+  justify-content: space-between;
+}
+
+.blockquote__name {
+  font-style: normal;
+  font-size: 14px;
+  color: var(--color-gray);
+}
+
+.blockquote__date {
+  font-size: 14px;
+  color: var(--color-gray);
+}

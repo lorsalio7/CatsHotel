@@ -400,6 +400,8 @@ template {
   /* #D0D0D0 */
   --color-mercury: rgb(225, 225, 225);
   /* #E1E1E1 */
+  --color-gray: rgb(132, 132, 132);
+  /* #848484 */
 }
 
 .container {
@@ -782,6 +784,10 @@ body {
   margin-bottom: 70px;
 }
 
+.page__reviews {
+  margin-bottom: 70px;
+}
+
 .hero {
   position: relative;
   overflow: hidden;
@@ -1077,6 +1083,98 @@ body {
   font-weight: 400;
   font-size: 15px;
   color: var(--color-mirage);
+}
+
+.reviews {
+  position: relative;
+}
+
+.reviews::before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: -14px;
+  z-index: -1;
+  width: 100px;
+  height: 104px;
+  background-image: url("../img/paw-up-left-ic.svg");
+  background-position: center;
+  background-size: 100px 104px;
+  background-repeat: no-repeat;
+}
+
+.reviews__title {
+  margin-bottom: 40px;
+}
+
+.reviews__slider {
+  padding-bottom: 30px;
+}
+
+.reviews-slider__slide {
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 25px var(--color-card-shadow);
+          box-shadow: 0 0 25px var(--color-card-shadow);
+  background-color: var(--color-white);
+}
+
+.reviews-slider__track {
+  overflow: visible;
+}
+
+.reviews-slider__pagination {
+  bottom: -20px;
+}
+
+.reviews-slider__pagination .splide__pagination__page {
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-mercury);
+  opacity: 1;
+}
+
+.reviews-slider__pagination .splide__pagination__page.is-active {
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-primary);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.blockquote {
+  margin: 0;
+  padding: 25px 20px 25px 56px;
+  background-image: url("../img/quote-ic.svg");
+  background-position: left 25px top 28px;
+  background-size: 20px 18px;
+  background-repeat: no-repeat;
+}
+
+.blockquote__text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 140%;
+  color: var(--color-mirage);
+}
+
+.blockquote__footer {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blockquote__name {
+  font-style: normal;
+  font-size: 14px;
+  color: var(--color-gray);
+}
+
+.blockquote__date {
+  font-size: 14px;
+  color: var(--color-gray);
 }
 
 .site-footer {
