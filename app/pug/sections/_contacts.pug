@@ -1,0 +1,32 @@
+section.contacts
+  .contacts__container.container
+    .contacts__block-1
+      .contacts__text-content
+        h2.contacts__title.section-title Как нас найти
+        dl.contacts-list
+          .contacts-list__item
+            dt.contacts-list__title Адрес
+            dd.contacts-list__description
+              address.contacts-list__address
+                | Санкт-Петербург,
+                br
+                | ул Большая Конюшенная, д 19
+          .contacts-list__item
+            dt.contacts-list__title Режим работы
+            dd.contacts-list__description Ежедневно, с 9:00 до 20:00
+          .contacts-list__item
+            dt.contacts-list__title Телефон
+            dd.contacts-list__description
+              a(href="tel:+78003335599").contacts-list__phone 8 (800) 333-55-99
+          .contacts-list__item
+            dt.contacts-list__title E-mail
+            dd.contacts-list__description
+              a(href="mailto:info@cat-hotel.ru").contacts-list__email info@cat-hotel.ru
+          .contacts-list__item
+            dt.contacts-list__title Социальные сети
+            dd.contacts-list__description
+              ul.socials
+                +socials(pugData.socials)
+    .contacts__block-2
+      .contacts__map-wrapper
+        img(src="img/map.jpg", alt="Местоположение отеля Котейка на карте").contacts__map

@@ -1,0 +1,28 @@
+.contacts__container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.contacts__title {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.contacts__block-1 {
+  background-color: var(--color-primary);
+}
+
+.contacts__text-content {
+  padding: 40px 15px;
+}
+
+.contacts__map-wrapper {
+  height: 300px;
+}
+
+.contacts__map {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

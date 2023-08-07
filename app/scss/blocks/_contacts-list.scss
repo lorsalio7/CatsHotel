@@ -1,0 +1,38 @@
+.contacts-list {
+  margin: 0;
+}
+
+.contacts-list__item:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.contacts-list__title {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--color-mirage);
+}
+
+.contacts-list__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--color-mirage);
+}
+
+.contacts-list__address {
+  font-style: normal;
+}
+
+.contacts-list__phone,
+.contacts-list__email {
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: none;
+  color: var(--color-mirage);
+
+  @include hover-focus {
+    text-decoration: underline;
+  }
+}
