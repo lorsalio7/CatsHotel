@@ -1,1 +1,13 @@
-footer.site-footer This is site footer
+footer.site-footer
+  .site-footer__row
+    .site-footer__container.container
+      a(href="#").site-footer__logo.logo
+        img(src="img/logo.svg", width="63" height="52" alt="Логотип сайта - Котейка").logo__image
+      ul.site-navigation__list
+        each item in pugData.site_navigation
+          li.site-navigation__item
+            a(href= item.link_url).site-navigation__link= item.link_name
+  .site-footer__row
+    .container
+      p.site-footer__copyright 2019 Все права защищены
+      a(href="#").site-footer__policy Политика конфиденциальности
