@@ -1,0 +1,28 @@
+section.catalog
+  .container
+    header.catalog__header.catalog-header
+      h2.catalog-header__title.section-title Наши номера
+      .catalog-header__controls
+        button(type="button").catalog-header__filter-button Фильтры
+        .dropdown
+          button(type="button" id="dropdownMenuButton" aria-expanded="false").dropdown__toggle
+            | По&nbsp;
+            span.visually-hidden возрастающей
+            | площади
+          ul(aria-labelledby="dropdownMenuButton").dropdown-filter__list
+            li(tabindex="0" data-option-icon="img/dropdown-option-arrow-up.svg" style="background-image: url('img/dropdown-option-arrow-up.svg')").dropdown-filter__option
+              | По&nbsp;
+              span.visually-hidden возрастающей
+              | площади
+            li(tabindex="0" data-option-icon="img/dropdown-option-arrow-bottom.svg" style="background-image: url('img/dropdown-option-arrow-bottom.svg')").dropdown-filter__option
+              | По&nbsp;
+              span.visually-hidden убывающей
+              | площади
+            li(tabindex="0" data-option-icon="img/dropdown-option-arrow-up.svg" style="background-image: url('img/dropdown-option-arrow-up.svg')").dropdown-filter__option
+              | По&nbsp;
+              span.visually-hidden возрастающей
+              | цене
+            li(tabindex="0" data-option-icon="img/dropdown-option-arrow-bottom.svg" style="background-image: url('img/dropdown-option-arrow-bottom.svg')").dropdown-filter__option
+              | По&nbsp;
+              span.visually-hidden убывающей
+              | цене

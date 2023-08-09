@@ -1,0 +1,29 @@
+.catalog-header {
+  padding-top: 40px;
+}
+
+.catalog-header__title {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.catalog-header__controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-header__filter-button {
+  align-self: flex-start;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 15px 13px 37px;
+  box-shadow: 0 2px 12px var(--color-filters-shadow);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-mirage);
+  background-image: url("../img/filters-pin-ic.svg");
+  background-position: 15px center;
+  background-size: 12px 15px;
+  background-repeat: no-repeat;
+  background-color: var(--color-white);
+}
