@@ -1,0 +1,15 @@
+.overlay {
+  position: fixed;
+  left: -4px;
+  right: -4px;
+  top: -4px;
+  bottom: -4px;
+  z-index: 60;
+  display: none;
+  background-color: var(--color-overlay-bg);
+  backdrop-filter: blur(4px);
+}
+
+.overlay--active {
+  display: block;
+}

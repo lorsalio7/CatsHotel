@@ -1,0 +1,15 @@
+.form-button {
+  border: 2px solid var(--color-primary);
+  border-radius: 27px;
+  padding: 10px 40px 11px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: normal;
+  color: var(--color-mirage);
+  background-color: var(--color-primary);
+}
+
+.form-button--outline {
+  background-color: var(--color-white);
+}

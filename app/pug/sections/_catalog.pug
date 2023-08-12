@@ -26,3 +26,69 @@ section.catalog
               | По&nbsp;
               span.visually-hidden убывающей
               | цене
+    .catalog__content
+      .catalog__catalog-filters.catalog-filters
+        .catalog-filters__wrapper
+          h2.visually-hidden Фильтры
+          form(action="#" method="GET").catalog-filters__form
+            fieldset.catalog-filters__field
+              legend.catalog-filters__legend Цена за сутки,₽
+              .catalog-filters__price-inputs-wrapper
+                label(for="catalog-filters-price-from").visually-hidden Цена за сутки, от
+                input(type="text" name="catalog-filters-price-from" id="catalog-filters-price-from" placeholder="от 100" value="100").catalog-filters__price-input
+                label(for="catalog-filters-price-to").visually-hidden Цена за сутки, до
+                input(type="text" name="catalog-filters-price-to" id="catalog-filters-price-to" placeholder="до 600" value="600").catalog-filters__price-input
+            fieldset.catalog-filters__field
+              legend.catalog-filters__legend Площадь
+              .catalog-filters__column
+                label(for="catalog-filters-area-0_63").catalog-filters__checkbox
+                  input(type="checkbox", class="visually-hidden catalog-filters__checkbox-input" name="catalog-filters-area-0_63" id="catalog-filters-area-0_63" value="0,63")
+                  span.catalog-filters__custom-box
+                  | 0,63 м2
+                label(for="catalog-filters-area-0_90").catalog-filters__checkbox
+                  input(type="checkbox", class="visually-hidden catalog-filters__checkbox-input" name="catalog-filters-area-0_90" id="catalog-filters-area-0_90" value="0,90")
+                  span.catalog-filters__custom-box
+                  | 0,90 м2
+                label(for="catalog-filters-area-1_13").catalog-filters__checkbox
+                  input(type="checkbox", class="visually-hidden catalog-filters__checkbox-input" name="catalog-filters-area-1_13" id="catalog-filters-area-1_13" value="1,13")
+                  span.catalog-filters__custom-box
+                  | 1,13 м2
+                label(for="catalog-filters-area-1_56").catalog-filters__checkbox
+                  input(type="checkbox", class="visually-hidden catalog-filters__checkbox-input" name="catalog-filters-area-1_56" id="catalog-filters-area-1_56" value="1,56")
+                  span.catalog-filters__custom-box
+                  | 1,56 м2
+                label(for="catalog-filters-area-2_56").catalog-filters__checkbox
+                  input(type="checkbox", class="visually-hidden catalog-filters__checkbox-input" name="catalog-filters-area-2_56" id="catalog-filters-area-2_56" value="2,56")
+                  span.catalog-filters__custom-box
+                  | 2,56 м2
+                label(for="catalog-filters-area-2_88").catalog-filters__checkbox
+                  input(type="checkbox", class="visually-hidden catalog-filters__checkbox-input" name="catalog-filters-area-2_88" id="catalog-filters-area-2_88" value="2,88")
+                  span.catalog-filters__custom-box
+                  | 2,88 м2
+            fieldset.catalog-filters__field
+              legend.catalog-filters__legend Оснащение номера
+              .catalog-filters__column
+                label(for="catalog-filters-empty-room").catalog-filters__checkbox
+                  input(type="checkbox", class="visually-hidden catalog-filters__checkbox-input" name="catalog-filters-empty-room" id="catalog-filters-empty-room" value="Пустой номер")
+                  span.catalog-filters__custom-box
+                  | Пустой номер
+                label(for="catalog-filters-sunbed").catalog-filters__checkbox
+                  input(type="checkbox", class="visually-hidden catalog-filters__checkbox-input" name="catalog-filters-sunbed" id="catalog-filters-sunbed" value="Лежак")
+                  span.catalog-filters__custom-box
+                  | Лежак
+                label(for="catalog-filters-scratching-post").catalog-filters__checkbox
+                  input(type="checkbox", class="visually-hidden catalog-filters__checkbox-input" name="catalog-filters-scratching-post" id="catalog-filters-scratching-post" value="Когтеточка")
+                  span.catalog-filters__custom-box
+                  | Когтеточка
+                label(for="catalog-filters-game-complex").catalog-filters__checkbox
+                  input(type="checkbox", class="visually-hidden catalog-filters__checkbox-input" name="catalog-filters-game-complex" id="catalog-filters-game-complex" value="Игровой-комплекс")
+                  span.catalog-filters__custom-box
+                  | Игровой-комплекс
+                label(for="catalog-filters-small-house").catalog-filters__checkbox
+                  input(type="checkbox", class="visually-hidden catalog-filters__checkbox-input" name="catalog-filters-small-house" id="catalog-filters-small-house" value="Домик")
+                  span.catalog-filters__custom-box
+                  | Домик
+            button(type="submit").catalog-filters__submit-button.form-button Подобрать
+            button(type="reset").form-button.form-button--outline Сбросить фильтр
+          button(type="button").catalog-filters__close-button
+            span.visually-hidden Закрыть окно

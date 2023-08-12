@@ -100,3 +100,37 @@ if (dropdown) {
   });
 }
 ;
+var filtersButton = document.querySelector(".catalog-header__filter-button");
+if (filtersButton) {
+  var openFilters = function openFilters() {
+    pageHtml.classList.add("no-scroll");
+    filtersModal.classList.add("catalog-filters__wrapper--active");
+    overlay.classList.add("overlay--active");
+  };
+  var closeFilters = function closeFilters() {
+    pageHtml.classList.remove("no-scroll");
+    filtersForm.scrollTo(0, 0);
+    filtersModal.classList.remove("catalog-filters__wrapper--active");
+    overlay.classList.remove("overlay--active");
+    filtersButton.classList.remove("catalog-header__filter-button--active");
+  };
+  var pageHtml = document.querySelector("html");
+  var filtersModal = document.querySelector(".catalog-filters__wrapper");
+  var filtersForm = filtersModal.querySelector(".catalog-filters__form");
+  var closeFiltersButton = document.querySelector(".catalog-filters__close-button");
+  var overlay = document.querySelector(".overlay");
+  filtersButton.addEventListener("click", function () {
+    filtersButton.classList.toggle("catalog-header__filter-button--active");
+    if (filtersButton.classList.contains("catalog-header__filter-button--active")) {
+      openFilters();
+    } else {
+      closeFilters();
+    }
+  });
+  closeFiltersButton.addEventListener("click", function () {
+    if (filtersModal.classList.contains("catalog-filters__wrapper--active")) {
+      closeFilters();
+    }
+  });
+}
+;
