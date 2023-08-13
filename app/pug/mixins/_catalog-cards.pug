@@ -1,0 +1,29 @@
+mixin catalogCards(array)
+  each item in array
+    li.catalog__card
+      article.catalog-card
+        .catalog-card__text-content
+          h3.catalog-card__title= item.cardTitle
+          dl.catalog-card__options-list.catalog-card-options
+            .catalog-card-options__row
+              dt.catalog-card-options__title Размеры (ШхГхВ) -&nbsp;
+              dd.catalog-card-options__description= item.roomSize
+            .catalog-card-options__row
+              dt.catalog-card-options__title Площадь -&nbsp;
+              dd.catalog-card-options__description= item.roomArea
+            .catalog-card-options__row
+              dt.catalog-card-options__title Оснащение номера
+              dd.catalog-card-options__description
+                ul.catalog-card-options__list
+                  each option_item in item.optionsIcons
+                    li.catalog-card-options__item
+                      div(data-tooltip-content= option_item.iconTitle).tooltip
+                        button(type="button" style=`background-image: url("${option_item.icon}")`).tooltip__button
+                          span.visually-hidden= option_item.iconTitle
+            .catalog-card-options__row
+              dt.catalog-card-options__title Цена за сутки:
+              dd.catalog-card-options__description
+                span.catalog-card-options__price= item.price
+          button(type="button").catalog-card__button.button Забронировать
+        img(src= item.cardImage width="290" height="185", alt="Фото номера " + "'" + item.cardTitle + "'").catalog-card__image
+

@@ -1,3 +1,13 @@
 .catalog__catalog-filters {
   padding: 5px;
 }
+
+.catalog__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__card:not(:last-of-type) {
+  margin-bottom: 30px;
+}

@@ -92,3 +92,6 @@ section.catalog
             button(type="reset").form-button.form-button--outline Сбросить фильтр
           button(type="button").catalog-filters__close-button
             span.visually-hidden Закрыть окно
+      .catalog__cards
+        ul.catalog__list
+          +catalogCards(pugData.catalog_cards)

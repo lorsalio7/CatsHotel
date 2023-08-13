@@ -141,5 +141,131 @@
       "datetime": "08-02-2019",
       "date": "2 августа, 2019"
     }
+  ],
+  "catalog_cards": [
+    {
+      "cardTitle": "Эконом",
+      "cardImage": "img/catalog-img-1.jpg",
+      "roomSize": "90х70х180 см",
+      "roomArea": "0,63 м2",
+      "price": "100₽",
+      "optionsIcons": [
+        {
+          "icon": "img/empty-ic.svg",
+          "iconTitle": "Пустой номер"
+        }
+      ]
+    },
+    {
+      "cardTitle": "Эконом плюс",
+      "cardImage": "img/catalog-img-2.jpg",
+      "roomSize": "90х100х180 см",
+      "roomArea": "0,90 м2",
+      "price": "200₽",
+      "optionsIcons": [
+        {
+          "icon": "img/sun-lounger-ic.svg",
+          "iconTitle": "Лежак"
+        },
+        {
+          "icon": "img/scratching-post-ic.svg",
+          "iconTitle": "Когтеточка"
+        }
+      ]
+    },
+    {
+      "cardTitle": "Комфорт",
+      "cardImage": "img/catalog-img-3.jpg",
+      "roomSize": "100х125х180 см",
+      "roomArea": "1,13 м2",
+      "price": "250₽",
+      "optionsIcons": [
+        {
+          "icon": "img/sun-lounger-ic.svg",
+          "iconTitle": "Лежак"
+        },
+        {
+          "icon": "img/scratching-post-ic.svg",
+          "iconTitle": "Когтеточка"
+        }
+        ,
+        {
+          "icon": "img/game-complex-ic.svg",
+          "iconTitle": "Игровой комплекс"
+        }
+      ]
+    },
+    {
+      "cardTitle": "Сьют",
+      "cardImage": "img/catalog-img-4.jpg",
+      "roomSize": "125х125х180 см",
+      "roomArea": "1,56 м2",
+      "price": "350₽",
+      "optionsIcons": [
+        {
+          "icon": "img/sun-lounger-ic.svg",
+          "iconTitle": "Лежак"
+        },
+        {
+          "icon": "img/scratching-post-ic.svg",
+          "iconTitle": "Когтеточка"
+        }
+        ,
+        {
+          "icon": "img/game-complex-ic.svg",
+          "iconTitle": "Игровой комплекс"
+        }
+      ]
+    },
+    {
+      "cardTitle": "Люкс",
+      "cardImage": "img/catalog-img-5.jpg",
+      "roomSize": "160х160х180 см",
+      "roomArea": "2,56 м2",
+      "price": "500₽",
+      "optionsIcons": [
+        {
+          "icon": "img/sun-lounger-ic.svg",
+          "iconTitle": "Лежак"
+        },
+        {
+          "icon": "img/scratching-post-ic.svg",
+          "iconTitle": "Когтеточка"
+        },
+        {
+          "icon": "img/game-complex-ic.svg",
+          "iconTitle": "Игровой комплекс"
+        },
+        {
+          "icon": "img/house-cat-ic.svg",
+          "iconTitle": "Домик"
+        }
+      ]
+    },
+    {
+      "cardTitle": "Супер-Люкс",
+      "cardImage": "img/catalog-img-6.jpg",
+      "roomSize": "180х160х180 см",
+      "roomArea": "2,88 м2",
+      "price": "600₽",
+      "optionsIcons": [
+        {
+          "icon": "img/sun-lounger-ic.svg",
+          "iconTitle": "Лежак"
+        },
+        {
+          "icon": "img/scratching-post-ic.svg",
+          "iconTitle": "Когтеточка"
+        },
+        {
+          "icon": "img/game-complex-ic.svg",
+          "iconTitle": "Игровой комплекс"
+        },
+        {
+          "icon": "img/house-cat-ic.svg",
+          "iconTitle": "Домик"
+        }
+      ]
+    }
   ]
 }
