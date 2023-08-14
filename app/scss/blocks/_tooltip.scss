@@ -6,15 +6,39 @@
   content: attr(data-tooltip-content);
   position: absolute;
   left: 50%;
-  top: -42px;
+  top: -50px;
+  z-index: 100;
   display: none;
   border: 1px solid var(--color-primary);
+  border-radius: 4px;
   padding: 9px 10px 11px;
+  box-shadow: 0 2px 12px 0 var(--color-filters-shadow);
+  white-space: nowrap;
   background-color: var(--color-white);
   transform: translateX(-50%);
 }
 
 .tooltip:hover::before {
+  display: block;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 27.5px;
+  z-index: 100;
+  display: none;
+  border: 1px solid var(--color-primary);
+  border-top: transparent;
+  border-right: transparent;
+  width: 14px;
+  height: 14px;
+  background-color: var(--color-white);
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.tooltip:hover::after {
   display: block;
 }
 
