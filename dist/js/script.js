@@ -28,6 +28,8 @@ if (burgerButton) {
 document.addEventListener('DOMContentLoaded', function () {
   var roomsSlider = document.querySelector(".rooms-slider");
   var reviewsSlider = document.querySelector(".reviews__slider");
+  var cardRoomSlider = document.querySelector(".card-room__big-slider");
+  var cardRoomThumbs = document.querySelector(".card-room__thumbs-slider");
   if (roomsSlider) {
     new Splide(roomsSlider, {
       gap: 30,
@@ -42,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }).mount();
   }
+  ;
   if (reviewsSlider) {
     new Splide(reviewsSlider, {
       gap: 30,
@@ -55,6 +58,22 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       }
     }).mount();
+  }
+  ;
+  if (cardRoomSlider) {
+    cardRoomSlider = new Splide(cardRoomSlider, {
+      gap: 30,
+      arrows: false,
+      pagination: false
+    }).mount();
+    cardRoomThumbs = new Splide(cardRoomThumbs, {
+      gap: 16,
+      perPage: 3,
+      arrows: false,
+      pagination: false,
+      isNavigation: true
+    }).mount();
+    cardRoomSlider.sync(cardRoomThumbs);
   }
 });
 ;

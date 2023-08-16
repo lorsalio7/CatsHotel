@@ -1,0 +1,10 @@
+main.page__main.main
+  include _card-room.pug
+  section.page__rooms.rooms
+    .container
+      h2.rooms__title.section-title Другие номера
+      .rooms__slider.rooms-slider.splide
+        ul.splide__pagination.rooms-slider__pagination
+        .splide__track.rooms-slider__track
+          ul.rooms-slider__list.splide__list
+            +roomsSlides(pugData.rooms_slides)

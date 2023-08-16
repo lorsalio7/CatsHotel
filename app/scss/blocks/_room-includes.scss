@@ -1,0 +1,20 @@
+.room-includes {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.room-includes__item {
+  display: flex;
+  align-items: center;
+}
+
+.room-includes__item:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.room-includes__icon {
+  margin-right: 10px;
+}

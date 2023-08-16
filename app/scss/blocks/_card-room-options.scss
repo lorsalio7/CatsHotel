@@ -1,0 +1,38 @@
+.card-room-options__item {
+  display: flex;
+  align-items: baseline;
+}
+
+.card-room-options__item--column {
+  flex-direction: column;
+}
+
+.card-room-options__item:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.card-room-options__title {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--color-mirage);
+}
+
+.card-room-options__item--column .card-room-options__title {
+  margin-bottom: 17px;
+}
+
+.card-room-options__description {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--color-mirage);
+}
+
+.card-room-options__price {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--color-mirage);
+}

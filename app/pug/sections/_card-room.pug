@@ -1,0 +1,57 @@
+section.page__card-room.card-room
+  .container
+    .card-room__content
+      .card-room__gallery
+        section.card-room__big-slider.splide
+          h3.visually-hidden Галерея номера Супер-Люкс
+          .splide__track
+            ul.splide__list
+              li.splide__slide
+                img(src="img/card-room-slide-1.jpg" width="500" height="396", alt="Изображение 1 номера Супер-Люкс")
+              li.splide__slide
+                img(src="img/card-room-slide-2.jpg" width="500" height="396", alt="Изображение 2 номера Супер-Люкс")
+              li.splide__slide
+                img(src="img/card-room-slide-3.jpg" width="500" height="396", alt="Изображение 3 номера Супер-Люкс")
+              li.splide__slide
+                img(src="img/card-room-slide-4.jpg" width="500" height="396", alt="Изображение 4 номера Супер-Люкс")
+        section(area-label="Это карусель с миниатюрными изображениями главного слайдера галереи").card-room__thumbs-slider.splide
+          .splide__track
+            ul.splide__list
+              li.splide__slide
+                img(src="img/card-room-slide-thumb-1.jpg" width="104" height="104", alt="Миниатюрное изображение 1 номера Супер-Люкс")
+              li.splide__slide
+                img(src="img/card-room-slide-thumb-2.jpg" width="104" height="104", alt="Миниатюрное изображение 2 номера Супер-Люкс")
+              li.splide__slide
+                img(src="img/card-room-slide-thumb-3.jpg" width="104" height="104", alt="Миниатюрное изображение 3 номера Супер-Люкс")
+              li.splide__slide
+                img(src="img/card-room-slide-thumb-4.jpg" width="104" height="104", alt="Миниатюрное изображение 4 номера Супер-Люкс")
+      .card-room__description
+        h2.card-room__title Супер-Люкс
+        dl.card-room__list.card-room-options
+          .card-room-options__item
+            dt.card-room-options__title Размеры (ШхГхВ) -&nbsp;
+            dd.card-room-options__description 180х160х180 см
+          .card-room-options__item
+            dt.card-room-options__title Площадь -&nbsp;
+            dd.card-room-options__description 2,88 м2
+          .card-room-options__item.card-room-options__item--column
+            dt.card-room-options__title Оснащение номера
+            dd.card-room-options__description
+              ul.card-room-options__list.room-includes
+                li.room-includes__item
+                  img(src="img/sun-lounger-ic.svg" width="18" height="18", alt="Иконка лежака" aria-hidden="true").room-includes__icon
+                  | Лежак
+                li.room-includes__item
+                  img(src="img/house-cat-ic.svg" width="18" height="18", alt="Иконка домика" aria-hidden="true").room-includes__icon
+                  | Домик
+                li.room-includes__item
+                  img(src="img/game-complex-ic.svg" width="18" height="18", alt="Иконка игрового комплекса" aria-hidden="true").room-includes__icon
+                  | Игровой комплекс - 3 яруса
+                li.room-includes__item
+                  img(src="img/scratching-post-ic.svg" width="18" height="18", alt="Иконка когтеточки" aria-hidden="true").room-includes__icon
+                  | Когтеточка
+          .card-room-options__item
+            dt.card-room-options__title Цена за сутки:&nbsp;
+            dd.card-room-options__description
+              span.card-room-options__price 600₽
+        button(type="button").button Забронировать
