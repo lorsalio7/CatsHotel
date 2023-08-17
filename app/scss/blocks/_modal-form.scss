@@ -1,0 +1,62 @@
+// .modal-form {
+//   overflow: hidden;
+//   overflow-y: auto;
+//   // // width: 100%;
+//   max-height: 100%;
+// }
+
+.modal-form__input {
+  margin-bottom: 21px;
+  border: 1px solid var(--color-alto);
+  border-radius: 30px;
+  padding: 16px 20px;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+}
+
+.modal-form__input::placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  color: var(--color-mirage);
+}
+
+.modal-form__date-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 0.6;
+}
+
+.modal-form__input-wrapper {
+  display: flex;
+  margin-top: 16px;
+}
+
+.modal-form__label-input {
+  display: flex;
+  align-items: center;
+}
+
+.modal-form__arrival-date {
+  margin-right: 11px;
+}
+
+.modal-form__arrival-date,
+.modal-form__departure-date {
+  margin-bottom: 0;
+  margin-left: 5px;
+  padding: 16px 14px;
+}
+
+.modal-form__arrival-date::placeholder,
+.modal-form__departure-date::placeholder {
+  color: var(--color-nobel);
+}
