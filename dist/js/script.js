@@ -164,3 +164,27 @@ var departureInput = new Cleave('.modal-form__departure-date', {
   datePattern: ['d', 'm', 'Y']
 });
 ;
+var reserveRoomModal = document.querySelector(".modal--reserve");
+if (reserveRoomModal) {
+  var openReserveRoomModal = function openReserveRoomModal() {
+    reserveRoomModal.classList.add("modal--active");
+    document.querySelector("html").classList.add("no-scroll");
+    document.querySelector(".overlay").classList.add("overlay--active");
+  };
+  var closeReserveRoomModal = function closeReserveRoomModal() {
+    reserveRoomModal.classList.remove("modal--active");
+    document.querySelector("html").classList.remove("no-scroll");
+    document.querySelector(".overlay").classList.remove("overlay--active");
+  };
+  var closeReserveRoomButton = document.querySelector(".modal__close-button");
+  var reserveButtons = document.querySelectorAll(".reserve-button");
+  reserveButtons.forEach(function (item) {
+    item.addEventListener("click", openReserveRoomModal);
+  });
+  closeReserveRoomButton.addEventListener("click", function () {
+    if (reserveRoomModal.classList.contains("modal--active")) {
+      closeReserveRoomModal();
+    }
+  });
+}
+;

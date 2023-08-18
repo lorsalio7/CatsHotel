@@ -3,3 +3,4 @@
 @@include("parts/dropdown.js");
 @@include("parts/catalog-filters.js");
 @@include("parts/form-date-mask.js");
+@@include("parts/modals.js");

@@ -24,7 +24,7 @@ mixin catalogCards(array)
               dt.catalog-card-options__title Цена за сутки:
               dd.catalog-card-options__description
                 span.catalog-card-options__price= item.price
-          button(type="button").catalog-card__button.button Забронировать
+          button(type="button").catalog-card__button.button.reserve-button Забронировать
         .catalog-card__image-wrapper
           img(src= item.cardImage width="706" height="404", alt="Фото номера " + "'" + item.cardTitle + "'").catalog-card__image
 
