@@ -544,6 +544,10 @@ body {
   z-index: 50;
   padding: 12px 0;
   background-color: var(--color-white);
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
 .site-header--active::before {
@@ -1972,46 +1976,74 @@ body {
 
 .modal {
   position: fixed;
-  left: 50%;
-  top: 100px;
-  bottom: 100px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   z-index: 70;
-  border-radius: 10px;
-  width: 290px;
-  -webkit-box-shadow: 0 0 25px var(--color-modal-shadow);
-          box-shadow: 0 0 25px var(--color-modal-shadow);
-  background-color: var(--color-white);
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.modal--reserve {
   display: none;
-  max-width: 570px;
-  background-image: url("../img/paw-bottom-right-ic.svg");
-  background-position: left -12px top -21px;
-  background-size: 83px 84px;
-  background-repeat: no-repeat;
+  overflow-y: auto;
+  padding: 102px 15px;
+  background-color: var(--color-overlay-bg);
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 
 .modal--active {
+  opacity: 1;
+}
+
+.modal-reserve {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(1, -0.41, 0.43, 0.68);
+  transition: -webkit-transform 0.3s cubic-bezier(1, -0.41, 0.43, 0.68);
+  transition: transform 0.3s cubic-bezier(1, -0.41, 0.43, 0.68);
+  transition: transform 0.3s cubic-bezier(1, -0.41, 0.43, 0.68), -webkit-transform 0.3s cubic-bezier(1, -0.41, 0.43, 0.68);
+}
+
+.modal-reserve--active {
   display: block;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 .modal__container {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow: hidden;
-  padding: 10px 10px 60px;
-  width: 100%;
-  max-height: 100%;
+  margin: auto;
+  max-width: 570px;
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  will-change: transform, opacity;
+  cursor: default;
+}
+
+.modal__container--active {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.modal__body {
+  border-radius: 10px;
+  padding: 10px 15px 60px;
+  -webkit-box-shadow: 0 0 25px var(--color-modal-shadow);
+          box-shadow: 0 0 25px var(--color-modal-shadow);
+  background-color: var(--color-white);
+}
+
+.modal-reserve .modal__body {
+  background-image: url("../img/paw-bottom-right-ic.svg");
+  background-position: left -12px top -21px;
+  background-size: 83px 84px;
+  background-repeat: no-repeat;
 }
 
 .modal__top {
@@ -2021,8 +2053,9 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-bottom: 7px;
-  padding: 7px 8px;
+  margin-bottom: 11px;
+  padding-top: 7px;
+  padding-bottom: 8px;
 }
 
 .modal__close-button {
@@ -2039,12 +2072,6 @@ body {
 
 .modal__close-button:focus {
   border: 1px solid var(--color-primary);
-}
-
-.modal__content {
-  overflow-y: auto;
-  padding: 5px;
-  max-height: 100%;
 }
 
 .modal__title {

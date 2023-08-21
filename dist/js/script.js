@@ -1,19 +1,57 @@
 "use strict";
 
+function throttle(func, delay) {
+  var wait = false;
+  return function () {
+    if (wait) {
+      return;
+    }
+    func.apply(void 0, arguments);
+    wait = true;
+    setTimeout(function () {
+      wait = false;
+    }, delay);
+  };
+}
+function debounce(func, delay) {
+  var timeout;
+  return function () {
+    var context = this;
+    var args = arguments;
+    clearTimeout(timeout);
+    timeout = setTimeout(function () {
+      return func.apply(context, args);
+    }, delay);
+  };
+}
+;
+var siteHeader = document.querySelector(".site-header");
+if (siteHeader) {
+  var addShadow = function addShadow() {
+    var offsetTop = window.pageYOffset;
+    if (offsetTop > 0) {
+      siteHeader.style.boxShadow = "0 2px 6px rgba(0,0,0,0.2)";
+    } else {
+      siteHeader.removeAttribute("style");
+    }
+  };
+  window.addEventListener("scroll", debounce(addShadow, 150));
+}
+;
 var burgerButton = document.querySelector(".burger-button");
 if (burgerButton) {
   var openMenu = function openMenu() {
     setTimeout(function () {
-      siteHeader.classList.add("site-header--active");
+      _siteHeader.classList.add("site-header--active");
     }, 300);
     siteNavigation.classList.add("site-header__site-navigation--active");
   };
   var closeMenu = function closeMenu() {
-    siteHeader.classList.remove("site-header--active");
+    _siteHeader.classList.remove("site-header--active");
     siteNavigation.classList.remove("site-header__site-navigation--active");
     burgerButton.classList.remove("burger-button--active");
   };
-  var siteHeader = document.querySelector(".site-header");
+  var _siteHeader = document.querySelector(".site-header");
   var siteNavigation = document.querySelector(".site-header__site-navigation");
   burgerButton.addEventListener("click", function () {
     burgerButton.classList.toggle("burger-button--active");
@@ -164,27 +202,33 @@ var departureInput = new Cleave('.modal-form__departure-date', {
   datePattern: ['d', 'm', 'Y']
 });
 ;
-var reserveRoomModal = document.querySelector(".modal--reserve");
+var reserveRoomModal = document.querySelector(".modal-reserve");
 if (reserveRoomModal) {
-  var openReserveRoomModal = function openReserveRoomModal() {
-    reserveRoomModal.classList.add("modal--active");
-    document.querySelector("html").classList.add("no-scroll");
-    document.querySelector(".overlay").classList.add("overlay--active");
+  var openReserveModal = function openReserveModal() {
+    reserveRoomModal.style.display = "flex";
+    setTimeout(function () {
+      reserveRoomModal.classList.add("modal--active");
+      modalContainer.classList.add("modal__container--active");
+      document.querySelector("html").classList.add("no-scroll");
+    }, 10);
   };
-  var closeReserveRoomModal = function closeReserveRoomModal() {
-    reserveRoomModal.classList.remove("modal--active");
-    document.querySelector("html").classList.remove("no-scroll");
-    document.querySelector(".overlay").classList.remove("overlay--active");
+  var closeReserveModal = function closeReserveModal(e) {
+    var target = e.target;
+    if (target === reserveRoomModal || target === closeReserveModalButton) {
+      reserveRoomModal.classList.remove("modal--active");
+      modalContainer.classList.remove("modal__container--active");
+      document.querySelector("html").classList.remove("no-scroll");
+      setTimeout(function () {
+        reserveRoomModal.removeAttribute("style");
+      }, 300);
+    }
   };
-  var closeReserveRoomButton = document.querySelector(".modal__close-button");
+  var closeReserveModalButton = document.querySelector(".modal-reserve .modal__close-button");
+  var modalContainer = reserveRoomModal.querySelector(".modal__container");
   var reserveButtons = document.querySelectorAll(".reserve-button");
   reserveButtons.forEach(function (item) {
-    item.addEventListener("click", openReserveRoomModal);
+    item.addEventListener("click", openReserveModal);
   });
-  closeReserveRoomButton.addEventListener("click", function () {
-    if (reserveRoomModal.classList.contains("modal--active")) {
-      closeReserveRoomModal();
-    }
-  });
+  reserveRoomModal.addEventListener("click", closeReserveModal);
 }
 ;
