@@ -25,6 +25,14 @@
                   label(for="date-of-departure").modal-form__label-input по
                     input(type="text" name="date-of-departure" id="date-of-departure" placeholder="26.02.2023" required).modal-form__input.modal-form__departure-date
               button(type="submit").button Отправить заявку
-
-
-    //- .modal.modal--complete
+    .modal.modal-success
+      .modal__container
+        .modal__body
+          .modal__top
+            button(type="button").modal__close-button
+              span.visually-hidden Закрыть окно
+          .modal__content
+            h2.modal__title Спасибо за заявку!
+            p.modal__info-text Мы свяжемся с вами в ближайшее время
+            .modal__ok-button
+              button(type="button").button Ок

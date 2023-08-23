@@ -202,33 +202,62 @@ var departureInput = new Cleave('.modal-form__departure-date', {
   datePattern: ['d', 'm', 'Y']
 });
 ;
-var reserveRoomModal = document.querySelector(".modal-reserve");
-if (reserveRoomModal) {
-  var openReserveModal = function openReserveModal() {
-    reserveRoomModal.style.display = "flex";
-    setTimeout(function () {
-      reserveRoomModal.classList.add("modal--active");
-      modalContainer.classList.add("modal__container--active");
-      document.querySelector("html").classList.add("no-scroll");
-    }, 10);
-  };
-  var closeReserveModal = function closeReserveModal(e) {
-    var target = e.target;
-    if (target === reserveRoomModal || target === closeReserveModalButton) {
-      reserveRoomModal.classList.remove("modal--active");
-      modalContainer.classList.remove("modal__container--active");
-      document.querySelector("html").classList.remove("no-scroll");
+var scrollController = {
+  scrollPosition: 0,
+  disabledScroll: function disabledScroll() {
+    scrollController.scrollPosition = window.scrollY;
+    document.body.style.cssText = "\n      overflow: hidden;\n      position: fixed;\n      top: -".concat(scrollController.scrollPosition, "px;\n      left: 0;\n      height: 100vh;\n      width: 100vw;\n      padding-right: ").concat(parseInt(window.innerWidth - document.body.offsetWidth), "px;\n    ");
+    document.documentElement.style.scrollBehavior = "unset";
+  },
+  enabledScrool: function enabledScrool() {
+    document.body.style.cssText = "";
+    window.scroll({
+      top: scrollController.scrollPosition
+    });
+    document.documentElement.style.scrollBehavior = "";
+  }
+};
+function modalInit(_ref) {
+  var modalWindow = _ref.modalWindow,
+    buttonOpen = _ref.buttonOpen,
+    buttonClose = _ref.buttonClose;
+  var modal = document.querySelector(modalWindow);
+  if (modal) {
+    var closeModal = function closeModal(event) {
+      var target = event.target;
+      if (target === modal || buttonClose && target === closeModalButton || event.keyCode === 27) {
+        modal.classList.remove("modal--active");
+        modalBody.classList.remove("modal__container--active");
+        setTimeout(function () {
+          modal.removeAttribute("style");
+          scrollController.enabledScrool();
+        }, 300);
+        window.removeEventListener("keydown", closeModal);
+      }
+    };
+    var openModal = function openModal() {
+      modal.style.display = "flex";
       setTimeout(function () {
-        reserveRoomModal.removeAttribute("style");
-      }, 300);
-    }
-  };
-  var closeReserveModalButton = document.querySelector(".modal-reserve .modal__close-button");
-  var modalContainer = reserveRoomModal.querySelector(".modal__container");
-  var reserveButtons = document.querySelectorAll(".reserve-button");
-  reserveButtons.forEach(function (item) {
-    item.addEventListener("click", openReserveModal);
-  });
-  reserveRoomModal.addEventListener("click", closeReserveModal);
+        modal.classList.add("modal--active");
+        modalBody.classList.add("modal__container--active");
+      }, 10);
+      window.addEventListener("keydown", closeModal);
+      scrollController.disabledScroll();
+    };
+    var openModalButtons = document.querySelectorAll(buttonOpen);
+    var closeModalButton = modal.querySelector(buttonClose);
+    var modalBody = modal.querySelector(".modal__container");
+    openModalButtons.forEach(function (item) {
+      item.addEventListener("click", openModal);
+    });
+    modal.addEventListener("click", closeModal);
+  }
+  ;
 }
+;
+modalInit({
+  modalWindow: ".modal-reserve",
+  buttonOpen: ".reserve-button",
+  buttonClose: ".modal__close-button"
+});
 ;
