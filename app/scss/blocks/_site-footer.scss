@@ -9,7 +9,7 @@
 }
 
 .site-footer__row:nth-child(2) .container {
-  padding-top: 15px;
+  padding-top: 13px;
 }
 
 .site-footer__container {
@@ -19,17 +19,17 @@
 }
 
 .site-footer__logo {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .site-footer .site-navigation__list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .site-footer .site-navigation__item {
-  margin-bottom: 20px;
+  margin-bottom: 11px;
 }
 
 .site-footer .site-navigation__item:not(:last-of-type) {
@@ -45,7 +45,7 @@
 
 .site-footer__copyright {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 11px;
   padding-left: 14px;
   font-size: 12px;
   color: var(--color-gray);

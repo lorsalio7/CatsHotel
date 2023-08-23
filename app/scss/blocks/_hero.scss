@@ -6,7 +6,7 @@
 .hero__container {
   position: relative;
   z-index: 2;
-  padding-top: 50px;
+  padding-top: 48px;
   padding-bottom: 230px;
 }
 
@@ -19,8 +19,8 @@
   &::before {
     content: "";
     position: absolute;
-    left: -50px;
-    bottom: -100px;
+    left: -112px;
+    bottom: -80px;
     z-index: -1;
     width: 527px;
     height: 568px;
@@ -37,7 +37,7 @@
   flex-direction: column;
   order: 2;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   font-weight: 500;
   font-size: 16px;
   text-align: center;
@@ -45,7 +45,7 @@
 
 .hero__caption {
   display: inline-block;
-  margin-bottom: 9px;
+  margin-bottom: 3px;
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 44px;
@@ -55,11 +55,17 @@
 .hero__place {
   order: 1;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-mirage);
 }
 
 .hero__button {
   order: 3;
+  padding: 13px 60px 13px 20px;
+  width: auto;
 }
 
 .hero__picture {

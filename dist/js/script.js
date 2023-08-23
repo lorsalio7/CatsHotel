@@ -24,7 +24,24 @@ function debounce(func, delay) {
     }, delay);
   };
 }
-;
+
+// =========================== Фикс скачка браузерного скролла и плавной прокрутки ==========================================
+
+var scrollController = {
+  scrollPosition: 0,
+  disabledScroll: function disabledScroll() {
+    scrollController.scrollPosition = window.scrollY;
+    document.body.style.cssText = "\n      overflow: hidden;\n      position: fixed;\n      top: -".concat(scrollController.scrollPosition, "px;\n      left: 0;\n      height: 100vh;\n      width: 100vw;\n      padding-right: ").concat(parseInt(window.innerWidth - document.body.offsetWidth), "px;\n    ");
+    document.documentElement.style.scrollBehavior = "unset";
+  },
+  enabledScrool: function enabledScrool() {
+    document.body.style.cssText = "";
+    window.scroll({
+      top: scrollController.scrollPosition
+    });
+    document.documentElement.style.scrollBehavior = "";
+  }
+};
 var siteHeader = document.querySelector(".site-header");
 if (siteHeader) {
   var addShadow = function addShadow() {
@@ -41,12 +58,14 @@ if (siteHeader) {
 var burgerButton = document.querySelector(".burger-button");
 if (burgerButton) {
   var openMenu = function openMenu() {
+    scrollController.disabledScroll();
     setTimeout(function () {
       _siteHeader.classList.add("site-header--active");
     }, 300);
     siteNavigation.classList.add("site-header__site-navigation--active");
   };
   var closeMenu = function closeMenu() {
+    scrollController.enabledScrool();
     _siteHeader.classList.remove("site-header--active");
     siteNavigation.classList.remove("site-header__site-navigation--active");
     burgerButton.classList.remove("burger-button--active");
@@ -202,21 +221,6 @@ var departureInput = new Cleave('.modal-form__departure-date', {
   datePattern: ['d', 'm', 'Y']
 });
 ;
-var scrollController = {
-  scrollPosition: 0,
-  disabledScroll: function disabledScroll() {
-    scrollController.scrollPosition = window.scrollY;
-    document.body.style.cssText = "\n      overflow: hidden;\n      position: fixed;\n      top: -".concat(scrollController.scrollPosition, "px;\n      left: 0;\n      height: 100vh;\n      width: 100vw;\n      padding-right: ").concat(parseInt(window.innerWidth - document.body.offsetWidth), "px;\n    ");
-    document.documentElement.style.scrollBehavior = "unset";
-  },
-  enabledScrool: function enabledScrool() {
-    document.body.style.cssText = "";
-    window.scroll({
-      top: scrollController.scrollPosition
-    });
-    document.documentElement.style.scrollBehavior = "";
-  }
-};
 function modalInit(_ref) {
   var modalWindow = _ref.modalWindow,
     buttonOpen = _ref.buttonOpen,

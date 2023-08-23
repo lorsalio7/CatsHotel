@@ -14,6 +14,7 @@ if(burgerButton) {
   });
 
   function openMenu() {
+    scrollController.disabledScroll();
     setTimeout(()=>{
       siteHeader.classList.add("site-header--active");
     }, 300);
@@ -21,6 +22,7 @@ if(burgerButton) {
   }
 
   function closeMenu() {
+    scrollController.enabledScrool();
     siteHeader.classList.remove("site-header--active");
     siteNavigation.classList.remove("site-header__site-navigation--active");
     burgerButton.classList.remove("burger-button--active");

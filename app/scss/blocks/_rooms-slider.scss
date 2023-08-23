@@ -1,5 +1,5 @@
 .rooms-slider {
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 
 .rooms-slider__pagination {
@@ -11,6 +11,10 @@
   height: 12px;
   background-color: var(--color-mercury);
   opacity: 1;
+}
+
+.rooms-slider__pagination li:not(:last-of-type) {
+  margin-right: 6px;
 }
 
 .rooms-slider__pagination .splide__pagination__page.is-active {
@@ -34,26 +38,26 @@
 .rooms-slider__text-content {
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
-  padding: 25px;
+  padding: 21px 25px 25px;
   background-color: var(--color-white);
 }
 
 .rooms-slider__title {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 17px;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 20px;
 }
 
 .rooms-slider__button {
-  margin-top: 25px;
+  margin-top: 21px;
 }
 
 .rooms-slider__image {
   display: block;
   border-radius: 8px 8px 0 0;
   width: 100%;
-  height: 100%;
+  height: 192px;
   object-fit: cover;
 }

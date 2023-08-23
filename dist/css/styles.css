@@ -500,6 +500,7 @@ template {
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -617,7 +618,7 @@ body {
 
 .site-navigation {
   overflow-y: auto;
-  padding: 100px 15px 30px;
+  padding: 95px 15px 30px;
   width: 100%;
   background-color: var(--color-primary);
 }
@@ -625,12 +626,12 @@ body {
 .site-navigation__list {
   list-style-type: none;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   padding: 0;
 }
 
 .site-navigation__item:not(:last-of-type) {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .site-navigation__link {
@@ -644,7 +645,8 @@ body {
 
 .site-navigation__phone {
   display: inline-block;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
   text-decoration: none;
@@ -653,6 +655,7 @@ body {
 
 .burger-button {
   border: none;
+  padding: 0;
   width: 24px;
   height: 24px;
   background-color: transparent;
@@ -745,7 +748,7 @@ body {
 }
 
 .socials__item:not(:last-of-type) {
-  margin-right: 20px;
+  margin-right: 18px;
 }
 
 .socials__link {
@@ -800,7 +803,7 @@ body {
 }
 
 .page__hero {
-  margin-bottom: 70px;
+  margin-bottom: 66px;
 }
 
 .page__advantages {
@@ -808,11 +811,11 @@ body {
 }
 
 .page__rooms {
-  margin-bottom: 70px;
+  margin-bottom: 88px;
 }
 
 .page__reviews {
-  margin-bottom: 70px;
+  margin-bottom: 86px;
 }
 
 .page__promo-banner {
@@ -831,7 +834,7 @@ body {
 .hero__container {
   position: relative;
   z-index: 2;
-  padding-top: 50px;
+  padding-top: 48px;
   padding-bottom: 230px;
 }
 
@@ -852,8 +855,8 @@ body {
 .hero__content::before {
   content: "";
   position: absolute;
-  left: -50px;
-  bottom: -100px;
+  left: -112px;
+  bottom: -80px;
   z-index: -1;
   width: 527px;
   height: 568px;
@@ -878,7 +881,7 @@ body {
       -ms-flex-order: 2;
           order: 2;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   font-weight: 500;
   font-size: 16px;
   text-align: center;
@@ -886,7 +889,7 @@ body {
 
 .hero__caption {
   display: inline-block;
-  margin-bottom: 9px;
+  margin-bottom: 3px;
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 44px;
@@ -898,13 +901,19 @@ body {
       -ms-flex-order: 1;
           order: 1;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-mirage);
 }
 
 .hero__button {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
+  padding: 13px 60px 13px 20px;
+  width: auto;
 }
 
 .hero__picture {
@@ -954,7 +963,7 @@ body {
 }
 
 .advantages__title {
-  margin-bottom: 40px;
+  margin-bottom: 33px;
 }
 
 .advantages__list {
@@ -976,7 +985,7 @@ body {
 
 .advantage-card {
   border-radius: 8px;
-  padding: 115px 25px 25px;
+  padding: 110px 25px 25px;
   -webkit-box-shadow: 0 0 25px var(--color-card-shadow);
           box-shadow: 0 0 25px var(--color-card-shadow);
   background-position: top 25px left 25px;
@@ -987,7 +996,7 @@ body {
 
 .advantage-card__title {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -1005,7 +1014,7 @@ body {
 }
 
 .rooms__title {
-  margin-bottom: 40px;
+  margin-bottom: 33px;
 }
 
 .rooms__slider {
@@ -1026,7 +1035,7 @@ body {
 }
 
 .rooms-slider {
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 
 .rooms-slider__pagination {
@@ -1038,6 +1047,10 @@ body {
   height: 12px;
   background-color: var(--color-mercury);
   opacity: 1;
+}
+
+.rooms-slider__pagination li:not(:last-of-type) {
+  margin-right: 6px;
 }
 
 .rooms-slider__pagination .splide__pagination__page.is-active {
@@ -1069,27 +1082,27 @@ body {
 .rooms-slider__text-content {
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
-  padding: 25px;
+  padding: 21px 25px 25px;
   background-color: var(--color-white);
 }
 
 .rooms-slider__title {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 17px;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 20px;
 }
 
 .rooms-slider__button {
-  margin-top: 25px;
+  margin-top: 21px;
 }
 
 .rooms-slider__image {
   display: block;
   border-radius: 8px 8px 0 0;
   width: 100%;
-  height: 100%;
+  height: 192px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1110,6 +1123,10 @@ body {
   background-position: 0 3px;
   background-size: 11px;
   background-repeat: no-repeat;
+}
+
+.rooms-slider-data-list__row:not(:last-of-type) {
+  margin-bottom: 11px;
 }
 
 .rooms-slider-data-list__title,
@@ -1139,11 +1156,11 @@ body {
 }
 
 .reviews__title {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .reviews__slider {
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .reviews-slider__slide {
@@ -1159,6 +1176,10 @@ body {
 
 .reviews-slider__pagination {
   bottom: -20px;
+}
+
+.reviews-slider__pagination li:not(:last-of-type) {
+  margin-right: 6px;
 }
 
 .reviews-slider__pagination .splide__pagination__page {
@@ -1179,9 +1200,9 @@ body {
 
 .blockquote {
   margin: 0;
-  padding: 25px 20px 25px 56px;
+  padding: 21px 20px 21px 56px;
   background-image: url("../img/quote-ic.svg");
-  background-position: left 25px top 28px;
+  background-position: left 25px top 25px;
   background-size: 20px 18px;
   background-repeat: no-repeat;
 }
@@ -1218,7 +1239,7 @@ body {
 }
 
 .contacts__title {
-  margin-bottom: 40px;
+  margin-bottom: 29px;
   text-align: left;
 }
 
@@ -1227,7 +1248,7 @@ body {
 }
 
 .contacts__text-content {
-  padding: 40px 15px;
+  padding: 36px 15px 40px;
 }
 
 .contacts__map-wrapper {
@@ -1247,11 +1268,11 @@ body {
 }
 
 .contacts-list__item:not(:last-of-type) {
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 }
 
 .contacts-list__title {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 15px;
   color: var(--color-mirage);
@@ -2268,7 +2289,7 @@ body {
 }
 
 .site-footer__row:nth-child(2) .container {
-  padding-top: 15px;
+  padding-top: 13px;
 }
 
 .site-footer__container {
@@ -2285,7 +2306,7 @@ body {
 }
 
 .site-footer__logo {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .site-footer .site-navigation__list {
@@ -2294,11 +2315,11 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .site-footer .site-navigation__item {
-  margin-bottom: 20px;
+  margin-bottom: 11px;
 }
 
 .site-footer .site-navigation__item:not(:last-of-type) {
@@ -2314,7 +2335,7 @@ body {
 
 .site-footer__copyright {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 11px;
   padding-left: 14px;
   font-size: 12px;
   color: var(--color-gray);
