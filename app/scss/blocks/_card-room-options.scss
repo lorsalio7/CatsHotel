@@ -1,14 +1,16 @@
 .card-room-options__item {
   display: flex;
   align-items: baseline;
+  margin-bottom: 14px;
+}
+
+.card-room-options__item:last-of-type {
+  margin-bottom: 0;
 }
 
 .card-room-options__item--column {
   flex-direction: column;
-}
-
-.card-room-options__item:not(:last-of-type) {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .card-room-options__title {
@@ -19,7 +21,7 @@
 }
 
 .card-room-options__item--column .card-room-options__title {
-  margin-bottom: 17px;
+  margin-bottom: 11px;
 }
 
 .card-room-options__description {
@@ -31,6 +33,7 @@
 }
 
 .card-room-options__price {
+  margin-left: 7px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1;
