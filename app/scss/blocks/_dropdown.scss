@@ -6,7 +6,7 @@
   position: relative;
   border: none;
   border-radius: 25px;
-  padding: 12px 47px 12px 25px;
+  padding: 8px 47px 10px 25px;
   min-width: 154px;
   box-shadow: 0 2px 12px var(--color-filters-shadow);
   font-weight: 400;
@@ -14,7 +14,7 @@
   text-align: left;
   color: var(--color-mirage);
   background-image: url("../img/dropdown-option-arrow-up.svg");
-  background-position: left 15px center;
+  background-position: left 14px top 10px;
   background-size: 7px 12px;
   background-repeat: no-repeat;
   background-color: var(--color-white);
@@ -60,11 +60,11 @@
 }
 
 .dropdown-filter__option {
-  padding: 12px 47px 12px 25px;
+  padding: 8px 47px 10px 25px;
   font-weight: 400;
   font-size: 14px;
   color: var(--color-mirage);
-  background-position: left 15px center;
+  background-position: left 14px top 10px;
   background-repeat: no-repeat;
   cursor: pointer;
 }

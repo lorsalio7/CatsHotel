@@ -1,15 +1,15 @@
 .button {
   border: 2px solid var(--color-secondary);
   border-radius: 25px;
-  padding: 13px 68px 13px 30px;
+  padding: 12px 68px 13px 30px;
   width: 100%;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: normal;
   text-decoration: none;
   color: var(--color-white);
   background-image: url("../img/paw-ic--reverse.svg");
-  background-position: top 50% right 6px;
+  background-position: top 50% right 3px;
   background-size: 36px;
   background-repeat: no-repeat;
   background-color: var(--color-secondary);
@@ -27,6 +27,8 @@
 
 .button--secondary {
   border: 2px solid var(--color-white);
+  padding: 11px 68px 15px 28px;
+  font-size: 16px;
   color: var(--color-mirage);
   background-image: url("../img/paw-ic.svg");
   background-color: var(--color-white);

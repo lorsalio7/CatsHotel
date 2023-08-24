@@ -763,15 +763,15 @@ body {
 .button {
   border: 2px solid var(--color-secondary);
   border-radius: 25px;
-  padding: 13px 68px 13px 30px;
+  padding: 12px 68px 13px 30px;
   width: 100%;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: normal;
   text-decoration: none;
   color: var(--color-white);
   background-image: url("../img/paw-ic--reverse.svg");
-  background-position: top 50% right 6px;
+  background-position: top 50% right 3px;
   background-size: 36px;
   background-repeat: no-repeat;
   background-color: var(--color-secondary);
@@ -788,6 +788,8 @@ body {
 
 .button--secondary {
   border: 2px solid var(--color-white);
+  padding: 11px 68px 15px 28px;
+  font-size: 16px;
   color: var(--color-mirage);
   background-image: url("../img/paw-ic.svg");
   background-color: var(--color-white);
@@ -1239,7 +1241,7 @@ body {
 }
 
 .contacts__title {
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   text-align: left;
 }
 
@@ -1248,7 +1250,7 @@ body {
 }
 
 .contacts__text-content {
-  padding: 36px 15px 40px;
+  padding: 35px 15px 40px;
 }
 
 .contacts__map-wrapper {
@@ -1321,11 +1323,11 @@ body {
 }
 
 .catalog-header {
-  padding-top: 40px;
+  padding-top: 35px;
 }
 
 .catalog-header__title {
-  margin-bottom: 40px;
+  margin-bottom: 34px;
   text-align: left;
 }
 
@@ -1343,14 +1345,14 @@ body {
       align-self: flex-start;
   border: none;
   border-radius: 25px;
-  padding: 12px 15px 13px 37px;
+  padding: 8px 12px 10px 37px;
   -webkit-box-shadow: 0 2px 12px var(--color-filters-shadow);
           box-shadow: 0 2px 12px var(--color-filters-shadow);
   font-weight: 600;
   font-size: 14px;
   color: var(--color-mirage);
   background-image: url("../img/filters-pin-ic.svg");
-  background-position: 15px center;
+  background-position: left 15px top 9px;
   background-size: 12px 15px;
   background-repeat: no-repeat;
   background-color: var(--color-white);
@@ -1364,7 +1366,7 @@ body {
   position: relative;
   border: none;
   border-radius: 25px;
-  padding: 12px 47px 12px 25px;
+  padding: 8px 47px 10px 25px;
   min-width: 154px;
   -webkit-box-shadow: 0 2px 12px var(--color-filters-shadow);
           box-shadow: 0 2px 12px var(--color-filters-shadow);
@@ -1373,7 +1375,7 @@ body {
   text-align: left;
   color: var(--color-mirage);
   background-image: url("../img/dropdown-option-arrow-up.svg");
-  background-position: left 15px center;
+  background-position: left 14px top 10px;
   background-size: 7px 12px;
   background-repeat: no-repeat;
   background-color: var(--color-white);
@@ -1427,11 +1429,11 @@ body {
 }
 
 .dropdown-filter__option {
-  padding: 12px 47px 12px 25px;
+  padding: 8px 47px 10px 25px;
   font-weight: 400;
   font-size: 14px;
   color: var(--color-mirage);
-  background-position: left 15px center;
+  background-position: left 14px top 10px;
   background-repeat: no-repeat;
   cursor: pointer;
 }
@@ -1690,12 +1692,12 @@ body {
   border-left: 1px solid var(--color-mercury);
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
-  padding: 25px;
+  padding: 21px 25px 25px;
 }
 
 .catalog-card__title {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -1704,7 +1706,7 @@ body {
 
 .catalog-card__options-list {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .catalog-card-options__row {
@@ -1719,7 +1721,7 @@ body {
 }
 
 .catalog-card-options__row:not(:last-of-type) {
-  margin-bottom: 15px;
+  margin-bottom: 7px;
 }
 
 .catalog-card-options__title {
@@ -1822,12 +1824,12 @@ body {
 
 .promo-banner__container {
   border-radius: 8px;
-  padding-top: 50px;
-  padding-bottom: 100%;
+  padding-top: 46px;
+  padding-bottom: 258px;
   background-image: url("../img/paw-white-decor.svg"), url("../img/promo-banner-bg.png"), -webkit-gradient(linear, left bottom, left top, from(#ffc042), to(#ffd058));
   background-image: url("../img/paw-white-decor.svg"), url("../img/promo-banner-bg.png"), linear-gradient(0deg, #ffc042 0%, #ffd058 100%);
-  background-position: top -6px left -19px, bottom -62px right 0, 0 0;
-  background-size: 80px 79px, contain, auto;
+  background-position: top -6px left -19px, bottom -84px right -8px, 0 0;
+  background-size: 80px 79px, 285px, auto;
   background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
@@ -1839,7 +1841,7 @@ body {
 
 .promo-banner__heading {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -1848,15 +1850,20 @@ body {
 
 .promo-banner__heading--accent {
   font-size: 37px;
+  line-height: 1;
 }
 
 .promo-banner__description {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-family: "Lato", sans-serif;
   font-size: 15px;
   line-height: 140%;
   color: var(--color-mirage);
+}
+
+.promo-banner__button {
+  max-width: 206px;
 }
 
 .card-room {
@@ -2306,7 +2313,7 @@ body {
 }
 
 .site-footer__logo {
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 .site-footer .site-navigation__list {

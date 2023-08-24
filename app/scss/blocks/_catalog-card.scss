@@ -27,12 +27,12 @@
   border-left: 1px solid var(--color-mercury);
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
-  padding: 25px;
+  padding: 21px 25px 25px;
 }
 
 .catalog-card__title {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -41,5 +41,5 @@
 
 .catalog-card__options-list {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }

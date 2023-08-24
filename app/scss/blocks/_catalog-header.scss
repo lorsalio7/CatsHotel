@@ -1,9 +1,9 @@
 .catalog-header {
-  padding-top: 40px;
+  padding-top: 35px;
 }
 
 .catalog-header__title {
-  margin-bottom: 40px;
+  margin-bottom: 34px;
   text-align: left;
 }
 
@@ -16,13 +16,13 @@
   align-self: flex-start;
   border: none;
   border-radius: 25px;
-  padding: 12px 15px 13px 37px;
+  padding: 8px 12px 10px 37px;
   box-shadow: 0 2px 12px var(--color-filters-shadow);
   font-weight: 600;
   font-size: 14px;
   color: var(--color-mirage);
   background-image: url("../img/filters-pin-ic.svg");
-  background-position: 15px center;
+  background-position: left 15px top 9px;
   background-size: 12px 15px;
   background-repeat: no-repeat;
   background-color: var(--color-white);
