@@ -1,8 +1,14 @@
 section.page__reviews.reviews
-  .container
+  .reviews__container.container
     h2.reviews__title.section-title Отзывы
     .reviews__slider.reviews-slider.splide
-      ul.reviews-slider__pagination.splide__pagination
       .splide__track.reviews-slider__track
         ul.splide__list.reviews-slider__list
           +reviewsSlides(pugData.reviews_slides)
+      .reviews-slider__controls
+        ul.reviews-slider__pagination.splide__pagination
+        .reviews-slider__arrows.splide__arrows
+          button(type="button" aria-label="Предыдущий слайд").splide__arrow.splide__arrow--prev.reviews-slider__arrow
+            +svg("reviews-slider__arrow-icon", "prev-slide-ic", 6, 10)
+          button(type="button" aria-label="Следующий слайд").splide__arrow.splide__arrow--next.reviews-slider__arrow
+            +svg("reviews-slider__arrow-icon", "next-slide-ic", 6, 10)

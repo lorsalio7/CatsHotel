@@ -5,4 +5,8 @@
   font-size: 28px;
   text-align: center;
   color: var(--color-mirage);
+
+  @include px600 {
+    font-size: 36px;
+  }
 }

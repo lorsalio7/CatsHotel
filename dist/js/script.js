@@ -62,16 +62,16 @@ if (burgerButton) {
     setTimeout(function () {
       _siteHeader.classList.add("site-header--active");
     }, 300);
-    siteNavigation.classList.add("site-header__site-navigation--active");
+    siteNavigation.classList.add("site-header__navigation--active");
   };
   var closeMenu = function closeMenu() {
     scrollController.enabledScrool();
     _siteHeader.classList.remove("site-header--active");
-    siteNavigation.classList.remove("site-header__site-navigation--active");
+    siteNavigation.classList.remove("site-header__navigation--active");
     burgerButton.classList.remove("burger-button--active");
   };
   var _siteHeader = document.querySelector(".site-header");
-  var siteNavigation = document.querySelector(".site-header__site-navigation");
+  var siteNavigation = document.querySelector(".site-header__navigation");
   burgerButton.addEventListener("click", function () {
     burgerButton.classList.toggle("burger-button--active");
     if (burgerButton.classList.contains("burger-button--active")) {
@@ -89,13 +89,21 @@ document.addEventListener('DOMContentLoaded', function () {
   var cardRoomThumbs = document.querySelector(".card-room__thumbs-slider");
   if (roomsSlider) {
     new Splide(roomsSlider, {
-      gap: 30,
+      gap: 45,
       mediaQuery: 'min',
+      classes: {
+        prev: "splide__arrow--prev rooms-slider__arrow",
+        next: "splide__arrow--next rooms-slider__arrow"
+      },
       breakpoints: {
         200: {
           arrows: false
         },
-        798: {
+        768: {
+          padding: 15
+        },
+        950: {
+          padding: 0,
           arrows: true
         }
       }
@@ -106,11 +114,15 @@ document.addEventListener('DOMContentLoaded', function () {
     new Splide(reviewsSlider, {
       gap: 30,
       mediaQuery: 'min',
+      classes: {
+        prev: "splide__arrow--prev reviews-slider__arrow",
+        next: "splide__arrow--next reviews-slider__arrow"
+      },
       breakpoints: {
         200: {
           arrows: false
         },
-        798: {
+        950: {
           arrows: true
         }
       }

@@ -32,17 +32,45 @@
   z-index: 10;
 }
 
-.site-header__site-navigation {
+.site-header__navigation {
   position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
+  overflow-y: auto;
+  padding: 95px 15px 30px;
+  width: 100%;
+  background-color: var(--color-primary);
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
+
+  @include px768 {
+    position: static;
+    padding: 0;
+    width: auto;
+    background-color: transparent;
+    transform: none;
+  }
 }
 
-.site-header__site-navigation--active {
+.site-header__navigation--active {
   transform: translateX(0);
+}
+
+.site-header__phone {
+  display: inline-block;
+  margin-bottom: 23px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--color-mirage);
+}
+
+.site-header__contacts {
+  @include px768 {
+    display: none;
+  }
 }
 
 .site-header__burger-button {

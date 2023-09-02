@@ -142,7 +142,8 @@ function images() {
       imagemin.svgo({
         plugins: [
           {removeViewBox: false},
-          {cleanupIDs: false}
+          {cleanupIDs: false},
+          {removeXMLNS: false}
         ]
       })
     ])

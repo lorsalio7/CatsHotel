@@ -1,32 +1,54 @@
-.blockquote {
+.review {
   margin: 0;
   padding: 21px 20px 21px 56px;
   background-image: url("../img/quote-ic.svg");
   background-position: left 25px top 25px;
   background-size: 20px 18px;
   background-repeat: no-repeat;
+
+  @include px768 {
+    padding: 31px 33px 32px 70px;
+    background-position: left 34px top 34px;
+    background-size: 27px 23px;
+  }
+
+  @include px1200 {
+    padding: 31px 35px 32px 70px;
+  }
 }
 
-.blockquote__text {
+.review__text {
   margin: 0;
   font-weight: 500;
   font-size: 15px;
   line-height: 140%;
   color: var(--color-mirage);
+
+  @include px768 {
+    margin-bottom: 16px;
+  }
+
+  @include px1200 {
+    font-size: 16px;
+  }
 }
 
-.blockquote__footer {
+.review__footer {
   display: none;
   justify-content: space-between;
+
+  @include px768 {
+    display: flex;
+  }
 }
 
-.blockquote__name {
+.review__name {
   font-style: normal;
   font-size: 14px;
   color: var(--color-gray);
 }
 
-.blockquote__date {
+.review__date {
   font-size: 14px;
   color: var(--color-gray);
 }

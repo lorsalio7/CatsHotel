@@ -1,21 +1,53 @@
 .page__main {
   padding-top: 62px;
+
+  @include px425 {
+    padding-top: 76px;
+  }
 }
 
 .page__hero {
   margin-bottom: 66px;
+
+  @include px600 {
+    margin-bottom: 113px;
+  }
+
+  @include px950 {
+    margin-bottom: 132px;
+  }
 }
 
 .page__advantages {
   margin-bottom: 70px;
+
+  @include px950 {
+    margin-bottom: 142px;
+  }
 }
 
 .page__rooms {
-  margin-bottom: 88px;
+  margin-bottom: 107px;
+
+  @include px768 {
+    margin-bottom: 174px;
+  }
+
+  @include px950 {
+    margin-bottom: 211px;
+  }
 }
 
 .page__reviews {
-  margin-bottom: 86px;
+  margin-bottom: 52px;
+
+  @include px768 {
+    margin-bottom: 102px;
+  }
+
+  @include px1200 {
+    margin-bottom: 134px;
+  }
 }
 
 .page__promo-banner {

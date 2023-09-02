@@ -3,13 +3,13 @@ header.site-header
     .site-header__row
       a(href="/").site-header__logo.logo
         img(src="img/logo.svg", width="63" height="52" alt="Логотип сайта - Котейка").logo__image
-      nav.site-header__site-navigation.site-navigation
-        ul.site-navigation__list
+      nav.site-header__navigation
+        ul.site-navigation-list
           each item in pugData.site_navigation
-            li.site-navigation__item
-              a(href= item.link_url).site-navigation__link= item.link_name
-        .site-navigation__contacts
-          a(href="tel:+78003335599").site-navigation__phone 8 (800) 333-55-99
+            li.site-navigation-list__item
+              a(href= item.link_url).site-navigation-list__link= item.link_name
+        .site-header__contacts
+          a(href="tel:+78003335599").site-header__phone 8 (800) 333-55-99
           ul.socials
             +socials(pugData.socials)
       button(type="button" class="site-header__burger-button burger-button" aria-label="Открыть меню")

@@ -1,8 +1,8 @@
 mixin reviewsSlides(array)
   each item in array
     li.splide__slide.reviews-slider__slide
-      blockquote.blockquote
-        p.blockquote__text= item.text
-        footer.blockquote__footer
-          cite.blockquote__name= item.name
-          time(datetime= item.datetime).blockquote__date= item.date
+      blockquote.review
+        p.review__text= item.text
+        footer.review__footer
+          cite.review__name= item.name
+          time(datetime= item.datetime).review__date= item.date

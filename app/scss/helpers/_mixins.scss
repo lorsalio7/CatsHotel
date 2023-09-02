@@ -1,8 +1,6 @@
 @mixin font($name, $font-family, $weight, $style) {
   @font-face {
-    src:
-      local(""),
-      url("../fonts/" + $name + ".woff2") format("woff2");
+    src: url("../fonts/" + $name + ".woff2") format("woff2");
     font-family: $font-family;
     font-weight: $weight;
     font-style: $style;
@@ -18,7 +16,7 @@
   }
 }
 
-// @include hover {}
+/* @include hover {} */
 
 @mixin hover-focus {
   @media (hover: hover) {
@@ -32,12 +30,52 @@
   }
 }
 
-// @include hover-focus {}
+/* @include hover-focus {} */
 
-// @mixin px940 {
-//   @media (max-width: 940px) {
-//     @content;
-//   }
-// }
+@mixin px375 {
+  @media (min-width: 375px) {
+    @content;
+  }
+}
 
-// @include px940 {}
+/* @include px375 {} */
+
+@mixin px425 {
+  @media (min-width: 425px) {
+    @content;
+  }
+}
+
+/* @include px425 {} */
+
+@mixin px600 {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+/* @include px600 {} */
+
+@mixin px768 {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+/* @include px768 {} */
+
+@mixin px950 {
+  @media (min-width: 950px) {
+    @content;
+  }
+}
+
+/* @include px950 {} */
+
+@mixin px1200 {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+/* @include px1200 {} */

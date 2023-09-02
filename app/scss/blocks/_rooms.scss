@@ -1,20 +1,42 @@
 .rooms__title {
   margin-bottom: 33px;
+
+  @include px768 {
+    margin-bottom: 52px;
+  }
+
+  @include px950 {
+    margin-bottom: 62px;
+  }
 }
 
-.rooms__slider {
+.rooms__container {
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    left: -15px;
-    top: -27px;
+    left: 0;
+    top: 37px;
     width: 150px;
     height: 46px;
     background-image: url("../img/fish-ic.svg");
     background-position: center;
     background-size: 150px 46px;
     background-repeat: no-repeat;
+
+    @include px768 {
+      width: 339px;
+      height: 106px;
+      background-size: 339px 106px;
+    }
+
+    @include px1200 {
+      left: -83px;
+      top: 16px;
+      width: 484px;
+      height: 151px;
+      background-size: 484px 151px;
+    }
   }
 }

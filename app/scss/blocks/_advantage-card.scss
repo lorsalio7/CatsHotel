@@ -6,6 +6,18 @@
   background-size: 60px 60px;
   background-repeat: no-repeat;
   background-color: var(--color-white);
+
+  @include px768 {
+    padding: 123px 25px 25px;
+    min-height: 321px;
+    background-size: 75px 75px;
+  }
+
+  @include px950 {
+    padding: 150px 30px 30px;
+    background-position: top 30px left 30px;
+    background-size: 91px 91px;
+  }
 }
 
 .advantage-card__title {
@@ -16,6 +28,15 @@
   font-size: 18px;
   line-height: 140%;
   color: var(--color-mirage);
+
+  @include px768 {
+    font-size: 20px;
+  }
+
+  @include px950 {
+    font-size: 22px;
+    line-height: 120%;
+  }
 }
 
 .advantage-card__description {
@@ -25,4 +46,8 @@
   font-size: 15px;
   line-height: 140%;
   color: var(--color-mirage);
+
+  @include px950 {
+    font-size: 16px;
+  }
 }

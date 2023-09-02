@@ -4,6 +4,10 @@
 
 .contacts-list__item:not(:last-of-type) {
   margin-bottom: 23px;
+
+  @include px1200 {
+    margin-bottom: 30px;
+  }
 }
 
 .contacts-list__title {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page full-height" lang="en">
+<html class="page full-height" lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,14 +16,14 @@
       <header class="site-header">
         <div class="container">
           <div class="site-header__row"><a class="site-header__logo logo" href="/"><img class="logo__image" src="img/logo.svg" width="63" height="52" alt="Логотип сайта - Котейка"></a>
-            <nav class="site-header__site-navigation site-navigation">
-              <ul class="site-navigation__list">
-                <li class="site-navigation__item"><a class="site-navigation__link" href="#">Почему мы?</a></li>
-                <li class="site-navigation__item"><a class="site-navigation__link" href="#">Номера</a></li>
-                <li class="site-navigation__item"><a class="site-navigation__link" href="#">Отзывы</a></li>
-                <li class="site-navigation__item"><a class="site-navigation__link" href="#">Как нас найти</a></li>
+            <nav class="site-header__navigation">
+              <ul class="site-navigation-list">
+                <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Почему мы?</a></li>
+                <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Номера</a></li>
+                <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Отзывы</a></li>
+                <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Как нас найти</a></li>
               </ul>
-              <div class="site-navigation__contacts"><a class="site-navigation__phone" href="tel:+78003335599">8 (800) 333-55-99</a>
+              <div class="site-header__contacts"><a class="site-header__phone" href="tel:+78003335599">8 (800) 333-55-99</a>
                 <ul class="socials">
                   <li class="socials__item"><a class="socials__link" href="#" style="background-image: url(&quot;img/ok-ic.svg&quot;)"><span class="visually-hidden">Мы в Одноклассниках</span></a></li>
                   <li class="socials__item"><a class="socials__link" href="#" style="background-image: url(&quot;img/telegram-ic.svg&quot;)"><span class="visually-hidden">Мы в Телеграм</span></a></li>
@@ -38,19 +38,21 @@
       <main class="page__main main">
         <section class="page__hero hero">
           <div class="hero__container container">
-            <div class="hero__content">
-              <h1 class="hero__title"><span class="hero__caption">Котейка</span>Уютная гостиница для котов и кошек</h1>
-              <p class="hero__place">Санкт-Петербург</p>
-              <button class="hero__button button reserve-button button--shadow button--secondary" type="button">Забронировать</button>
+            <div class="hero__content-wrapper">
+              <div class="hero__content">
+                <h1 class="hero__title"><span class="hero__caption">Котейка</span>Уютная гостиница для котов и кошек</h1>
+                <p class="hero__place">Санкт-Петербург</p>
+                <button class="hero__button button reserve-button button--shadow button--secondary" type="button">Забронировать</button>
+              </div>
             </div>
           </div>
           <picture class="hero__picture">
-            <source srcset="img/hero-bg.jpg" media="(min-width: 1366px)">
+            <source srcset="img/hero-bg.jpg" media="(min-width: 950px)">
             <source srcset="img/hero-bg-768.jpg" media="(min-width: 768px)"><img class="hero__image" loading="lazy" src="img/hero-bg-320.jpg" alt="Довольная котейка лежит на кроватке">
           </picture>
         </section>
         <section class="page__advantages advantages">
-          <div class="container">
+          <div class="advantages__container container">
             <h2 class="advantages__title section-title">Почему мы?</h2>
             <ul class="advantages__list">
               <li class="advantages__item advantage-card" style="background-image: url(&quot;../img/thermometer-ic.svg&quot;)">
@@ -81,10 +83,9 @@
           </div>
         </section>
         <section class="page__rooms rooms">
-          <div class="container">
+          <div class="rooms__container container">
             <h2 class="rooms__title section-title">Номера</h2>
             <div class="rooms__slider rooms-slider splide">
-              <ul class="splide__pagination rooms-slider__pagination"></ul>
               <div class="splide__track rooms-slider__track">
                 <ul class="rooms-slider__list splide__list">
                   <li class="rooms-slider__slide splide__slide">
@@ -149,44 +150,73 @@
                   </li>
                 </ul>
               </div>
+              <div class="rooms-slider__controls">
+                <ul class="splide__pagination rooms-slider__pagination"></ul>
+                <div class="rooms-slider__arrows splide__arrows">
+                  <button class="splide__arrow splide__arrow--prev rooms-slider__arrow" type="button" aria-label="Предыдущий слайд">
+                    <svg class="rooms-slider__arrow-icon" width="6" height="10">
+                      <use xlink:href="img/sprite.svg#prev-slide-ic"></use>
+                    </svg>
+                  </button>
+                  <button class="splide__arrow splide__arrow--next rooms-slider__arrow" type="button" aria-label="Следующий слайд">
+                    <svg class="rooms-slider__arrow-icon" width="6" height="10">
+                      <use xlink:href="img/sprite.svg#next-slide-ic"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
         <section class="page__reviews reviews">
-          <div class="container">
+          <div class="reviews__container container">
             <h2 class="reviews__title section-title">Отзывы</h2>
             <div class="reviews__slider reviews-slider splide">
-              <ul class="reviews-slider__pagination splide__pagination"></ul>
               <div class="splide__track reviews-slider__track">
                 <ul class="splide__list reviews-slider__list">
                   <li class="splide__slide reviews-slider__slide">
-                    <blockquote class="blockquote">
-                      <p class="blockquote__text">Первый раз пришлось оставить нашего котика в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует. И мы и котик остались очень довольны!</p>
-                      <footer class="blockquote__footer">
-                        <cite class="blockquote__name">Валерия Гришаева</cite>
-                        <time class="blockquote__date" datetime="11-15-2019">15 ноября, 2019</time>
+                    <blockquote class="review">
+                      <p class="review__text">Первый раз пришлось оставить нашего котика в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует. И мы и котик остались очень довольны!</p>
+                      <footer class="review__footer">
+                        <cite class="review__name">Валерия Гришаева</cite>
+                        <time class="review__date" datetime="11-15-2019">15 ноября, 2019</time>
                       </footer>
                     </blockquote>
                   </li>
                   <li class="splide__slide reviews-slider__slide">
-                    <blockquote class="blockquote">
-                      <p class="blockquote__text">Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают. В “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться еще.</p>
-                      <footer class="blockquote__footer">
-                        <cite class="blockquote__name">Екатерина Минаева</cite>
-                        <time class="blockquote__date" datetime="10-10-2019">10 октября, 2019</time>
+                    <blockquote class="review">
+                      <p class="review__text">Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают. В “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться еще.</p>
+                      <footer class="review__footer">
+                        <cite class="review__name">Екатерина Минаева</cite>
+                        <time class="review__date" datetime="10-10-2019">10 октября, 2019</time>
                       </footer>
                     </blockquote>
                   </li>
                   <li class="splide__slide reviews-slider__slide">
-                    <blockquote class="blockquote">
-                      <p class="blockquote__text">Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу за ним, и “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно.</p>
-                      <footer class="blockquote__footer">
-                        <cite class="blockquote__name">Павел Нечаев</cite>
-                        <time class="blockquote__date" datetime="08-02-2019">2 августа, 2019</time>
+                    <blockquote class="review">
+                      <p class="review__text">Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу за ним, и “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно.</p>
+                      <footer class="review__footer">
+                        <cite class="review__name">Павел Нечаев</cite>
+                        <time class="review__date" datetime="08-02-2019">2 августа, 2019</time>
                       </footer>
                     </blockquote>
                   </li>
                 </ul>
+              </div>
+              <div class="reviews-slider__controls">
+                <ul class="reviews-slider__pagination splide__pagination"></ul>
+                <div class="reviews-slider__arrows splide__arrows">
+                  <button class="splide__arrow splide__arrow--prev reviews-slider__arrow" type="button" aria-label="Предыдущий слайд">
+                    <svg class="reviews-slider__arrow-icon" width="6" height="10">
+                      <use xlink:href="img/sprite.svg#prev-slide-ic"></use>
+                    </svg>
+                  </button>
+                  <button class="splide__arrow splide__arrow--next reviews-slider__arrow" type="button" aria-label="Следующий слайд">
+                    <svg class="reviews-slider__arrow-icon" width="6" height="10">
+                      <use xlink:href="img/sprite.svg#next-slide-ic"></use>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -287,11 +317,11 @@
       <footer class="site-footer">
         <div class="site-footer__row">
           <div class="site-footer__container container"><a class="site-footer__logo logo" href="#"><img class="logo__image" src="img/logo.svg" width="63" height="52" alt="Логотип сайта - Котейка"></a>
-            <ul class="site-navigation__list">
-              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Почему мы?</a></li>
-              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Номера</a></li>
-              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Отзывы</a></li>
-              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Как нас найти</a></li>
+            <ul class="site-navigation-list">
+              <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Почему мы?</a></li>
+              <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Номера</a></li>
+              <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Отзывы</a></li>
+              <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Как нас найти</a></li>
             </ul>
           </div>
         </div>

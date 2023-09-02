@@ -15,6 +15,10 @@
 
 .rooms-slider-data-list__row:not(:last-of-type) {
   margin-bottom: 11px;
+
+  @include px1200 {
+    margin-bottom: 14px;
+  }
 }
 
 .rooms-slider-data-list__title,
@@ -23,4 +27,8 @@
   font-weight: 400;
   font-size: 15px;
   color: var(--color-mirage);
+
+  @include px950 {
+    font-size: 16px;
+  }
 }

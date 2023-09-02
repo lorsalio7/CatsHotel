@@ -1,0 +1,34 @@
+.site-navigation-list {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  @include px768 {
+    display: flex;
+    margin-bottom: 0;
+  }
+}
+
+.site-navigation-list__item:not(:last-of-type) {
+  margin-bottom: 15px;
+
+  @include px768 {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
+
+.site-navigation-list__link {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: normal;
+  text-decoration: none;
+  color: var(--color-mirage);
+
+  @include px768 {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+  }
+}

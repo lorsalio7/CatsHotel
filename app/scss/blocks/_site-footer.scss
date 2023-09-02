@@ -1,42 +1,91 @@
 .site-footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
   background-color: var(--color-white);
 }
 
 .site-footer__row:first-of-type {
   border-bottom: 1px solid var(--color-gallery);
+  padding-top: 31px;
+  padding-bottom: 29px;
+
+  @include px768 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+.site-footer__row:nth-child(2) {
+  padding-top: 12px;
+  padding-bottom: 28px;
+
+  @include px768 {
+    padding-top: 17px;
+    padding-bottom: 18px;
+  }
 }
 
 .site-footer__row:nth-child(2) .container {
-  padding-top: 13px;
+  @include px768 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+
+  @include px950 {
+    max-width: 1000px;
+  }
 }
 
 .site-footer__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @include px768 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @include px950 {
+    max-width: 1000px;
+  }
 }
 
 .site-footer__logo {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+
+  @include px768 {
+    margin-bottom: 0;
+  }
 }
 
-.site-footer .site-navigation__list {
+.site-footer .site-navigation-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 14px;
+  margin-bottom: -14px;
+
+  @include px768 {
+    margin-bottom: -12px;
+  }
 }
 
-.site-footer .site-navigation__item {
+.site-footer .site-navigation-list__item {
   margin-bottom: 11px;
+
+  @include px768 {
+    margin-bottom: 12px;
+  }
 }
 
-.site-footer .site-navigation__item:not(:last-of-type) {
+.site-footer .site-navigation-list__item:not(:last-of-type) {
   margin-right: 38px;
+
+  @include px768 {
+    margin-right: 31px;
+  }
 }
 
-.site-footer .site-navigation__link {
+.site-footer .site-navigation-list__link {
   font-family: "Lato", sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -53,6 +102,10 @@
   background-position: 0 3px;
   background-size: 9px;
   background-repeat: no-repeat;
+
+  @include px768 {
+    margin-bottom: 0;
+  }
 }
 
 .site-footer__policy {

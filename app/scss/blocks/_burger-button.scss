@@ -5,6 +5,10 @@
   height: 24px;
   background-color: transparent;
   cursor: pointer;
+
+  @include px768 {
+    display: none;
+  }
 }
 
 .burger-button__line {
