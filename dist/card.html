@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page full-height" lang="ru">
+<html class="page card full-height" lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,7 +37,7 @@
       </header>
       <main class="page__main main">
         <section class="page__card-room card-room">
-          <div class="container">
+          <div class="card-room__container container">
             <div class="card-room__content">
               <div class="card-room__gallery">
                 <section class="card-room__big-slider splide">
@@ -89,16 +89,15 @@
                     <dd class="card-room-options__description"><span class="card-room-options__price">600₽</span></dd>
                   </div>
                 </dl>
-                <button class="button reserve-button" type="button">Забронировать</button>
+                <button class="card-room__button button reserve-button" type="button">Забронировать</button>
               </div>
             </div>
           </div>
         </section>
         <section class="page__rooms rooms">
-          <div class="container">
+          <div class="rooms__container container">
             <h2 class="rooms__title section-title">Другие номера</h2>
             <div class="rooms__slider rooms-slider splide">
-              <ul class="splide__pagination rooms-slider__pagination"></ul>
               <div class="splide__track rooms-slider__track">
                 <ul class="rooms-slider__list splide__list">
                   <li class="rooms-slider__slide splide__slide">
@@ -106,15 +105,18 @@
                       <h3 class="rooms-slider__title">Эконом плюс</h3>
                       <dl class="rooms-slider__data-list rooms-slider-data-list">
                         <div class="rooms-slider-data-list__row">
-                          <dt class="rooms-slider-data-list__title">Площадь -</dt>&nbsp;
+                          <dt class="rooms-slider-data-list__title">Площадь -
+                          </dt>&nbsp;
                           <dd class="rooms-slider-data-list__description"> 0,90 м2</dd>
                         </div>
                         <div class="rooms-slider-data-list__row">
-                          <dt class="rooms-slider-data-list__title">Размеры (ШхГхВ) </dt>&nbsp;
+                          <dt class="rooms-slider-data-list__title">Размеры (ШхГхВ) <span>&mdash;</span>
+                          </dt>&nbsp;
                           <dd class="rooms-slider-data-list__description">90х100х180 см</dd>
                         </div>
                         <div class="rooms-slider-data-list__row">
-                          <dt class="rooms-slider-data-list__title">Цена за сутки: </dt>&nbsp;
+                          <dt class="rooms-slider-data-list__title">Цена за сутки: 
+                          </dt>&nbsp;
                           <dd class="rooms-slider-data-list__description">200₽</dd>
                         </div>
                       </dl>
@@ -126,15 +128,18 @@
                       <h3 class="rooms-slider__title">Комфорт</h3>
                       <dl class="rooms-slider__data-list rooms-slider-data-list">
                         <div class="rooms-slider-data-list__row">
-                          <dt class="rooms-slider-data-list__title">Площадь - </dt>&nbsp;
+                          <dt class="rooms-slider-data-list__title">Площадь - 
+                          </dt>&nbsp;
                           <dd class="rooms-slider-data-list__description"> 1,13 м2</dd>
                         </div>
                         <div class="rooms-slider-data-list__row">
-                          <dt class="rooms-slider-data-list__title">Размеры (ШхГхВ) </dt>&nbsp;
+                          <dt class="rooms-slider-data-list__title">Размеры (ШхГхВ) <span>&mdash;</span>
+                          </dt>&nbsp;
                           <dd class="rooms-slider-data-list__description">100х125х180 см</dd>
                         </div>
                         <div class="rooms-slider-data-list__row">
-                          <dt class="rooms-slider-data-list__title">Цена за сутки: </dt>&nbsp;
+                          <dt class="rooms-slider-data-list__title">Цена за сутки: 
+                          </dt>&nbsp;
                           <dd class="rooms-slider-data-list__description">250₽</dd>
                         </div>
                       </dl>
@@ -146,15 +151,18 @@
                       <h3 class="rooms-slider__title">Сьют</h3>
                       <dl class="rooms-slider__data-list rooms-slider-data-list">
                         <div class="rooms-slider-data-list__row">
-                          <dt class="rooms-slider-data-list__title">Площадь - </dt>&nbsp;
+                          <dt class="rooms-slider-data-list__title">Площадь - 
+                          </dt>&nbsp;
                           <dd class="rooms-slider-data-list__description">1,56 м2</dd>
                         </div>
                         <div class="rooms-slider-data-list__row">
-                          <dt class="rooms-slider-data-list__title">Размеры (ШхГхВ) </dt>&nbsp;
+                          <dt class="rooms-slider-data-list__title">Размеры (ШхГхВ) <span>&mdash;</span>
+                          </dt>&nbsp;
                           <dd class="rooms-slider-data-list__description"> 125х125х180 см</dd>
                         </div>
                         <div class="rooms-slider-data-list__row">
-                          <dt class="rooms-slider-data-list__title">Цена за сутки: </dt>&nbsp;
+                          <dt class="rooms-slider-data-list__title">Цена за сутки: 
+                          </dt>&nbsp;
                           <dd class="rooms-slider-data-list__description">350₽</dd>
                         </div>
                       </dl>
@@ -163,6 +171,63 @@
                   </li>
                 </ul>
               </div>
+              <div class="rooms-slider__controls">
+                <ul class="splide__pagination rooms-slider__pagination"></ul>
+                <div class="rooms-slider__arrows splide__arrows">
+                  <button class="splide__arrow splide__arrow--prev rooms-slider__arrow" type="button" aria-label="Предыдущий слайд">
+                    <svg class="rooms-slider__arrow-icon" width="6" height="10">
+                      <use xlink:href="img/sprite.svg#prev-slide-ic"></use>
+                    </svg>
+                  </button>
+                  <button class="splide__arrow splide__arrow--next rooms-slider__arrow" type="button" aria-label="Следующий слайд">
+                    <svg class="rooms-slider__arrow-icon" width="6" height="10">
+                      <use xlink:href="img/sprite.svg#next-slide-ic"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="contacts__container container">
+            <div class="contacts__block-1">
+              <div class="contacts__text-content">
+                <h2 class="contacts__title section-title">Как нас найти</h2>
+                <dl class="contacts-list">
+                  <div class="contacts-list__item">
+                    <dt class="contacts-list__title">Адрес</dt>
+                    <dd class="contacts-list__description">
+                      <address class="contacts-list__address">Санкт-Петербург,<br>ул Большая Конюшенная, д 19</address>
+                    </dd>
+                  </div>
+                  <div class="contacts-list__item">
+                    <dt class="contacts-list__title">Режим работы</dt>
+                    <dd class="contacts-list__description">Ежедневно, с 9:00 до 20:00</dd>
+                  </div>
+                  <div class="contacts-list__item">
+                    <dt class="contacts-list__title">Телефон</dt>
+                    <dd class="contacts-list__description"><a class="contacts-list__phone" href="tel:+78003335599">8 (800) 333-55-99</a></dd>
+                  </div>
+                  <div class="contacts-list__item">
+                    <dt class="contacts-list__title">E-mail</dt>
+                    <dd class="contacts-list__description"><a class="contacts-list__email" href="mailto:info@cat-hotel.ru">info@cat-hotel.ru</a></dd>
+                  </div>
+                  <div class="contacts-list__item">
+                    <dt class="contacts-list__title">Социальные сети</dt>
+                    <dd class="contacts-list__description">
+                      <ul class="socials">
+                        <li class="socials__item"><a class="socials__link" href="#" style="background-image: url(&quot;img/ok-ic.svg&quot;)"><span class="visually-hidden">Мы в Одноклассниках</span></a></li>
+                        <li class="socials__item"><a class="socials__link" href="#" style="background-image: url(&quot;img/telegram-ic.svg&quot;)"><span class="visually-hidden">Мы в Телеграм</span></a></li>
+                        <li class="socials__item"><a class="socials__link" href="#" style="background-image: url(&quot;img/vk-ic.svg&quot;)"><span class="visually-hidden">Мы в Вконтакте</span></a></li>
+                      </ul>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="contacts__block-2">
+              <div class="contacts__map-wrapper"><img class="contacts__map" src="img/map.jpg" alt="Местоположение отеля Котейка на карте"></div>
             </div>
           </div>
         </section>

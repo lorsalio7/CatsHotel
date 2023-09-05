@@ -1,13 +1,77 @@
 .card-room {
   padding-top: 40px;
+
+  @include px768 {
+    padding-top: 60px;
+  }
+
+  @include px1200 {
+    padding-top: 70px;
+  }
+}
+
+.card-room__container {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: -151px;
+    top: -24px;
+    display: none;
+    width: 229px;
+    height: 233px;
+    background-image: url("../img/paw-bottom-left-ic.svg");
+    background-position: center;
+    background-size: 229px 233px;
+    background-repeat: no-repeat;
+
+    @include px1200 {
+      display: block;
+    }
+  }
+}
+
+.card-room__content {
+  @include px600 {
+    display: flex;
+  }
 }
 
 .card-room__gallery {
   margin-bottom: 35px;
+
+  @include px600 {
+    flex-shrink: 1;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+
+  @include px768 {
+    margin-right: 60px;
+  }
+
+  @include px950 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 0;
+  }
+
+  @include px1200 {
+    margin-right: 70px;
+  }
 }
 
 .card-room__big-slider {
   margin-bottom: 16px;
+
+  @include px768 {
+    margin-bottom: 21px;
+  }
+
+  @include px950 {
+    max-width: 500px;
+  }
 }
 
 .card-room__big-slider .splide__slide > img {
@@ -16,6 +80,16 @@
   width: 100%;
   height: 288px;
   object-fit: cover;
+
+  @include px950 {
+    height: 396px;
+  }
+}
+
+.card-room__thumbs-slider {
+  @include px950 {
+    margin-right: 30px;
+  }
 }
 
 .card-room__thumbs-slider .splide__track--nav > .splide__list > .splide__slide {
@@ -51,6 +125,39 @@
   width: 100%;
   height: 64px;
   object-fit: cover;
+
+  @include px425 {
+    height: 90px;
+  }
+
+  @include px600 {
+    height: 80px;
+  }
+
+  @include px768 {
+    height: 78px;
+  }
+
+  @include px950 {
+    width: 70px;
+    height: 112px;
+  }
+}
+
+.card-room__description {
+  @include px600 {
+    flex-shrink: 1;
+    min-width: 250px;
+  }
+
+  @include px768 {
+    flex-shrink: 1;
+    min-width: 264px;
+  }
+
+  @include px950 {
+    min-width: 270px;
+  }
 }
 
 .card-room__title {
@@ -60,9 +167,29 @@
   font-weight: 700;
   font-size: 28px;
   color: var(--color-mirage);
+
+  @include px600 {
+    margin-top: -5px;
+  }
+
+  @include px768 {
+    margin-top: -7px;
+    margin-bottom: 26px;
+    font-size: 36px;
+  }
+
+  @include px950 {
+    margin-bottom: 28px;
+  }
 }
 
 .card-room__list {
   margin-top: 0;
   margin-bottom: 27px;
+}
+
+.card-room__button {
+  @include px600 {
+    max-width: 206px;
+  }
 }

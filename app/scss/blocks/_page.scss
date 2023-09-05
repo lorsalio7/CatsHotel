@@ -38,6 +38,18 @@
   }
 }
 
+.card .page__rooms {
+  margin-bottom: 112px;
+
+  @include px768 {
+    margin-bottom: 181px;
+  }
+
+  @include px950 {
+    margin-bottom: 219px;
+  }
+}
+
 .page__reviews {
   margin-bottom: 52px;
 
@@ -50,10 +62,38 @@
   }
 }
 
+.page__catalog {
+  margin-bottom: 70px;
+
+  @include px768 {
+    margin-bottom: 119px;
+  }
+
+  @include px1200 {
+    margin-bottom: 139px;
+  }
+}
+
 .page__promo-banner {
   margin-bottom: 70px;
+
+  @include px768 {
+    margin-bottom: 120px;
+  }
+
+  @include px1200 {
+    margin-bottom: 141px;
+  }
 }
 
 .page__card-room {
   margin-bottom: 60px;
+
+  @include px768 {
+    margin-bottom: 112px;
+  }
+
+  @include px1200 {
+    margin-bottom: 111px;
+  }
 }

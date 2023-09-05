@@ -6,7 +6,12 @@ mixin roomsSlides(array)
         dl.rooms-slider__data-list.rooms-slider-data-list
           each data_info in item.data_list
             .rooms-slider-data-list__row
-              dt.rooms-slider-data-list__title= data_info.title
+              dt.rooms-slider-data-list__title
+                if data_info.title === "Размеры (ШхГхВ) "
+                  = data_info.title
+                  span &mdash;
+                else
+                  = data_info.title
               | &nbsp;
               dd.rooms-slider-data-list__description= data_info.description
         button(type="button").rooms-slider__button.button.reserve-button Забронировать

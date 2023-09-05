@@ -54,11 +54,28 @@ document.addEventListener( 'DOMContentLoaded', function() {
 
 
     cardRoomThumbs = new Splide(cardRoomThumbs, {
+      mediaQuery: 'min',
       gap: 16,
       perPage: 3,
       arrows: false,
       pagination: false,
       isNavigation: true,
+      breakpoints: {
+        425: {
+          gap: 40
+        },
+        600: {
+          gap: 25
+        },
+        768: {
+          gap: 21
+        },
+        950: {
+          direction: 'ttb',
+          height: 396,
+          gap: 30,
+        }
+      }
     }).mount();
 
     cardRoomSlider.sync(cardRoomThumbs);

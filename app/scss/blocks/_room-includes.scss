@@ -9,12 +9,24 @@
 .room-includes__item {
   display: flex;
   align-items: center;
+
+  @include px950 {
+    font-size: 16px;
+  }
 }
 
 .room-includes__item:not(:last-of-type) {
   margin-bottom: 15px;
+
+  @include px950 {
+    margin-bottom: 11px;
+  }
 }
 
 .room-includes__icon {
   margin-right: 10px;
+
+  @include px950 {
+    margin-right: 6px;
+  }
 }

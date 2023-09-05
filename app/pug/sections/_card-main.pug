@@ -1,11 +1,18 @@
 main.page__main.main
   include _card-room.pug
   section.page__rooms.rooms
-    .container
+    .rooms__container.container
       h2.rooms__title.section-title Другие номера
       .rooms__slider.rooms-slider.splide
-        ul.splide__pagination.rooms-slider__pagination
         .splide__track.rooms-slider__track
           ul.rooms-slider__list.splide__list
             +roomsSlides(pugData.rooms_slides)
+        .rooms-slider__controls
+          ul.splide__pagination.rooms-slider__pagination
+          .rooms-slider__arrows.splide__arrows
+            button(type="button" aria-label="Предыдущий слайд").splide__arrow.splide__arrow--prev.rooms-slider__arrow
+              +svg("rooms-slider__arrow-icon", "prev-slide-ic", 6, 10)
+            button(type="button" aria-label="Следующий слайд").splide__arrow.splide__arrow--next.rooms-slider__arrow
+              +svg("rooms-slider__arrow-icon", "next-slide-ic", 6, 10)
+  include _contacts.pug
   include _modals.pug

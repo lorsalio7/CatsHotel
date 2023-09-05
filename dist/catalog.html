@@ -35,7 +35,7 @@
         </div>
       </header>
       <main class="page__main main">
-        <section class="catalog">
+        <section class="page__catalog catalog">
           <div class="container">
             <header class="catalog__header catalog-header">
               <h2 class="catalog-header__title section-title">Наши номера</h2>
@@ -61,9 +61,9 @@
                       <legend class="catalog-filters__legend">Цена за сутки,₽</legend>
                       <div class="catalog-filters__price-inputs-wrapper">
                         <label class="visually-hidden" for="catalog-filters-price-from">Цена за сутки, от</label>
-                        <input class="catalog-filters__price-input" type="text" name="catalog-filters-price-from" id="catalog-filters-price-from" placeholder="от 100" value="100">
+                        <input class="catalog-filters__price-input" type="text" name="catalog-filters-price-from" id="catalog-filters-price-from" placeholder="от 100">
                         <label class="visually-hidden" for="catalog-filters-price-to">Цена за сутки, до</label>
-                        <input class="catalog-filters__price-input" type="text" name="catalog-filters-price-to" id="catalog-filters-price-to" placeholder="до 600" value="600">
+                        <input class="catalog-filters__price-input" type="text" name="catalog-filters-price-to" id="catalog-filters-price-to" placeholder="до 600">
                       </div>
                     </fieldset>
                     <fieldset class="catalog-filters__field">
@@ -110,7 +110,7 @@
                       </div>
                     </fieldset>
                     <button class="catalog-filters__submit-button form-button" type="submit">Подобрать</button>
-                    <button class="form-button form-button--outline" type="reset">Сбросить фильтр</button>
+                    <button class="catalog-filters__reset-button form-button form-button--outline" type="reset">Сбросить фильтр</button>
                   </form>
                   <button class="catalog-filters__close-button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
                 </div>

@@ -1,5 +1,9 @@
 .catalog-filters {
   background-color: var(--color-white);
+
+  @include px1200 {
+    background-color: transparent;
+  }
 }
 
 .catalog-filters__wrapper {
@@ -15,6 +19,15 @@
   box-shadow: 0 4px 25px 0 var(--color-card-shadow);
   background-color: var(--color-white);
   transform: translateX(-50%);
+
+  @include px1200 {
+    position: static;
+    display: block;
+    padding: 0;
+    width: 230px;
+    box-shadow: none;
+    transform: translateX(0);
+  }
 }
 
 .catalog-filters__wrapper--active {
@@ -26,6 +39,10 @@
   padding: 5px;
   width: 100%;
   height: 100%;
+
+  @include px1200 {
+    padding: 0;
+  }
 }
 
 .catalog-filters__close-button {
@@ -40,6 +57,11 @@
   background-size: 14px 14px;
   background-repeat: no-repeat;
   background-color: transparent;
+  cursor: pointer;
+
+  @include px1200 {
+    display: none;
+  }
 }
 
 .catalog-filters__field {
@@ -47,6 +69,16 @@
   margin-bottom: 30px;
   border: none;
   padding: 0;
+
+  @include px1200 {
+    margin-bottom: 32px;
+  }
+}
+
+.catalog-filters__field:last-of-type {
+  @include px1200 {
+    margin-bottom: 37px;
+  }
 }
 
 .catalog-filters__legend {
@@ -56,6 +88,10 @@
   font-size: 16px;
   line-height: normal;
   color: var(--color-mirage);
+
+  @include px1200 {
+    margin-bottom: 16px;
+  }
 }
 
 .catalog-filters__input-wrapper {
@@ -71,6 +107,10 @@
 
 .catalog-filters__price-input:first-of-type {
   margin-right: 14px;
+
+  @include px1200 {
+    margin-right: 6px;
+  }
 }
 
 .catalog-filters__price-input {
@@ -78,10 +118,18 @@
   border: 1px solid var(--color-mercury);
   padding: 13px 8px;
   max-width: 99px;
+  font-family: "Lato", sans-serif;
+
+  @include px1200 {
+    padding: 3px 5px;
+    max-width: 100px;
+    font-size: 14px;
+  }
 }
 
 .catalog-filters__price-input::placeholder {
   font-family: "Lato", sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: normal;
   color: var(--color-mirage);
@@ -100,6 +148,12 @@
   font-size: 14px;
   line-height: normal;
   color: var(--color-mirage);
+  cursor: pointer;
+
+  @include px1200 {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .catalog-filters__checkbox:not(:last-of-type) {
@@ -116,6 +170,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--color-white);
+
+  @include px1200 {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .catalog-filters__checkbox-input:checked + .catalog-filters__custom-box {
@@ -123,11 +182,16 @@
 }
 
 .catalog-filters__checkbox-input:focus + .catalog-filters__custom-box {
-  box-shadow:
-    0 0 0 1px var(--color-white),
-    0 0 0 2px var(--color-mirage);
+  border: 1px solid var(--color-primary);
 }
 
 .catalog-filters__submit-button {
   margin-bottom: 15px;
+}
+
+.catalog-filters__submit-button,
+.catalog-filters__reset-button {
+  @include px1200 {
+    max-width: 185px;
+  }
 }

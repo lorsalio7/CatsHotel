@@ -1,5 +1,6 @@
 .catalog-card {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
 }
 
@@ -7,6 +8,18 @@
   order: 1;
   overflow: hidden;
   height: 185px;
+
+  @include px425 {
+    height: 220px;
+  }
+
+  @include px600 {
+    height: 280px;
+  }
+
+  @include px768 {
+    height: 185px;
+  }
 }
 
 .catalog-card__image {
@@ -20,6 +33,7 @@
 
 .catalog-card__text-content {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   order: 2;
   border-right: 1px solid var(--color-mercury);
@@ -28,6 +42,10 @@
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
   padding: 21px 25px 25px;
+
+  @include px950 {
+    padding: 21px 18px 25px;
+  }
 }
 
 .catalog-card__title {
@@ -41,5 +59,11 @@
 
 .catalog-card__options-list {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
+}
+
+.catalog-card__button {
+  margin-top: auto;
+  padding: 11px 68px 14px 30px;
+  background-position: top 50% right 2px;
 }

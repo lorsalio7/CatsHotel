@@ -1,10 +1,25 @@
 .catalog-header {
   padding-top: 35px;
+
+  @include px768 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 52px;
+  }
+
+  @include px1200 {
+    padding-top: 62px;
+  }
 }
 
 .catalog-header__title {
   margin-bottom: 34px;
   text-align: left;
+
+  @include px768 {
+    margin-bottom: 0;
+  }
 }
 
 .catalog-header__controls {
@@ -26,4 +41,14 @@
   background-size: 12px 15px;
   background-repeat: no-repeat;
   background-color: var(--color-white);
+
+  @include px768 {
+    margin-right: 29px;
+    padding: 8px 21px 10px 42px;
+    background-position: left 20px top 9px;
+  }
+
+  @include px1200 {
+    display: none;
+  }
 }

@@ -9,12 +9,52 @@
   background-position: top -6px left -19px, bottom -84px right -8px, 0 0;
   background-size: 80px 79px, 285px, auto;
   background-repeat: no-repeat, no-repeat, no-repeat;
+
+  @include px425 {
+    padding-bottom: 330px;
+    background-size: 80px 79px, 340px, auto;
+  }
+
+  @include px600 {
+    padding-bottom: 380px;
+    background-size: 80px 79px, 398px, auto;
+  }
+
+  @include px768 {
+    border-radius: 10px;
+    padding-top: 59px;
+    padding-bottom: 70px;
+    background-position: top -13px left -22px, bottom -84px right -8px, 0 0;
+    background-size: 142px 140px, 398px, auto;
+  }
+
+  @include px1200 {
+    padding-top: 68px;
+    padding-bottom: 77px;
+    background-position: top -20px left -7px, bottom -192px right -8px, 0 0;
+    background-size: 224px 220px, 575px, auto;
+  }
 }
 
 .promo-banner__content {
   margin: 0 auto;
   max-width: 330px;
   text-align: center;
+
+  @include px768 {
+    margin-right: auto;
+    margin-left: 50px;
+    max-width: 320px;
+    text-align: left;
+  }
+
+  @include px950 {
+    margin-left: 170px;
+  }
+
+  @include px1200 {
+    margin-left: 270px;
+  }
 }
 
 .promo-banner__heading {
@@ -24,11 +64,31 @@
   font-weight: 700;
   font-size: 24px;
   color: var(--color-mirage);
+
+  @include px600 {
+    font-size: 30px;
+  }
+
+  @include px768 {
+    font-size: 36px;
+  }
+
+  @include px1200 {
+    margin-bottom: 14px;
+  }
 }
 
 .promo-banner__heading--accent {
   font-size: 37px;
   line-height: 1;
+
+  @include px600 {
+    font-size: 46px;
+  }
+
+  @include px768 {
+    font-size: 56px;
+  }
 }
 
 .promo-banner__description {
@@ -38,6 +98,11 @@
   font-size: 15px;
   line-height: 140%;
   color: var(--color-mirage);
+
+  @include px768 {
+    margin-bottom: 30px;
+    max-width: 310px;
+  }
 }
 
 .promo-banner__button {
