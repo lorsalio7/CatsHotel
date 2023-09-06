@@ -8,6 +8,7 @@
     <meta name="description" content="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur">
     <link rel="shortcut icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=c2170c45-5c2d-4a8f-bb71-bbad80caf715&amp;lang=ru_RU"></script>
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body class="page__body full-height">
@@ -437,7 +438,9 @@
               </div>
             </div>
             <div class="contacts__block-2">
-              <div class="contacts__map-wrapper"><img class="contacts__map" src="img/map.jpg" alt="Местоположение отеля Котейка на карте"></div>
+              <div class="contacts__map-wrapper">
+                <div class="contacts__map" id="map"></div>
+              </div>
             </div>
           </div>
         </section>

@@ -6,3 +6,4 @@
 @@include("parts/catalog-filters.js");
 @@include("parts/form-date-mask.js");
 @@include("parts/modals.js");
+@@include("parts/map.js");
