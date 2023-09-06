@@ -1,7 +1,7 @@
 .rooms__title {
   margin-bottom: 33px;
 
-  @include px768 {
+  @include px769 {
     margin-bottom: 52px;
   }
 
@@ -25,7 +25,7 @@
     background-size: 150px 46px;
     background-repeat: no-repeat;
 
-    @include px768 {
+    @include px769 {
       width: 339px;
       height: 106px;
       background-size: 339px 106px;

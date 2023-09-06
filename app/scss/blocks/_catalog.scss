@@ -1,7 +1,7 @@
 .catalog__header {
   margin-bottom: 20px;
 
-  @include px768 {
+  @include px769 {
     margin-bottom: 32px;
   }
 
@@ -30,7 +30,7 @@
   margin: 0;
   padding: 0;
 
-  @include px768 {
+  @include px769 {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
@@ -48,7 +48,7 @@
   border-radius: 6px;
   box-shadow: 0 0 25px var(--color-card-shadow);
 
-  @include px768 {
+  @include px769 {
     flex-basis: calc((100% - 30px * 2) / 2);
     margin-right: 30px;
     margin-bottom: 30px;

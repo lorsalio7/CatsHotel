@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   background-color: var(--color-white);
 
-  @include px768 {
+  @include px769 {
     padding: 123px 25px 25px;
     min-height: 321px;
     background-size: 75px 75px;
@@ -29,7 +29,7 @@
   line-height: 140%;
   color: var(--color-mirage);
 
-  @include px768 {
+  @include px769 {
     font-size: 20px;
   }
 

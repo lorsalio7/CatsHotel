@@ -7,6 +7,10 @@
   width: 100%;
   font-family: "Lato", sans-serif;
   font-size: 15px;
+
+  @include px600 {
+    padding: 16px 28px;
+  }
 }
 
 .modal-form__input::placeholder {
@@ -31,11 +35,27 @@
   font-style: normal;
   font-size: 15px;
   line-height: 0.6;
+
+  @include px600 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding-left: 6px;
+  }
+
+  @include px1200 {
+    padding-left: 0;
+  }
 }
 
 .modal-form__input-wrapper {
   display: flex;
   margin-top: 16px;
+
+  @include px600 {
+    margin-top: 0;
+  }
 }
 
 .modal-form__label-input {
@@ -45,6 +65,14 @@
 
 .modal-form__arrival-date {
   margin-right: 11px;
+
+  @include px600 {
+    margin-right: 16px;
+  }
+
+  @include px1200 {
+    margin-right: 15px;
+  }
 }
 
 .modal-form__arrival-date,
@@ -52,6 +80,18 @@
   margin-bottom: 0;
   margin-left: 5px;
   padding: 16px 14px;
+
+  @include px600 {
+    margin-left: 11px;
+    padding: 16px 14px;
+    max-width: 132px;
+  }
+
+  @include px1200 {
+    margin-left: 12px;
+    padding: 16px 18px;
+    max-width: 129px;
+  }
 }
 
 .modal-form__arrival-date::placeholder,

@@ -1,7 +1,7 @@
 .card-room {
   padding-top: 40px;
 
-  @include px768 {
+  @include px769 {
     padding-top: 60px;
   }
 
@@ -47,7 +47,7 @@
     margin-bottom: 0;
   }
 
-  @include px768 {
+  @include px769 {
     margin-right: 60px;
   }
 
@@ -65,7 +65,7 @@
 .card-room__big-slider {
   margin-bottom: 16px;
 
-  @include px768 {
+  @include px769 {
     margin-bottom: 21px;
   }
 
@@ -126,7 +126,7 @@
   height: 64px;
   object-fit: cover;
 
-  @include px425 {
+  @include px426 {
     height: 90px;
   }
 
@@ -134,7 +134,7 @@
     height: 80px;
   }
 
-  @include px768 {
+  @include px769 {
     height: 78px;
   }
 
@@ -150,7 +150,7 @@
     min-width: 250px;
   }
 
-  @include px768 {
+  @include px769 {
     flex-shrink: 1;
     min-width: 264px;
   }
@@ -172,7 +172,7 @@
     margin-top: -5px;
   }
 
-  @include px768 {
+  @include px769 {
     margin-top: -7px;
     margin-bottom: 26px;
     font-size: 36px;

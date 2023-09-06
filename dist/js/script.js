@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
         200: {
           arrows: false
         },
-        768: {
+        769: {
           padding: 15
         },
         950: {
@@ -143,13 +143,13 @@ document.addEventListener('DOMContentLoaded', function () {
       pagination: false,
       isNavigation: true,
       breakpoints: {
-        425: {
+        426: {
           gap: 40
         },
         600: {
           gap: 25
         },
-        768: {
+        769: {
           gap: 21
         },
         950: {

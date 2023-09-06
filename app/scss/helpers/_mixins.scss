@@ -40,13 +40,21 @@
 
 /* @include px375 {} */
 
-@mixin px425 {
-  @media (min-width: 425px) {
+@mixin px426 {
+  @media (min-width: 426px) {
     @content;
   }
 }
 
-/* @include px425 {} */
+/* @include px426 {} */
+
+@mixin px425max {
+  @media (max-width: 425px) {
+    @content;
+  }
+}
+
+/* @include px425max {} */
 
 @mixin px600 {
   @media (min-width: 600px) {
@@ -56,13 +64,21 @@
 
 /* @include px600 {} */
 
-@mixin px768 {
-  @media (min-width: 768px) {
+@mixin px769 {
+  @media (min-width: 769px) {
     @content;
   }
 }
 
-/* @include px768 {} */
+/* @include px769 {} */
+
+@mixin px768max {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+/* @include px768max {} */
 
 @mixin px950 {
   @media (min-width: 950px) {

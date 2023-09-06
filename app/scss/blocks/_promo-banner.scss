@@ -10,7 +10,7 @@
   background-size: 80px 79px, 285px, auto;
   background-repeat: no-repeat, no-repeat, no-repeat;
 
-  @include px425 {
+  @include px426 {
     padding-bottom: 330px;
     background-size: 80px 79px, 340px, auto;
   }
@@ -20,7 +20,7 @@
     background-size: 80px 79px, 398px, auto;
   }
 
-  @include px768 {
+  @include px769 {
     border-radius: 10px;
     padding-top: 59px;
     padding-bottom: 70px;
@@ -41,7 +41,7 @@
   max-width: 330px;
   text-align: center;
 
-  @include px768 {
+  @include px769 {
     margin-right: auto;
     margin-left: 50px;
     max-width: 320px;
@@ -69,7 +69,7 @@
     font-size: 30px;
   }
 
-  @include px768 {
+  @include px769 {
     font-size: 36px;
   }
 
@@ -86,7 +86,7 @@
     font-size: 46px;
   }
 
-  @include px768 {
+  @include px769 {
     font-size: 56px;
   }
 }
@@ -99,7 +99,7 @@
   line-height: 140%;
   color: var(--color-mirage);
 
-  @include px768 {
+  @include px769 {
     margin-bottom: 30px;
     max-width: 310px;
   }

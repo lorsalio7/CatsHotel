@@ -14,7 +14,7 @@
     background-size: 100px 104px;
     background-repeat: no-repeat;
 
-    @include px768 {
+    @include px769 {
       right: -4px;
       top: -59px;
       width: 205px;
@@ -35,7 +35,7 @@
 .reviews__title {
   margin-bottom: 33px;
 
-  @include px768 {
+  @include px769 {
     margin-bottom: 52px;
   }
 

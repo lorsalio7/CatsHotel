@@ -8,11 +8,21 @@
   z-index: 2;
   padding: 48px 0 51%;
 
+  @include px425max {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   @include px600 {
     padding-top: 18%;
   }
 
-  @include px768 {
+  @include px768max {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @include px769 {
     padding-right: 0;
     padding-bottom: 42.9%;
     padding-left: 0;
@@ -42,7 +52,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    @include px425 {
+    @include px426 {
       height: 700px;
     }
 
@@ -51,7 +61,7 @@
       background-position: bottom 0 left 27%;
     }
 
-    @include px768 {
+    @include px769 {
       height: 1300px;
     }
 
@@ -83,7 +93,7 @@
   padding-bottom: 68px;
   padding-left: 15px;
 
-  @include px768 {
+  @include px769 {
     padding-bottom: 200px;
   }
 
@@ -107,7 +117,7 @@
   font-size: 16px;
   text-align: center;
 
-  @include px425 {
+  @include px426 {
     font-size: 20px;
   }
 
@@ -124,7 +134,7 @@
   font-size: 44px;
   color: var(--color-mirage);
 
-  @include px425 {
+  @include px426 {
     margin-bottom: 8px;
     font-size: 62px;
     line-height: 1.09;
@@ -140,7 +150,7 @@
   font-size: 12px;
   color: var(--color-mirage);
 
-  @include px425 {
+  @include px426 {
     margin-bottom: 0;
     font-size: 14px;
   }
@@ -171,7 +181,7 @@
     object-position: left 10% top 100%;
   }
 
-  @include px768 {
+  @include px769 {
     object-position: left 10% top 94%;
   }
 

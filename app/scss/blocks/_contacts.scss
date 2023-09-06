@@ -1,7 +1,7 @@
 .contacts {
   position: relative;
 
-  @include px768 {
+  @include px769 {
     background-color: var(--color-primary);
   }
 }
@@ -12,7 +12,17 @@
   padding-right: 0;
   padding-left: 0;
 
-  @include px768 {
+  @include px425max {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @include px768max {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @include px769 {
     flex-direction: row;
     width: 100%;
   }
@@ -30,7 +40,17 @@
 .contacts__block-1 {
   background-color: var(--color-primary);
 
-  @include px768 {
+  @include px425max {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @include px768max {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  @include px769 {
     flex-shrink: 0;
     width: 47.75%;
   }
@@ -47,7 +67,15 @@
 .contacts__text-content {
   padding: 35px 15px 40px;
 
-  @include px768 {
+  @include px425max {
+    padding: 35px 15px 40px;
+  }
+
+  @include px768max {
+    padding: 35px 0 40px;
+  }
+
+  @include px769 {
     margin-left: auto;
     padding: 52px 45px 60px 0;
     max-width: 400px;
@@ -59,7 +87,7 @@
 }
 
 .contacts__block-2 {
-  @include px768 {
+  @include px769 {
     position: relative;
   }
 }
@@ -67,7 +95,7 @@
 .contacts__map-wrapper {
   height: 300px;
 
-  @include px768 {
+  @include px769 {
     position: relative;
     width: calc(50vw - (0.4775 - 0.5) * 1170px);
     height: 100%;
@@ -88,7 +116,7 @@
   height: 100%;
   object-fit: cover;
 
-  @include px768 {
+  @include px769 {
     position: absolute;
     left: 0;
     top: 0;

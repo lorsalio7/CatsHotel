@@ -6,7 +6,7 @@
   background-size: 20px 18px;
   background-repeat: no-repeat;
 
-  @include px768 {
+  @include px769 {
     padding: 31px 33px 32px 70px;
     background-position: left 34px top 34px;
     background-size: 27px 23px;
@@ -24,7 +24,7 @@
   line-height: 140%;
   color: var(--color-mirage);
 
-  @include px768 {
+  @include px769 {
     margin-bottom: 16px;
   }
 
@@ -37,7 +37,7 @@
   display: none;
   justify-content: space-between;
 
-  @include px768 {
+  @include px769 {
     display: flex;
   }
 }

@@ -9,7 +9,7 @@
   overflow: hidden;
   height: 185px;
 
-  @include px425 {
+  @include px426 {
     height: 220px;
   }
 
@@ -17,7 +17,7 @@
     height: 280px;
   }
 
-  @include px768 {
+  @include px769 {
     height: 185px;
   }
 }
