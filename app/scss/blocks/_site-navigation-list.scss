@@ -31,4 +31,8 @@
     font-family: "Lato", sans-serif;
     font-size: 16px;
   }
+
+  @include hover-focus {
+    text-decoration: underline;
+  }
 }

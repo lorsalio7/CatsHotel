@@ -6,40 +6,29 @@
   }
 }
 
-.page__hero {
-  margin-bottom: 66px;
+.page__advantages {
+  padding-top: 66px;
 
   @include px600 {
-    margin-bottom: 113px;
+    padding-top: 113px;
   }
 
   @include px950 {
-    margin-bottom: 132px;
-  }
-}
-
-.page__advantages {
-  margin-bottom: 70px;
-
-  @include px950 {
-    margin-bottom: 142px;
+    padding-top: 132px;
   }
 }
 
 .page__rooms {
-  margin-bottom: 107px;
-
-  @include px769 {
-    margin-bottom: 174px;
-  }
+  padding-top: 70px;
 
   @include px950 {
-    margin-bottom: 211px;
+    padding-top: 142px;
   }
 }
 
 .card .page__rooms {
   margin-bottom: 112px;
+  padding-top: 0;
 
   @include px769 {
     margin-bottom: 181px;
@@ -47,18 +36,37 @@
 
   @include px950 {
     margin-bottom: 219px;
+    padding-top: 0;
   }
 }
 
 .page__reviews {
   margin-bottom: 52px;
+  padding-top: 107px;
 
   @include px769 {
     margin-bottom: 102px;
+    padding-top: 174px;
+  }
+
+  @include px950 {
+    margin-bottom: 134px;
+    padding-top: 211px;
+  }
+}
+
+.page__contacts {
+  margin-top: -52px;
+  padding-top: 52px;
+
+  @include px769 {
+    margin-top: -102px;
+    padding-top: 102px;
   }
 
   @include px1200 {
-    margin-bottom: 134px;
+    margin-top: -134px;
+    padding-top: 134px;
   }
 }
 

@@ -1,19 +1,19 @@
 {
   "site_navigation": [
     {
-      "link_url": "#",
+      "link_url": "/#why-are-we",
       "link_name": "Почему мы?"
     },
     {
-      "link_url": "#",
+      "link_url": "/#rooms",
       "link_name": "Номера"
     },
     {
-      "link_url": "#",
+      "link_url": "/#reviews",
       "link_name": "Отзывы"
     },
     {
-      "link_url": "#",
+      "link_url": "#where-are-we",
       "link_name": "Как нас найти"
     }
   ],

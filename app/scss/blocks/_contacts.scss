@@ -1,5 +1,6 @@
 .contacts {
   position: relative;
+  background-clip: content-box;
 
   @include px769 {
     background-color: var(--color-primary);
@@ -24,6 +25,8 @@
 
   @include px769 {
     flex-direction: row;
+    padding-right: 15px;
+    padding-left: 15px;
     width: 100%;
   }
 }

@@ -821,24 +821,27 @@ body {
   padding-top: 62px;
 }
 
-.page__hero {
-  margin-bottom: 66px;
-}
-
 .page__advantages {
-  margin-bottom: 70px;
+  padding-top: 66px;
 }
 
 .page__rooms {
-  margin-bottom: 107px;
+  padding-top: 70px;
 }
 
 .card .page__rooms {
   margin-bottom: 112px;
+  padding-top: 0;
 }
 
 .page__reviews {
   margin-bottom: 52px;
+  padding-top: 107px;
+}
+
+.page__contacts {
+  margin-top: -52px;
+  padding-top: 52px;
 }
 
 .page__catalog {
@@ -1366,6 +1369,7 @@ body {
 
 .contacts {
   position: relative;
+  background-clip: content-box;
 }
 
 .contacts__container {
@@ -2323,6 +2327,7 @@ body {
   background-size: 16px 16px;
   background-repeat: no-repeat;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .modal__close-button:focus {
@@ -2634,8 +2639,8 @@ body {
 }
 
 @media (min-width: 600px) {
-  .page__hero {
-    margin-bottom: 113px;
+  .page__advantages {
+    padding-top: 113px;
   }
 
   .hero__container {
@@ -2815,16 +2820,18 @@ body {
     display: none;
   }
 
-  .page__rooms {
-    margin-bottom: 174px;
-  }
-
   .card .page__rooms {
     margin-bottom: 181px;
   }
 
   .page__reviews {
     margin-bottom: 102px;
+    padding-top: 174px;
+  }
+
+  .page__contacts {
+    margin-top: -102px;
+    padding-top: 102px;
   }
 
   .page__catalog {
@@ -2975,6 +2982,8 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding-right: 15px;
+    padding-left: 15px;
     width: 100%;
   }
 
@@ -3211,20 +3220,22 @@ body {
     padding-left: 15px;
   }
 
-  .page__hero {
-    margin-bottom: 132px;
-  }
-
   .page__advantages {
-    margin-bottom: 142px;
+    padding-top: 132px;
   }
 
   .page__rooms {
-    margin-bottom: 211px;
+    padding-top: 142px;
   }
 
   .card .page__rooms {
     margin-bottom: 219px;
+    padding-top: 0;
+  }
+
+  .page__reviews {
+    margin-bottom: 134px;
+    padding-top: 211px;
   }
 
   .hero__container {
@@ -3449,8 +3460,9 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .page__reviews {
-    margin-bottom: 134px;
+  .page__contacts {
+    margin-top: -134px;
+    padding-top: 134px;
   }
 
   .page__catalog {
@@ -3764,6 +3776,14 @@ body {
 }
 
 @media (hover: hover) {
+  .site-navigation-list__link:focus {
+    text-decoration: underline;
+  }
+
+  .site-navigation-list__link:hover {
+    text-decoration: underline;
+  }
+
   .button--secondary:focus {
     border: 2px solid var(--color-white);
     color: var(--color-white);
