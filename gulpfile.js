@@ -154,6 +154,7 @@ function images() {
 
 function watchFiles() {
   gulp.watch(["app/pug/**/*.pug"], gulpPug);
+  gulp.watch(["app/pug/pug-data.json"], gulpPug);
   gulp.watch(["app/scss/**/*.scss"], css);
   gulp.watch(["app/js/**/*.js"], js);
   gulp.watch(["app/img/**"], images);

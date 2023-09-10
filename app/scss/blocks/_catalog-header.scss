@@ -41,6 +41,7 @@
   background-size: 12px 15px;
   background-repeat: no-repeat;
   background-color: var(--color-white);
+  cursor: pointer;
 
   @include px769 {
     margin-right: 29px;

@@ -29,17 +29,29 @@ function debounce(func, delay) {
 
 var scrollController = {
   scrollPosition: 0,
-  disabledScroll: function disabledScroll() {
+  disabledScroll: function disabledScroll(fixedElement) {
+    if (fixedElement) {
+      var fixedElements = document.querySelectorAll(fixedElement);
+      fixedElements.forEach(function (element) {
+        element.style.paddingRight = "".concat(parseInt(window.innerWidth - document.body.offsetWidth), "px");
+      });
+    }
     scrollController.scrollPosition = window.scrollY;
     document.body.style.cssText = "\n      overflow: hidden;\n      position: fixed;\n      top: -".concat(scrollController.scrollPosition, "px;\n      left: 0;\n      height: 100vh;\n      width: 100vw;\n      padding-right: ").concat(parseInt(window.innerWidth - document.body.offsetWidth), "px;\n    ");
     document.documentElement.style.scrollBehavior = "unset";
   },
-  enabledScrool: function enabledScrool() {
+  enabledScrool: function enabledScrool(fixedElement) {
     document.body.style.cssText = "";
     window.scroll({
       top: scrollController.scrollPosition
     });
     document.documentElement.style.scrollBehavior = "";
+    if (fixedElement) {
+      var fixedElements = document.querySelectorAll(fixedElement);
+      fixedElements.forEach(function (element) {
+        element.style.paddingRight = "0";
+      });
+    }
   }
 };
 var siteHeader = document.querySelector(".site-header");
@@ -58,20 +70,19 @@ if (siteHeader) {
 var burgerButton = document.querySelector(".burger-button");
 if (burgerButton) {
   var openMenu = function openMenu() {
-    scrollController.disabledScroll();
+    scrollController.disabledScroll(".fixed-element");
     setTimeout(function () {
       _siteHeader.classList.add("site-header--active");
     }, 300);
     siteNavigation.classList.add("site-header__navigation--active");
   };
   var closeMenu = function closeMenu() {
-    scrollController.enabledScrool();
+    scrollController.enabledScrool(".fixed-element");
     _siteHeader.classList.remove("site-header--active");
     siteNavigation.classList.remove("site-header__navigation--active");
     burgerButton.classList.remove("burger-button--active");
-    burgerButton.style.marginRight = "unset";
   };
-  var changeMenuView = function changeMenuView(width) {
+  var changeView = function changeView(width) {
     if (!width) {
       closeMenu();
     }
@@ -81,9 +92,9 @@ if (burgerButton) {
   var burgerMenuWidth = window.matchMedia("(max-width: 768px)");
   var siteNavigationLinks = siteNavigation.querySelectorAll(".site-navigation-list__link");
   burgerButton.addEventListener("click", function () {
-    var widthScroll = window.innerWidth - document.body.offsetWidth + "px";
+    // let widthScroll = window.innerWidth - document.body.offsetWidth + "px";
     burgerButton.classList.toggle("burger-button--active");
-    burgerButton.style.marginRight = widthScroll;
+    // burgerButton.style.marginRight = widthScroll;
     if (burgerButton.classList.contains("burger-button--active")) {
       openMenu();
     } else {
@@ -91,7 +102,7 @@ if (burgerButton) {
     }
   });
   burgerMenuWidth.onchange = function (e) {
-    changeMenuView(e.matches);
+    changeView(e.matches);
   };
   siteNavigationLinks.forEach(function (link) {
     link.addEventListener("click", closeMenu);
@@ -224,22 +235,26 @@ if (dropdown) {
 var filtersButton = document.querySelector(".catalog-header__filter-button");
 if (filtersButton) {
   var openFilters = function openFilters() {
-    pageHtml.classList.add("no-scroll");
+    scrollController.disabledScroll(".fixed-element");
     filtersModal.classList.add("catalog-filters__wrapper--active");
-    overlay.classList.add("overlay--active");
+    document.querySelector(".overlay").classList.add("overlay--active");
   };
   var closeFilters = function closeFilters() {
-    pageHtml.classList.remove("no-scroll");
+    scrollController.enabledScrool(".fixed-element");
     filtersForm.scrollTo(0, 0);
     filtersModal.classList.remove("catalog-filters__wrapper--active");
-    overlay.classList.remove("overlay--active");
+    document.querySelector(".overlay").classList.remove("overlay--active");
     filtersButton.classList.remove("catalog-header__filter-button--active");
   };
-  var pageHtml = document.querySelector("html");
+  var _changeView = function _changeView(width) {
+    if (!width) {
+      closeFilters();
+    }
+  };
   var filtersModal = document.querySelector(".catalog-filters__wrapper");
   var filtersForm = filtersModal.querySelector(".catalog-filters__form");
+  var catalogFiltersWidth = window.matchMedia("(max-width: 1200px)");
   var closeFiltersButton = document.querySelector(".catalog-filters__close-button");
-  var overlay = document.querySelector(".overlay");
   filtersButton.addEventListener("click", function () {
     filtersButton.classList.toggle("catalog-header__filter-button--active");
     if (filtersButton.classList.contains("catalog-header__filter-button--active")) {
@@ -248,11 +263,19 @@ if (filtersButton) {
       closeFilters();
     }
   });
+  document.querySelector(".overlay").addEventListener("click", function () {
+    if (document.querySelector(".overlay").classList.contains("overlay--active")) {
+      closeFilters();
+    }
+  });
   closeFiltersButton.addEventListener("click", function () {
     if (filtersModal.classList.contains("catalog-filters__wrapper--active")) {
       closeFilters();
     }
   });
+  catalogFiltersWidth.onchange = function (e) {
+    _changeView(e.matches);
+  };
 }
 ;
 var arrivalInput = new Cleave('.modal-form__arrival-date', {

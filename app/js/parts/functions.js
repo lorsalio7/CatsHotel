@@ -28,7 +28,15 @@ function debounce(func, delay) {
 
 const scrollController = {
   scrollPosition: 0,
-  disabledScroll() {
+  disabledScroll(fixedElement) {
+
+    if(fixedElement) {
+      let fixedElements = document.querySelectorAll(fixedElement);
+      fixedElements.forEach(element => {
+        element.style.paddingRight = `${parseInt(window.innerWidth - document.body.offsetWidth)}px`;
+      });
+    }
+
     scrollController.scrollPosition = window.scrollY;
     document.body.style.cssText = `
       overflow: hidden;
@@ -41,9 +49,16 @@ const scrollController = {
     `;
     document.documentElement.style.scrollBehavior = "unset";
   },
-  enabledScrool() {
+  enabledScrool(fixedElement) {
     document.body.style.cssText = "";
     window.scroll({top: scrollController.scrollPosition});
     document.documentElement.style.scrollBehavior = "";
+
+    if(fixedElement) {
+      let fixedElements = document.querySelectorAll(fixedElement);
+      fixedElements.forEach(element => {
+        element.style.paddingRight = "0";
+      });
+    }
   }
 }
