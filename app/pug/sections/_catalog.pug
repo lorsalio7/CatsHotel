@@ -29,15 +29,17 @@ section.page__catalog.catalog
     .catalog__content
       .catalog__catalog-filters.catalog-filters
         .catalog-filters__wrapper
+          button(type="button").catalog-filters__close-button
+            span.visually-hidden Закрыть окно
           h2.visually-hidden Фильтры
           form(action="#" method="GET").catalog-filters__form
             fieldset.catalog-filters__field
               legend.catalog-filters__legend Цена за сутки,₽
               .catalog-filters__price-inputs-wrapper
                 label(for="catalog-filters-price-from").visually-hidden Цена за сутки, от
-                input(type="text" name="catalog-filters-price-from" id="catalog-filters-price-from" placeholder="от 100").catalog-filters__price-input
+                input(type="text" name="catalog-filters-price-from" id="catalog-filters-price-from" placeholder="от 100" ).catalog-filters__price-input
                 label(for="catalog-filters-price-to").visually-hidden Цена за сутки, до
-                input(type="text" name="catalog-filters-price-to" id="catalog-filters-price-to" placeholder="до 600").catalog-filters__price-input
+                input(type="text" name="catalog-filters-price-to" id="catalog-filters-price-to" placeholder="до 600" ).catalog-filters__price-input
             fieldset.catalog-filters__field
               legend.catalog-filters__legend Площадь
               .catalog-filters__column
@@ -90,8 +92,6 @@ section.page__catalog.catalog
                   | Домик
             button(type="submit").catalog-filters__submit-button.form-button Подобрать
             button(type="reset").catalog-filters__reset-button.form-button.form-button--outline Сбросить фильтр
-          button(type="button").catalog-filters__close-button
-            span.visually-hidden Закрыть окно
       .catalog__cards
         ul.catalog__list
           +catalogCards(pugData.catalog_cards)
