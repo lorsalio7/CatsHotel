@@ -305,11 +305,20 @@ if (filtersButton) {
     }
   };
   var filtersModalOverlay = document.querySelector(".catalog__catalog-filters");
+  var filtersForm = document.querySelector("#catalog-filters-form");
   var filtersModal = filtersModalOverlay.querySelector(".catalog-filters__wrapper");
   var catalogFiltersWidth = window.matchMedia("(max-width: 1200px)");
   var closeFiltersButton = document.querySelector(".catalog-filters__close-button");
   var previousActiveElement;
   var focusElements = ['a[href]', 'area[href]', 'input:not([disabled]):not([type="hidden"]):not([aria-hidden])', 'select:not([disabled]):not([aria-hidden])', 'textarea:not([disabled]):not([aria-hidden])', 'button:not([disabled]):not([aria-hidden])', 'iframe', 'object', 'embed', '[contenteditable]', '[tabindex]:not([tabindex^="-"])'];
+  filtersForm.addEventListener("keydown", function (event) {
+    if (event.key === 'Enter' && event.target !== filtersForm.querySelector(".catalog-filters__submit-button") && event.target !== filtersForm.querySelector(".catalog-filters__reset-button")) {
+      event.preventDefault();
+      if (event.target.type === "checkbox") {
+        event.target.checked = !event.target.checked;
+      }
+    }
+  });
   filtersButton.addEventListener("click", function () {
     filtersButton.classList.add("catalog-header__filter-button--active");
     openFilters();

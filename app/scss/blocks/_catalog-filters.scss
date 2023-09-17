@@ -20,6 +20,7 @@
     padding: 0;
     width: 230px;
     box-shadow: none;
+    background-color: unset;
     opacity: 1;
     transform: translateY(0);
   }
@@ -45,6 +46,7 @@
   right: 19px;
   top: 19px;
   border: none;
+  padding: 1px;
   width: 20px;
   height: 20px;
   background-image: url("../img/close-ic.svg");
@@ -61,6 +63,10 @@
 
 .catalog-filters__close-button:focus {
   border: 1px solid var(--color-primary);
+}
+
+.catalog-filters__close-button span {
+  pointer-events: unset;
 }
 
 .catalog-filters__field {
@@ -113,8 +119,10 @@
 }
 
 .catalog-filters__price-input {
+  appearance: none;
   display: inline-block;
   border: 1px solid var(--color-mercury);
+  border-radius: 0;
   padding: 13px 8px;
   max-width: 99px;
   font-family: "Lato", sans-serif;

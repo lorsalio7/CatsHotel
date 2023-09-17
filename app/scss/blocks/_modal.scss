@@ -10,11 +10,9 @@
   padding: 102px 15px;
   background-color: var(--color-overlay-bg);
   cursor: pointer;
-}
 
-@supports (backdrop-filter: blur(4px)) {
-  .modal {
-    background-color: var(--color-overlay-bg);
+  @supports ((-webkit-backdrop-filter: blur(4px)) or (backdrop-filter: blur(4px))) {
+    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
   }
 }
@@ -155,6 +153,7 @@
   margin-left: auto;
   outline: none;
   border: none;
+  padding: 1px;
   width: 20px;
   height: 20px;
   background-image: url("../img/close-ic.svg");

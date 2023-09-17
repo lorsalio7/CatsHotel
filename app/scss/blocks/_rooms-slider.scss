@@ -38,6 +38,8 @@
   background-color: var(--color-white);
 
   @include px769 {
+    position: relative;
+    z-index: 1;
     flex: 1 1 41%;
     margin-left: -109px;
     border-radius: 8px;

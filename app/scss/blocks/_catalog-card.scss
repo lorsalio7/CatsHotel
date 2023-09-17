@@ -32,6 +32,8 @@
 }
 
 .catalog-card__text-content {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-grow: 1;
   flex-direction: column;
@@ -44,7 +46,7 @@
   padding: 21px 25px 25px;
 
   @include px950 {
-    padding: 21px 18px 25px;
+    padding: 21px 17px 25px;
   }
 }
 

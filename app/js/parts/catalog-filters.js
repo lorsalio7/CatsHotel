@@ -2,6 +2,7 @@ const filtersButton = document.querySelector(".catalog-header__filter-button");
 
 if(filtersButton) {
   const filtersModalOverlay = document.querySelector(".catalog__catalog-filters");
+  const filtersForm = document.querySelector("#catalog-filters-form");
   const filtersModal = filtersModalOverlay.querySelector(".catalog-filters__wrapper");
   const catalogFiltersWidth = window.matchMedia("(max-width: 1200px)");
   const closeFiltersButton = document.querySelector(".catalog-filters__close-button");
@@ -48,6 +49,16 @@ if(filtersButton) {
       e.preventDefault();
     }
   }
+
+  filtersForm.addEventListener("keydown", (event) => {
+    if(event.key === 'Enter' && event.target !== filtersForm.querySelector(".catalog-filters__submit-button") && event.target !== filtersForm.querySelector(".catalog-filters__reset-button")) {
+      event.preventDefault();
+
+      if (event.target.type === "checkbox") {
+        event.target.checked = !event.target.checked;
+      }
+    }
+  })
 
   filtersButton.addEventListener("click", () => {
     filtersButton.classList.add("catalog-header__filter-button--active");

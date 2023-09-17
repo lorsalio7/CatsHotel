@@ -38,13 +38,15 @@
 
 .promo-banner__content {
   margin: 0 auto;
-  max-width: 330px;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 360px;
   text-align: center;
 
   @include px769 {
     margin-right: auto;
     margin-left: 50px;
-    max-width: 320px;
+    max-width: 350px;
     text-align: left;
   }
 

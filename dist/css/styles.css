@@ -1465,17 +1465,9 @@ body {
 
 @supports ((-webkit-backdrop-filter: blur(4px)) or (backdrop-filter: blur(4px))) {
   .catalog__catalog-filters {
-    background-color: var(--color-overlay-bg);
     -webkit-backdrop-filter: blur(4px);
-            backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
   }
-
-@media (min-width: 1200px) {
-    .catalog__catalog-filters {
-      -webkit-backdrop-filter: blur(0);
-              backdrop-filter: blur(0);
-    }
-}
 }
 
 .catalog__catalog-filters--active {
@@ -1496,7 +1488,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
   border-radius: 6px;
   -webkit-box-shadow: 0 0 25px var(--color-card-shadow);
           box-shadow: 0 0 25px var(--color-card-shadow);
@@ -1666,6 +1657,7 @@ body {
   right: 19px;
   top: 19px;
   border: none;
+  padding: 1px;
   width: 20px;
   height: 20px;
   background-image: url("../img/close-ic.svg");
@@ -1678,6 +1670,10 @@ body {
 
 .catalog-filters__close-button:focus {
   border: 1px solid var(--color-primary);
+}
+
+.catalog-filters__close-button span {
+  pointer-events: unset;
 }
 
 .catalog-filters__field {
@@ -1714,8 +1710,12 @@ body {
 }
 
 .catalog-filters__price-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   display: inline-block;
   border: 1px solid var(--color-mercury);
+  border-radius: 0;
   padding: 13px 8px;
   max-width: 99px;
   font-family: "Lato", sans-serif;
@@ -1883,6 +1883,8 @@ body {
 }
 
 .catalog-card__text-content {
+  position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1981,6 +1983,7 @@ body {
 
 .tooltip {
   position: relative;
+  z-index: 100;
 }
 
 .tooltip::before {
@@ -2052,7 +2055,9 @@ body {
 
 .promo-banner__content {
   margin: 0 auto;
-  max-width: 330px;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 360px;
   text-align: center;
 }
 
@@ -2270,9 +2275,8 @@ body {
 
 @supports ((-webkit-backdrop-filter: blur(4px)) or (backdrop-filter: blur(4px))) {
   .modal {
-    background-color: var(--color-overlay-bg);
     -webkit-backdrop-filter: blur(4px);
-            backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
   }
 }
 
@@ -2370,6 +2374,7 @@ body {
   margin-left: auto;
   outline: none;
   border: none;
+  padding: 1px;
   width: 20px;
   height: 20px;
   background-image: url("../img/close-ic.svg");
@@ -2418,6 +2423,9 @@ body {
 }
 
 .modal-form__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   margin-bottom: 21px;
   outline: none;
   border: 1px solid var(--color-alto);
@@ -2958,6 +2966,8 @@ body {
   }
 
   .rooms-slider__text-content {
+    position: relative;
+    z-index: 1;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 41%;
             flex: 1 1 41%;
@@ -3139,7 +3149,7 @@ body {
   .promo-banner__content {
     margin-right: auto;
     margin-left: 50px;
-    max-width: 320px;
+    max-width: 350px;
     text-align: left;
   }
 
@@ -3421,7 +3431,7 @@ body {
   }
 
   .catalog-card__text-content {
-    padding: 21px 18px 25px;
+    padding: 21px 17px 25px;
   }
 
   .promo-banner__content {
@@ -3627,6 +3637,13 @@ body {
     cursor: default;
   }
 
+@supports ((-webkit-backdrop-filter: blur(4px)) or (backdrop-filter: blur(4px))) {
+    .catalog__catalog-filters {
+      -webkit-backdrop-filter: none;
+      backdrop-filter: none;
+    }
+}
+
   .catalog-header {
     padding-top: 62px;
   }
@@ -3642,6 +3659,7 @@ body {
     width: 230px;
     -webkit-box-shadow: none;
             box-shadow: none;
+    background-color: unset;
     opacity: 1;
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
@@ -3702,7 +3720,7 @@ body {
   }
 
   .catalog-card-options__list {
-    margin-left: 9px;
+    margin-left: 8px;
   }
 
   .promo-banner__container {

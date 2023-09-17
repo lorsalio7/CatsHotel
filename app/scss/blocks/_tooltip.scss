@@ -1,5 +1,6 @@
 .tooltip {
   position: relative;
+  z-index: 100;
 }
 
 .tooltip::before {
