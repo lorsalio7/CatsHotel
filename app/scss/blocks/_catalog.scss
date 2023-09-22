@@ -42,13 +42,11 @@
     cursor: default;
 
     @supports ((-webkit-backdrop-filter: blur(4px)) or (backdrop-filter: blur(4px))) {
-      -webkit-backdrop-filter: none;
       backdrop-filter: none;
     }
   }
 
   @supports ((-webkit-backdrop-filter: blur(4px)) or (backdrop-filter: blur(4px))) {
-    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
   }
 }

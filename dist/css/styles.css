@@ -1466,7 +1466,7 @@ body {
 @supports ((-webkit-backdrop-filter: blur(4px)) or (backdrop-filter: blur(4px))) {
   .catalog__catalog-filters {
     -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
   }
 }
 
@@ -2276,7 +2276,7 @@ body {
 @supports ((-webkit-backdrop-filter: blur(4px)) or (backdrop-filter: blur(4px))) {
   .modal {
     -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
   }
 }
 
@@ -3640,7 +3640,7 @@ body {
 @supports ((-webkit-backdrop-filter: blur(4px)) or (backdrop-filter: blur(4px))) {
     .catalog__catalog-filters {
       -webkit-backdrop-filter: none;
-      backdrop-filter: none;
+              backdrop-filter: none;
     }
 }
 
