@@ -78,6 +78,7 @@ function modalInit({modalWindow, buttonOpen, buttonClose}) {
     function openModal() {
 
       previousActiveElement = document.activeElement;
+      // console.log(previousActiveElement);
       modal.style.display = "flex";
 
       setTimeout(() => {

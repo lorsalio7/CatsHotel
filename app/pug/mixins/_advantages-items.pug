@@ -1,6 +1,6 @@
 mixin advantagesItems(array)
   each item in array
-    li(style=`background-image: url("../${item.icon}")`).advantages__item.advantage-card
+    li(style="background-image: url(\"" + item.icon + "\")").advantages__item.advantage-card
       h3.advantage-card__title= item.title
       p.advantage-card__description= item.description
 

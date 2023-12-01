@@ -381,6 +381,7 @@ function modalInit(_ref) {
     };
     var openModal = function openModal() {
       _previousActiveElement = document.activeElement;
+      // console.log(previousActiveElement);
       modal.style.display = "flex";
       setTimeout(function () {
         modal.classList.add("modal--active");
