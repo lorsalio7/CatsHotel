@@ -438,6 +438,18 @@ if (contactsMap) {
     contactsMap.geoObjects.add(placemark);
     contactsMap.behaviors.disable(["scrollZoom"]);
   };
-  ymaps.ready(init);
+  var mapLoaded = false;
+  var scrollTimeout;
+  var mapOffset = document.querySelector(".contacts__map-wrapper").getBoundingClientRect();
+  window.addEventListener("scroll", function () {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(function () {
+      var scrollY = window.scrollY;
+      if (!mapLoaded && scrollY >= mapOffset.top - 500) {
+        ymaps.ready(init);
+        mapLoaded = true;
+      }
+    }, 100);
+  });
 }
 ;

@@ -1,7 +1,11 @@
 let contactsMap = document.querySelector("#map");
 
 if(contactsMap) {
-  ymaps.ready(init);
+  let mapLoaded = false;
+  let scrollTimeout;
+  let mapOffset = document.querySelector(".contacts__map-wrapper").getBoundingClientRect();
+
+
 
   function init() {
     contactsMap = new ymaps.Map(contactsMap, {
@@ -18,4 +22,16 @@ if(contactsMap) {
     contactsMap.geoObjects.add(placemark);
     contactsMap.behaviors.disable(["scrollZoom"]);
   }
+
+
+  window.addEventListener("scroll", () => {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+      let scrollY = window.scrollY;
+      if(!mapLoaded && scrollY >= (mapOffset.top - 500)) {
+        ymaps.ready(init);
+        mapLoaded = true;
+      }
+    }, 100);
+  });
 }
