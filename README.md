@@ -2,9 +2,9 @@
 
 Проект созданный для сайта-портфолио [sezak.ru](https://sezak.ru/)
 
-[Главная страница](https://lorsalio7.github.io/CatsHotel/dist/)
-[Страница каталога](https://lorsalio7.github.io/CatsHotel/dist/catalog.html)
-[Карточка номера](https://lorsalio7.github.io/CatsHotel/dist/card.html)
+[Главная страница](https://lorsalio7.github.io/CatsHotel/dist/)  
+[Страница каталога](https://lorsalio7.github.io/CatsHotel/dist/catalog.html)  
+[Карточка номера](https://lorsalio7.github.io/CatsHotel/dist/card.html)  
 
 **Используемые плагины:**
 
