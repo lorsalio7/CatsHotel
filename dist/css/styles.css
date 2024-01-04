@@ -461,8 +461,10 @@ template {
   overflow: hidden;
 }
 
+/* @include font("$name", "$font-family", $weight, $style, $font-name-local, $font-name-local-alternate); */
+
 @font-face {
-  src: url("../fonts/Lato-Light.woff2") format("woff2");
+  src: local("Lato Light"), local("Lato-Light"), url("../fonts/Lato-Light.woff2") format("woff2");
   font-family: "Lato";
   font-weight: 100;
   font-style: normal;
@@ -470,7 +472,7 @@ template {
 }
 
 @font-face {
-  src: url("../fonts/Lato-Regular.woff2") format("woff2");
+  src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/Lato-Regular.woff2") format("woff2");
   font-family: "Lato";
   font-weight: 400;
   font-style: normal;
@@ -478,7 +480,7 @@ template {
 }
 
 @font-face {
-  src: url("../fonts/Lato-Medium.woff2") format("woff2");
+  src: local("Lato Medium"), local("Lato-Medium"), url("../fonts/Lato-Medium.woff2") format("woff2");
   font-family: "Lato";
   font-weight: 500;
   font-style: normal;
@@ -486,7 +488,7 @@ template {
 }
 
 @font-face {
-  src: url("../fonts/Lato-Semibold.woff2") format("woff2");
+  src: local("Lato SemiBold"), local("Lato-SemiBold"), url("../fonts/Lato-Semibold.woff2") format("woff2");
   font-family: "Lato";
   font-weight: 600;
   font-style: normal;
@@ -494,7 +496,7 @@ template {
 }
 
 @font-face {
-  src: url("../fonts/Lato-Bold.woff2") format("woff2");
+  src: local("Lato Bold"), local("Lato-Bold"), url("../fonts/Lato-Bold.woff2") format("woff2");
   font-family: "Lato";
   font-weight: 700;
   font-style: normal;
@@ -502,7 +504,7 @@ template {
 }
 
 @font-face {
-  src: url("../fonts/Rubik-Medium.woff2") format("woff2");
+  src: local("Rubik Medium"), local("Rubik-Medium"), url("../fonts/Rubik-Medium.woff2") format("woff2");
   font-family: "Rubik";
   font-weight: 500;
   font-style: normal;
@@ -510,7 +512,7 @@ template {
 }
 
 @font-face {
-  src: url("../fonts/Rubik-Bold.woff2") format("woff2");
+  src: local("Rubik Bold"), local("Rubik-Bold"), url("../fonts/Rubik-Bold.woff2") format("woff2");
   font-family: "Rubik";
   font-weight: 700;
   font-style: normal;
