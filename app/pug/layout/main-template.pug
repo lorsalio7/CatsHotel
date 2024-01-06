@@ -24,6 +24,13 @@ html(lang="ru" class= htmlClass + additionalClasses)
     link(rel="shortcut icon" type="image/png" href="img/favicon.png")
     script(src="https://api-maps.yandex.ru/2.1/?apikey=c2170c45-5c2d-4a8f-bb71-bbad80caf715&lang=ru_RU")
     block styles
+      link(rel="preload", href="fonts/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin)
+      link(rel="preload", href="fonts/Lato-Light.woff2" as="font" type="font/woff2" crossorigin)
+      link(rel="preload", href="fonts/Lato-Medium.woff2" as="font" type="font/woff2" crossorigin)
+      link(rel="preload", href="fonts/Lato-Semibold.woff2" as="font" type="font/woff2" crossorigin)
+      link(rel="preload", href="fonts/Lato-Bold.woff2" as="font" type="font/woff2" crossorigin)
+      link(rel="preload", href="fonts/Rubik-Medium.woff2" as="font" type="font/woff2" crossorigin)
+      link(rel="preload", href="fonts/Rubik-Bold.woff2" as="font" type="font/woff2" crossorigin)
       link(rel="stylesheet", href="css/styles.min.css")
   body(class= bodyClass).full-height
     .wrapper
