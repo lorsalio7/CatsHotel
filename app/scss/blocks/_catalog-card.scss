@@ -9,15 +9,15 @@
   overflow: hidden;
   height: 185px;
 
-  @include px426 {
+  @include min-xs {
     height: 220px;
   }
 
-  @include px600 {
+  @include min-sm {
     height: 280px;
   }
 
-  @include px769 {
+  @include min-md {
     height: 185px;
   }
 }
@@ -45,7 +45,7 @@
   border-bottom-left-radius: 6px;
   padding: 21px 25px 25px;
 
-  @include px950 {
+  @include min-lg {
     padding: 21px 17px 25px;
   }
 }

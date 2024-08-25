@@ -1,7 +1,7 @@
 .page__main {
   padding-top: 62px;
 
-  @include px426 {
+  @include min-xs {
     padding-top: 76px;
   }
 }
@@ -9,11 +9,11 @@
 .page__advantages {
   padding-top: 66px;
 
-  @include px600 {
+  @include min-sm {
     padding-top: 113px;
   }
 
-  @include px950 {
+  @include min-lg {
     padding-top: 132px;
   }
 }
@@ -21,7 +21,7 @@
 .page__rooms {
   padding-top: 70px;
 
-  @include px950 {
+  @include min-lg {
     padding-top: 142px;
   }
 }
@@ -30,11 +30,11 @@
   margin-bottom: 112px;
   padding-top: 0;
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 181px;
   }
 
-  @include px950 {
+  @include min-lg {
     margin-bottom: 219px;
     padding-top: 0;
   }
@@ -44,12 +44,12 @@
   margin-bottom: 52px;
   padding-top: 107px;
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 102px;
     padding-top: 174px;
   }
 
-  @include px950 {
+  @include min-lg {
     margin-bottom: 134px;
     padding-top: 211px;
   }
@@ -59,12 +59,12 @@
   margin-top: -52px;
   padding-top: 52px;
 
-  @include px769 {
+  @include min-md {
     margin-top: -102px;
     padding-top: 102px;
   }
 
-  @include px1200 {
+  @include min-xl {
     margin-top: -134px;
     padding-top: 134px;
   }
@@ -73,11 +73,11 @@
 .page__catalog {
   margin-bottom: 70px;
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 119px;
   }
 
-  @include px1200 {
+  @include min-xl {
     margin-bottom: 139px;
   }
 }
@@ -85,11 +85,11 @@
 .page__promo-banner {
   margin-bottom: 70px;
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 120px;
   }
 
-  @include px1200 {
+  @include min-xl {
     margin-bottom: 141px;
   }
 }
@@ -97,11 +97,11 @@
 .page__card-room {
   margin-bottom: 60px;
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 112px;
   }
 
-  @include px1200 {
+  @include min-xl {
     margin-bottom: 111px;
   }
 }

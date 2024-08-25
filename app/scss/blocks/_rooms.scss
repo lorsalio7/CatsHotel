@@ -1,11 +1,11 @@
 .rooms__title {
   margin-bottom: 33px;
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 52px;
   }
 
-  @include px950 {
+  @include min-lg {
     margin-bottom: 62px;
   }
 }
@@ -25,13 +25,13 @@
     background-size: 150px 46px;
     background-repeat: no-repeat;
 
-    @include px769 {
+    @include min-md {
       width: 339px;
       height: 106px;
       background-size: 339px 106px;
     }
 
-    @include px1200 {
+    @include min-xl {
       left: -83px;
       top: 16px;
       width: 484px;

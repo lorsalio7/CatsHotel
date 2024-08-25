@@ -6,7 +6,7 @@
   background-color: transparent;
   cursor: pointer;
 
-  @include px769 {
+  @include min-md {
     display: none;
   }
 }

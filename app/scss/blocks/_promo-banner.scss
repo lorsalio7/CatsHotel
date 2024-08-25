@@ -10,17 +10,17 @@
   background-size: 80px 79px, 285px, auto;
   background-repeat: no-repeat, no-repeat, no-repeat;
 
-  @include px426 {
+  @include min-xs {
     padding-bottom: 330px;
     background-size: 80px 79px, 340px, auto;
   }
 
-  @include px600 {
+  @include min-sm {
     padding-bottom: 380px;
     background-size: 80px 79px, 398px, auto;
   }
 
-  @include px769 {
+  @include min-md {
     border-radius: 10px;
     padding-top: 59px;
     padding-bottom: 70px;
@@ -28,7 +28,7 @@
     background-size: 142px 140px, 398px, auto;
   }
 
-  @include px1200 {
+  @include min-xl {
     padding-top: 68px;
     padding-bottom: 77px;
     background-position: top -20px left -7px, bottom -192px right -8px, 0 0;
@@ -43,18 +43,18 @@
   max-width: 360px;
   text-align: center;
 
-  @include px769 {
+  @include min-md {
     margin-right: auto;
     margin-left: 50px;
     max-width: 350px;
     text-align: left;
   }
 
-  @include px950 {
+  @include min-lg {
     margin-left: 170px;
   }
 
-  @include px1200 {
+  @include min-xl {
     margin-left: 270px;
   }
 }
@@ -67,15 +67,15 @@
   font-size: 24px;
   color: var(--color-mirage);
 
-  @include px600 {
+  @include min-sm {
     font-size: 30px;
   }
 
-  @include px769 {
+  @include min-md {
     font-size: 36px;
   }
 
-  @include px1200 {
+  @include min-xl {
     margin-bottom: 14px;
   }
 }
@@ -84,11 +84,11 @@
   font-size: 37px;
   line-height: 1;
 
-  @include px600 {
+  @include min-sm {
     font-size: 46px;
   }
 
-  @include px769 {
+  @include min-md {
     font-size: 56px;
   }
 }
@@ -101,7 +101,7 @@
   line-height: 140%;
   color: var(--color-mirage);
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 30px;
     max-width: 310px;
   }

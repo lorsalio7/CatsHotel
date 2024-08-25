@@ -3,11 +3,11 @@
   box-shadow: 0 0 25px var(--color-card-shadow);
   background-color: var(--color-white);
 
-  @include px769 {
+  @include min-md {
     max-width: 442px;
   }
 
-  @include px950 {
+  @include min-lg {
     max-width: 470px;
   }
 }
@@ -16,11 +16,11 @@
   overflow: visible;
   margin-bottom: 35px;
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 56px;
   }
 
-  @include px1200 {
+  @include min-xl {
     margin-bottom: 60px;
   }
 }

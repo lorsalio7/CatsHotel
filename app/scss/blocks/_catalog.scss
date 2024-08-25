@@ -1,17 +1,17 @@
 .catalog__header {
   margin-bottom: 20px;
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 32px;
   }
 
-  @include px1200 {
+  @include min-xl {
     margin-bottom: 52px;
   }
 }
 
 .catalog__content {
-  @include px1200 {
+  @include min-xl {
     display: flex;
   }
 }
@@ -30,7 +30,7 @@
   opacity: 0;
   cursor: pointer;
 
-  @include px1200 {
+  @include min-xl {
     position: relative;
     z-index: 1;
     display: block;
@@ -60,7 +60,7 @@
   margin: 0;
   padding: 0;
 
-  @include px769 {
+  @include min-md {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
@@ -77,13 +77,13 @@
   border-radius: 6px;
   box-shadow: 0 0 25px var(--color-card-shadow);
 
-  @include px769 {
+  @include min-md {
     flex-basis: calc((100% - 30px * 2) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
   }
 
-  @include px950 {
+  @include min-lg {
     flex-basis: calc((100% - 30px * 3) / 3);
   }
 }

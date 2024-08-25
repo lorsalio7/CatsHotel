@@ -35,66 +35,73 @@
 
 /* @include hover-focus {} */
 
-@mixin px375 {
-  @media (min-width: 375px) {
+$xxs: 375px;
+$xs: 426px;
+$sm: 600px;
+$md: 769px;
+$lg: 950px;
+$xl: 1200px;
+
+@mixin min-xxs {
+  @media (min-width: $xxs) {
     @content;
   }
 }
 
-/* @include px375 {} */
+/* @include min-xxs {} */
 
-@mixin px426 {
-  @media (min-width: 426px) {
+@mixin min-xs {
+  @media (min-width: $xs) {
     @content;
   }
 }
 
-/* @include px426 {} */
+/* @include min-xs {} */
 
-@mixin px425max {
-  @media (max-width: 425px) {
+@mixin max-xs {
+  @media (max-width: ($xs - 1px)) {
     @content;
   }
 }
 
-/* @include px425max {} */
+/* @include max-xs {} */
 
-@mixin px600 {
-  @media (min-width: 600px) {
+@mixin min-sm {
+  @media (min-width: $sm) {
     @content;
   }
 }
 
-/* @include px600 {} */
+/* @include min-sm {} */
 
-@mixin px769 {
-  @media (min-width: 769px) {
+@mixin min-md {
+  @media (min-width: $md) {
     @content;
   }
 }
 
-/* @include px769 {} */
+/* @include min-md {} */
 
-@mixin px768max {
-  @media (max-width: 768px) {
+@mixin max-md {
+  @media (max-width: ($md - 1)) {
     @content;
   }
 }
 
-/* @include px768max {} */
+/* @include max-md {} */
 
-@mixin px950 {
-  @media (min-width: 950px) {
+@mixin min-lg {
+  @media (min-width: $lg) {
     @content;
   }
 }
 
-/* @include px950 {} */
+/* @include min-lg {} */
 
-@mixin px1200 {
-  @media (min-width: 1200px) {
+@mixin min-xl {
+  @media (min-width: $xl) {
     @content;
   }
 }
 
-/* @include px1200 {} */
+/* @include min-xl {} */

@@ -16,7 +16,7 @@
 .rooms-slider-data-list__row:not(:last-of-type) {
   margin-bottom: 11px;
 
-  @include px1200 {
+  @include min-xl {
     margin-bottom: 14px;
   }
 }
@@ -28,7 +28,7 @@
   font-size: 15px;
   color: var(--color-mirage);
 
-  @include px950 {
+  @include min-lg {
     font-size: 16px;
   }
 }

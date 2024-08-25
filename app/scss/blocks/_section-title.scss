@@ -6,7 +6,7 @@
   text-align: center;
   color: var(--color-mirage);
 
-  @include px600 {
+  @include min-sm {
     font-size: 36px;
   }
 }

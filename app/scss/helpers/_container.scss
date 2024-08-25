@@ -5,17 +5,17 @@
   padding: 0 15px;
   max-width: var(--container-width);
 
-  @include px425max {
+  @include max-xs {
     padding-right: 15px;
     padding-left: 15px;
   }
 
-  @include px768max {
+  @include max-md {
     padding-right: 45px;
     padding-left: 45px;
   }
 
-  @include px950 {
+  @include min-lg {
     padding-right: 15px;
     padding-left: 15px;
   }

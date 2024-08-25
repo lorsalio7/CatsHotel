@@ -7,7 +7,7 @@
   padding-top: 31px;
   padding-bottom: 29px;
 
-  @include px769 {
+  @include min-md {
     padding-top: 12px;
     padding-bottom: 12px;
   }
@@ -17,21 +17,21 @@
   padding-top: 12px;
   padding-bottom: 28px;
 
-  @include px769 {
+  @include min-md {
     padding-top: 17px;
     padding-bottom: 18px;
   }
 }
 
 .site-footer__row:nth-child(2) .container {
-  @include px769 {
+  @include min-md {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 0;
   }
 
-  @include px950 {
+  @include min-lg {
     max-width: 1000px;
   }
 }
@@ -41,12 +41,12 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @include px769 {
+  @include min-md {
     flex-direction: row;
     align-items: center;
   }
 
-  @include px950 {
+  @include min-lg {
     max-width: 1000px;
   }
 }
@@ -54,7 +54,7 @@
 .site-footer__logo {
   margin-bottom: 22px;
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 0;
   }
 }
@@ -64,7 +64,7 @@
   flex-wrap: wrap;
   margin-bottom: -14px;
 
-  @include px769 {
+  @include min-md {
     margin-bottom: -12px;
   }
 }
@@ -72,7 +72,7 @@
 .site-footer .site-navigation-list__item {
   margin-bottom: 11px;
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 12px;
   }
 }
@@ -80,7 +80,7 @@
 .site-footer .site-navigation-list__item:not(:last-of-type) {
   margin-right: 38px;
 
-  @include px769 {
+  @include min-md {
     margin-right: 31px;
   }
 }
@@ -103,7 +103,7 @@
   background-size: 9px;
   background-repeat: no-repeat;
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 0;
   }
 }

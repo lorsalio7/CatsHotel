@@ -418,21 +418,21 @@ template {
 
 /* @include hover-focus {} */
 
-/* @include px375 {} */
+/* @include min-xxs {} */
 
-/* @include px426 {} */
+/* @include min-xs {} */
 
-/* @include px425max {} */
+/* @include max-xs {} */
 
-/* @include px600 {} */
+/* @include min-sm {} */
 
-/* @include px769 {} */
+/* @include min-md {} */
 
-/* @include px768max {} */
+/* @include max-md {} */
 
-/* @include px950 {} */
+/* @include min-lg {} */
 
-/* @include px1200 {} */
+/* @include min-xl {} */
 
 .container {
   --container-width: 1200px;

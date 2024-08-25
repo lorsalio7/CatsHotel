@@ -8,27 +8,27 @@
   z-index: 2;
   padding: 48px 0 51%;
 
-  @include px425max {
+  @include max-xs {
     padding-right: 0;
     padding-left: 0;
   }
 
-  @include px600 {
+  @include min-sm {
     padding-top: 18%;
   }
 
-  @include px768max {
+  @include max-md {
     padding-right: 0;
     padding-left: 0;
   }
 
-  @include px769 {
+  @include min-md {
     padding-right: 0;
     padding-bottom: 42.9%;
     padding-left: 0;
   }
 
-  @include px950 {
+  @include min-lg {
     display: flex;
     padding-top: 0;
     padding-bottom: 0;
@@ -52,20 +52,20 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    @include px426 {
+    @include min-xs {
       height: 700px;
     }
 
-    @include px600 {
+    @include min-sm {
       height: 1076px;
       background-position: bottom 0 left 27%;
     }
 
-    @include px769 {
+    @include min-md {
       height: 1300px;
     }
 
-    @include px950 {
+    @include min-lg {
       left: auto;
       right: -117px;
       bottom: -73%;
@@ -77,7 +77,7 @@
     }
   }
 
-  @include px950 {
+  @include min-lg {
     padding-top: 12.5%;
     padding-bottom: 13.09%;
   }
@@ -93,11 +93,11 @@
   padding-bottom: 68px;
   padding-left: 15px;
 
-  @include px769 {
+  @include min-md {
     padding-bottom: 200px;
   }
 
-  @include px950 {
+  @include min-lg {
     align-items: flex-start;
     margin-right: auto;
     margin-left: 85px;
@@ -117,11 +117,11 @@
   font-size: 16px;
   text-align: center;
 
-  @include px426 {
+  @include min-xs {
     font-size: 20px;
   }
 
-  @include px950 {
+  @include min-lg {
     text-align: left;
   }
 }
@@ -134,7 +134,7 @@
   font-size: 44px;
   color: var(--color-mirage);
 
-  @include px426 {
+  @include min-xs {
     margin-bottom: 8px;
     font-size: 62px;
     line-height: 1.09;
@@ -150,7 +150,7 @@
   font-size: 12px;
   color: var(--color-mirage);
 
-  @include px426 {
+  @include min-xs {
     margin-bottom: 0;
     font-size: 14px;
   }
@@ -177,15 +177,15 @@
   object-fit: cover;
   object-position: left 10% top 66%;
 
-  @include px375 {
+  @include min-xxs {
     object-position: left 10% top 100%;
   }
 
-  @include px769 {
+  @include min-md {
     object-position: left 10% top 94%;
   }
 
-  @include px950 {
+  @include min-lg {
     object-position: left 0 top 50%;
   }
 }

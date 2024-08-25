@@ -9,7 +9,7 @@
   font-family: "Lato", sans-serif;
   font-size: 15px;
 
-  @include px600 {
+  @include min-sm {
     padding: 16px 28px;
   }
 }
@@ -37,7 +37,7 @@
   font-size: 15px;
   line-height: 0.6;
 
-  @include px600 {
+  @include min-sm {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -45,7 +45,7 @@
     padding-left: 6px;
   }
 
-  @include px1200 {
+  @include min-xl {
     padding-left: 0;
   }
 }
@@ -54,7 +54,7 @@
   display: flex;
   margin-top: 16px;
 
-  @include px600 {
+  @include min-sm {
     margin-top: 0;
   }
 }
@@ -67,11 +67,11 @@
 .modal-form__arrival-date {
   margin-right: 11px;
 
-  @include px600 {
+  @include min-sm {
     margin-right: 16px;
   }
 
-  @include px1200 {
+  @include min-xl {
     margin-right: 15px;
   }
 }
@@ -82,13 +82,13 @@
   margin-left: 5px;
   padding: 16px 14px;
 
-  @include px600 {
+  @include min-sm {
     margin-left: 11px;
     padding: 16px 14px;
     max-width: 132px;
   }
 
-  @include px1200 {
+  @include min-xl {
     margin-left: 12px;
     padding: 16px 18px;
     max-width: 129px;

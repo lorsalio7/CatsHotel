@@ -3,7 +3,7 @@
   width: 46px;
   height: 38px;
 
-  @include px426 {
+  @include min-xs {
     width: 63px;
     height: 52px;
   }
@@ -13,7 +13,7 @@
   width: 46px;
   height: 38px;
 
-  @include px426 {
+  @include min-xs {
     width: 63px;
     height: 52px;
   }

@@ -4,7 +4,7 @@
   margin-bottom: 30px;
   padding: 0;
 
-  @include px769 {
+  @include min-md {
     display: flex;
     margin-bottom: 0;
   }
@@ -13,7 +13,7 @@
 .site-navigation-list__item:not(:last-of-type) {
   margin-bottom: 15px;
 
-  @include px769 {
+  @include min-md {
     margin-right: 30px;
     margin-bottom: 0;
   }
@@ -27,7 +27,7 @@
   text-decoration: none;
   color: var(--color-mirage);
 
-  @include px769 {
+  @include min-md {
     font-family: "Lato", sans-serif;
     font-size: 16px;
   }

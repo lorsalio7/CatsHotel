@@ -35,12 +35,12 @@
     transition: transform 0.3s ease-in-out;
     pointer-events: none;
 
-    @include px769 {
+    @include min-md {
       right: 19px;
     }
   }
 
-  @include px769 {
+  @include min-md {
     padding: 8px 47px 10px 30px;
     min-width: 174px;
     background-position: left 19px top 10px;
@@ -79,7 +79,7 @@
   background-repeat: no-repeat;
   cursor: pointer;
 
-  @include px769 {
+  @include min-md {
     padding: 8px 47px 10px 30px;
     background-position: left 19px top 10px;
   }

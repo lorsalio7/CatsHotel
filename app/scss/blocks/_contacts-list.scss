@@ -5,7 +5,7 @@
 .contacts-list__item:not(:last-of-type) {
   margin-bottom: 23px;
 
-  @include px1200 {
+  @include min-xl {
     margin-bottom: 30px;
   }
 }

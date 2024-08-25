@@ -14,7 +14,7 @@
     background-size: 100px 104px;
     background-repeat: no-repeat;
 
-    @include px769 {
+    @include min-md {
       right: -4px;
       top: -59px;
       width: 205px;
@@ -22,7 +22,7 @@
       background-size: 205px 211px;
     }
 
-    @include px1200 {
+    @include min-xl {
       right: -115px;
       top: -115px;
       width: 282px;
@@ -35,11 +35,11 @@
 .reviews__title {
   margin-bottom: 33px;
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 52px;
   }
 
-  @include px1200 {
+  @include min-xl {
     margin-bottom: 61px;
   }
 }

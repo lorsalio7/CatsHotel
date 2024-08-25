@@ -1,14 +1,14 @@
 .catalog-header {
   padding-top: 35px;
 
-  @include px769 {
+  @include min-md {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 52px;
   }
 
-  @include px1200 {
+  @include min-xl {
     padding-top: 62px;
   }
 }
@@ -17,7 +17,7 @@
   margin-bottom: 34px;
   text-align: left;
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 0;
   }
 }
@@ -43,13 +43,13 @@
   background-color: var(--color-white);
   cursor: pointer;
 
-  @include px769 {
+  @include min-md {
     margin-right: 29px;
     padding: 8px 21px 10px 42px;
     background-position: left 20px top 9px;
   }
 
-  @include px1200 {
+  @include min-xl {
     display: none;
   }
 }

@@ -6,13 +6,13 @@
   background-size: 20px 18px;
   background-repeat: no-repeat;
 
-  @include px769 {
+  @include min-md {
     padding: 31px 33px 32px 70px;
     background-position: left 34px top 34px;
     background-size: 27px 23px;
   }
 
-  @include px1200 {
+  @include min-xl {
     padding: 31px 35px 32px 70px;
   }
 }
@@ -24,11 +24,11 @@
   line-height: 140%;
   color: var(--color-mirage);
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 16px;
   }
 
-  @include px1200 {
+  @include min-xl {
     font-size: 16px;
   }
 }
@@ -37,7 +37,7 @@
   display: none;
   justify-content: space-between;
 
-  @include px769 {
+  @include min-md {
     display: flex;
   }
 }

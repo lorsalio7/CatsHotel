@@ -1,13 +1,13 @@
 .rooms-slider__track {
   overflow: visible;
 
-  @include px769 {
+  @include min-md {
     overflow: hidden;
     margin-right: -15px;
     margin-left: -15px;
   }
 
-  @include px1200 {
+  @include min-xl {
     margin-right: 0;
     margin-left: 0;
   }
@@ -19,13 +19,13 @@
   border-radius: 8px;
   box-shadow: 0 0 25px var(--color-card-shadow);
 
-  @include px769 {
+  @include min-md {
     flex-direction: row-reverse;
     align-items: center;
     box-shadow: none;
   }
 
-  @include px950 {
+  @include min-lg {
     padding-right: 70px;
     padding-left: 70px;
   }
@@ -37,7 +37,7 @@
   padding: 21px 25px 25px;
   background-color: var(--color-white);
 
-  @include px769 {
+  @include min-md {
     position: relative;
     z-index: 1;
     flex: 1 1 41%;
@@ -47,12 +47,12 @@
     box-shadow: 0 0 25px var(--color-card-shadow);
   }
 
-  @include px950 {
+  @include min-lg {
     margin-left: -70px;
     padding: 35px 40px 40px;
   }
 
-  @include px1200 {
+  @include min-xl {
     padding: 35px 100px 40px;
   }
 }
@@ -65,11 +65,11 @@
   font-size: 20px;
   line-height: normal;
 
-  @include px950 {
+  @include min-lg {
     font-size: 22px;
   }
 
-  @include px1200 {
+  @include min-xl {
     margin-bottom: 21px;
   }
 }
@@ -77,18 +77,18 @@
 .rooms-slider__button {
   margin-top: 21px;
 
-  @include px426 {
+  @include min-xs {
     display: block;
     margin-right: auto;
     margin-left: auto;
     max-width: 206px;
   }
 
-  @include px769 {
+  @include min-md {
     margin-left: 0;
   }
 
-  @include px1200 {
+  @include min-xl {
     margin-top: 27px;
     font-size: 16px;
   }
@@ -101,15 +101,15 @@
   height: 192px;
   object-fit: cover;
 
-  @include px426 {
+  @include min-xs {
     height: 230px;
   }
 
-  @include px600 {
+  @include min-sm {
     height: 250px;
   }
 
-  @include px769 {
+  @include min-md {
     flex-grow: 1;
     flex-shrink: 1;
     border-radius: 10px;
@@ -117,11 +117,11 @@
     height: 326px;
   }
 
-  @include px950 {
+  @include min-lg {
     height: 404px;
   }
 
-  @include px1200 {
+  @include min-xl {
     width: 50.8%;
   }
 }
@@ -130,11 +130,11 @@
   position: relative;
   margin-top: 36px;
 
-  @include px769 {
+  @include min-md {
     margin-top: 56px;
   }
 
-  @include px950 {
+  @include min-lg {
     margin-top: 61px;
   }
 }
@@ -146,7 +146,7 @@
   display: flex;
   transform: translateY(-50%);
 
-  @include px950 {
+  @include min-lg {
     right: 70px;
   }
 }

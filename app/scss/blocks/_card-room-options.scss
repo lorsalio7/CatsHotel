@@ -4,7 +4,7 @@
   align-items: baseline;
   margin-bottom: 14px;
 
-  @include px950 {
+  @include min-lg {
     margin-bottom: 18px;
   }
 }
@@ -17,7 +17,7 @@
   flex-direction: column;
   margin-bottom: 17px;
 
-  @include px950 {
+  @include min-lg {
     margin-bottom: 23px;
   }
 }
@@ -28,7 +28,7 @@
   font-size: 15px;
   color: var(--color-mirage);
 
-  @include px950 {
+  @include min-lg {
     font-size: 16px;
   }
 }
@@ -36,11 +36,11 @@
 .card-room-options__item--column .card-room-options__title {
   margin-bottom: 11px;
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 17px;
   }
 
-  @include px950 {
+  @include min-lg {
     margin-bottom: 15px;
   }
 }
@@ -52,7 +52,7 @@
   font-size: 15px;
   color: var(--color-mirage);
 
-  @include px950 {
+  @include min-lg {
     font-size: 16px;
   }
 }
@@ -64,7 +64,7 @@
   line-height: 1;
   color: var(--color-mirage);
 
-  @include px950 {
+  @include min-lg {
     margin-left: 9px;
   }
 }

@@ -1,11 +1,11 @@
 .card-room {
   padding-top: 40px;
 
-  @include px769 {
+  @include min-md {
     padding-top: 60px;
   }
 
-  @include px1200 {
+  @include min-xl {
     padding-top: 70px;
   }
 }
@@ -26,14 +26,14 @@
     background-size: 229px 233px;
     background-repeat: no-repeat;
 
-    @include px1200 {
+    @include min-xl {
       display: block;
     }
   }
 }
 
 .card-room__content {
-  @include px600 {
+  @include min-sm {
     display: flex;
   }
 }
@@ -41,23 +41,23 @@
 .card-room__gallery {
   margin-bottom: 35px;
 
-  @include px600 {
+  @include min-sm {
     flex-shrink: 1;
     margin-right: 30px;
     margin-bottom: 0;
   }
 
-  @include px769 {
+  @include min-md {
     margin-right: 60px;
   }
 
-  @include px950 {
+  @include min-lg {
     display: flex;
     flex-direction: row-reverse;
     margin-bottom: 0;
   }
 
-  @include px1200 {
+  @include min-xl {
     margin-right: 70px;
   }
 }
@@ -65,11 +65,11 @@
 .card-room__big-slider {
   margin-bottom: 16px;
 
-  @include px769 {
+  @include min-md {
     margin-bottom: 21px;
   }
 
-  @include px950 {
+  @include min-lg {
     max-width: 500px;
   }
 }
@@ -81,13 +81,13 @@
   height: 288px;
   object-fit: cover;
 
-  @include px950 {
+  @include min-lg {
     height: 396px;
   }
 }
 
 .card-room__thumbs-slider {
-  @include px950 {
+  @include min-lg {
     margin-right: 30px;
   }
 }
@@ -126,36 +126,36 @@
   height: 64px;
   object-fit: cover;
 
-  @include px426 {
+  @include min-xs {
     height: 90px;
   }
 
-  @include px600 {
+  @include min-sm {
     height: 80px;
   }
 
-  @include px769 {
+  @include min-md {
     height: 78px;
   }
 
-  @include px950 {
+  @include min-lg {
     width: 70px;
     height: 112px;
   }
 }
 
 .card-room__description {
-  @include px600 {
+  @include min-sm {
     flex-shrink: 1;
     min-width: 250px;
   }
 
-  @include px769 {
+  @include min-md {
     flex-shrink: 1;
     min-width: 264px;
   }
 
-  @include px950 {
+  @include min-lg {
     min-width: 270px;
   }
 }
@@ -168,17 +168,17 @@
   font-size: 28px;
   color: var(--color-mirage);
 
-  @include px600 {
+  @include min-sm {
     margin-top: -5px;
   }
 
-  @include px769 {
+  @include min-md {
     margin-top: -7px;
     margin-bottom: 26px;
     font-size: 36px;
   }
 
-  @include px950 {
+  @include min-lg {
     margin-bottom: 28px;
   }
 }
@@ -189,7 +189,7 @@
 }
 
 .card-room__button {
-  @include px600 {
+  @include min-sm {
     max-width: 206px;
   }
 }

@@ -10,7 +10,7 @@
   background-color: var(--color-primary);
   cursor: pointer;
 
-  @include px1200 {
+  @include min-xl {
     padding: 10px 20px 11px;
   }
 }

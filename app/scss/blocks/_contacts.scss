@@ -2,7 +2,7 @@
   position: relative;
   background-clip: content-box;
 
-  @include px769 {
+  @include min-md {
     background-color: var(--color-primary);
   }
 }
@@ -13,17 +13,17 @@
   padding-right: 0;
   padding-left: 0;
 
-  @include px425max {
+  @include max-xs {
     padding-right: 0;
     padding-left: 0;
   }
 
-  @include px768max {
+  @include max-md {
     padding-right: 0;
     padding-left: 0;
   }
 
-  @include px769 {
+  @include min-md {
     flex-direction: row;
     padding-right: 15px;
     padding-left: 15px;
@@ -35,7 +35,7 @@
   margin-bottom: 30px;
   text-align: left;
 
-  @include px1200 {
+  @include min-xl {
     margin-bottom: 40px;
   }
 }
@@ -43,26 +43,26 @@
 .contacts__block-1 {
   background-color: var(--color-primary);
 
-  @include px425max {
+  @include max-xs {
     padding-right: 0;
     padding-left: 0;
   }
 
-  @include px768max {
+  @include max-md {
     padding-right: 45px;
     padding-left: 45px;
   }
 
-  @include px769 {
+  @include min-md {
     flex-shrink: 0;
     width: 47.75%;
   }
 
-  @include px950 {
+  @include min-lg {
     width: 41.65%;
   }
 
-  @include px1200 {
+  @include min-xl {
     width: 40.2%;
   }
 }
@@ -70,27 +70,27 @@
 .contacts__text-content {
   padding: 35px 15px 40px;
 
-  @include px425max {
+  @include max-xs {
     padding: 35px 15px 40px;
   }
 
-  @include px768max {
+  @include max-md {
     padding: 35px 0 40px;
   }
 
-  @include px769 {
+  @include min-md {
     margin-left: auto;
     padding: 52px 45px 60px 0;
     max-width: 400px;
   }
 
-  @include px1200 {
+  @include min-xl {
     padding: 62px 45px 70px 30px;
   }
 }
 
 .contacts__block-2 {
-  @include px769 {
+  @include min-md {
     position: relative;
   }
 }
@@ -98,17 +98,17 @@
 .contacts__map-wrapper {
   height: 300px;
 
-  @include px769 {
+  @include min-md {
     position: relative;
     width: calc(50vw - (0.4775 - 0.5) * 1170px);
     height: 100%;
   }
 
-  @include px950 {
+  @include min-lg {
     width: calc(50vw - (0.4165 - 0.5) * 1170px);
   }
 
-  @include px1200 {
+  @include min-xl {
     width: calc(50vw - (0.402 - 0.5) * 1170px);
   }
 }
@@ -119,7 +119,7 @@
   height: 100%;
   object-fit: cover;
 
-  @include px769 {
+  @include min-md {
     position: absolute;
     left: 0;
     top: 0;
