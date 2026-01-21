@@ -36,32 +36,32 @@
   ],
   "advantages": [
     {
-      "icon": "img/thermometer-ic.svg",
+      "icon": "img/icons/thermometer-ic.svg",
       "title": "Комфортная температура",
       "description": "Во всех номерах поддерживается комфортная температура в пределах 23 - 25 градусов. В каждом номере можно дополнительно отрегулировать температуру."
     },
     {
-      "icon": "img/camera-ic.svg",
+      "icon": "img/icons/camera-ic.svg",
       "title": "Видеонаблюдение",
       "description": "Мы предоставляем доступ в нашу систему. Вы сможете следить за своим питомцем со своего смартфона или компьютера."
     },
     {
-      "icon": "img/taxi-ic.svg",
+      "icon": "img/icons/taxi-ic.svg",
       "title": "Услуги Зоотакси",
       "description": "Мы приедем за вашим питомцем в любой район Санкт-Петербурга."
     },
     {
-      "icon": "img/feed-ic.svg",
+      "icon": "img/icons/feed-ic.svg",
       "title": "Сбалансированное питание",
       "description": "Вы можете привезти свой корм или доверить рацион своего питомца нашим профессионалам."
     },
     {
-      "icon": "img/cat-ic.svg",
+      "icon": "img/icons/cat-ic.svg",
       "title": "Ежедневные прогулки",
       "description": "Вы можете привезти свой корм или доверить рацион своего питомца нашим профессионалам."
     },
     {
-      "icon": "img/veterinary-ic.svg",
+      "icon": "img/icons/veterinary-ic.svg",
       "title": "Лучшие ветеринары",
       "description": "В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости."
     }
@@ -69,7 +69,7 @@
   "rooms_slides": [
     {
       "title": "Эконом плюс",
-      "image": "img/room-slide-1.jpg",
+      "image": "img/content/slider/room-slide-1.jpg",
       "data_list": [
         {
           "title": "Площадь -",
@@ -87,7 +87,7 @@
     },
     {
       "title": "Комфорт",
-      "image": "img/room-slide-2.jpg",
+      "image": "img/content/slider/room-slide-2.jpg",
       "data_list": [
         {
           "title": "Площадь - ",
@@ -105,7 +105,7 @@
     },
     {
       "title": "Сьют",
-      "image": "img/room-slide-3.jpg",
+      "image": "img/content/slider/room-slide-3.jpg",
       "data_list": [
         {
           "title": "Площадь - ",
@@ -145,124 +145,124 @@
   "catalog_cards": [
     {
       "cardTitle": "Эконом",
-      "cardImage": "img/catalog-img-1.jpg",
+      "cardImage": "img/content/catalog/catalog-img-1.jpg",
       "roomSize": "90х70х180 см",
       "roomArea": "0,63 м2",
       "price": "100₽",
       "optionsIcons": [
         {
-          "icon": "img/empty-ic.svg",
+          "icon": "img/icons/empty-ic.svg",
           "iconTitle": "Пустой номер"
         }
       ]
     },
     {
       "cardTitle": "Эконом плюс",
-      "cardImage": "img/catalog-img-2.jpg",
+      "cardImage": "img/content/catalog/catalog-img-2.jpg",
       "roomSize": "90х100х180 см",
       "roomArea": "0,90 м2",
       "price": "200₽",
       "optionsIcons": [
         {
-          "icon": "img/sun-lounger-ic.svg",
+          "icon": "img/icons/sun-lounger-ic.svg",
           "iconTitle": "Лежак"
         },
         {
-          "icon": "img/scratching-post-ic.svg",
+          "icon": "img/icons/scratching-post-ic.svg",
           "iconTitle": "Когтеточка"
         }
       ]
     },
     {
       "cardTitle": "Комфорт",
-      "cardImage": "img/catalog-img-3.jpg",
+      "cardImage": "img/content/catalog/catalog-img-3.jpg",
       "roomSize": "100х125х180 см",
       "roomArea": "1,13 м2",
       "price": "250₽",
       "optionsIcons": [
         {
-          "icon": "img/sun-lounger-ic.svg",
+          "icon": "img/icons/sun-lounger-ic.svg",
           "iconTitle": "Лежак"
         },
         {
-          "icon": "img/scratching-post-ic.svg",
+          "icon": "img/icons/scratching-post-ic.svg",
           "iconTitle": "Когтеточка"
         }
         ,
         {
-          "icon": "img/game-complex-ic.svg",
+          "icon": "img/icons/game-complex-ic.svg",
           "iconTitle": "Игровой комплекс"
         }
       ]
     },
     {
       "cardTitle": "Сьют",
-      "cardImage": "img/catalog-img-4.jpg",
+      "cardImage": "img/content/catalog/catalog-img-4.jpg",
       "roomSize": "125х125х180 см",
       "roomArea": "1,56 м2",
       "price": "350₽",
       "optionsIcons": [
         {
-          "icon": "img/sun-lounger-ic.svg",
+          "icon": "img/icons/sun-lounger-ic.svg",
           "iconTitle": "Лежак"
         },
         {
-          "icon": "img/scratching-post-ic.svg",
+          "icon": "img/icons/scratching-post-ic.svg",
           "iconTitle": "Когтеточка"
         }
         ,
         {
-          "icon": "img/game-complex-ic.svg",
+          "icon": "img/icons/game-complex-ic.svg",
           "iconTitle": "Игровой комплекс"
         }
       ]
     },
     {
       "cardTitle": "Люкс",
-      "cardImage": "img/catalog-img-5.jpg",
+      "cardImage": "img/content/catalog/catalog-img-5.jpg",
       "roomSize": "160х160х180 см",
       "roomArea": "2,56 м2",
       "price": "500₽",
       "optionsIcons": [
         {
-          "icon": "img/sun-lounger-ic.svg",
+          "icon": "img/icons/sun-lounger-ic.svg",
           "iconTitle": "Лежак"
         },
         {
-          "icon": "img/scratching-post-ic.svg",
+          "icon": "img/icons/scratching-post-ic.svg",
           "iconTitle": "Когтеточка"
         },
         {
-          "icon": "img/game-complex-ic.svg",
+          "icon": "img/icons/game-complex-ic.svg",
           "iconTitle": "Игровой комплекс"
         },
         {
-          "icon": "img/house-cat-ic.svg",
+          "icon": "img/icons/house-cat-ic.svg",
           "iconTitle": "Домик"
         }
       ]
     },
     {
       "cardTitle": "Супер-Люкс",
-      "cardImage": "img/catalog-img-6.jpg",
+      "cardImage": "img/content/catalog/catalog-img-6.jpg",
       "roomSize": "180х160х180 см",
       "roomArea": "2,88 м2",
       "price": "600₽",
       "optionsIcons": [
         {
-          "icon": "img/sun-lounger-ic.svg",
+          "icon": "img/icons/sun-lounger-ic.svg",
           "iconTitle": "Лежак"
         },
         {
-          "icon": "img/scratching-post-ic.svg",
+          "icon": "img/icons/scratching-post-ic.svg",
           "iconTitle": "Когтеточка"
         },
         {
-          "icon": "img/game-complex-ic.svg",
+          "icon": "img/icons/game-complex-ic.svg",
           "iconTitle": "Игровой комплекс"
         },
         {
-          "icon": "img/house-cat-ic.svg",
+          "icon": "img/icons/house-cat-ic.svg",
           "iconTitle": "Домик"
         }
       ]
