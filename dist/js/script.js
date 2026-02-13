@@ -190,13 +190,13 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 ;
-var dropdown = document.querySelector(".dropdown");
+var dropdown = document.querySelector(".dropdown-filter");
 if (dropdown) {
   var openDropdown = function openDropdown() {
     dropdownList.classList.add("dropdown-filter__list--active");
   };
   var closeDropdown = function closeDropdown() {
-    dropdownButton.classList.remove("dropdown__toggle--active");
+    dropdownButton.classList.remove("dropdown-filter__toggle--active");
     dropdownList.classList.remove("dropdown-filter__list--active");
     dropdownButton.setAttribute("aria-expanded", "false");
   };
@@ -206,13 +206,13 @@ if (dropdown) {
     dropdownButton.innerHTML = optionText;
     dropdownButton.style.backgroundImage = "url(\"".concat(optionIcon, "\")");
   };
-  var dropdownButton = dropdown.querySelector(".dropdown__toggle");
+  var dropdownButton = dropdown.querySelector(".dropdown-filter__toggle");
   var dropdownList = dropdown.querySelector(".dropdown-filter__list");
   var dropdownOptions = dropdown.querySelectorAll(".dropdown-filter__option");
   dropdownButton.addEventListener("click", function () {
-    dropdownButton.classList.toggle("dropdown__toggle--active");
+    dropdownButton.classList.toggle("dropdown-filter__toggle--active");
     dropdownButton.setAttribute("aria-expanded", "true");
-    if (dropdownButton.classList.contains("dropdown__toggle--active")) {
+    if (dropdownButton.classList.contains("dropdown-filter__toggle--active")) {
       openDropdown();
       dropdownOptions.forEach(function (item) {
         item.addEventListener("click", function () {
@@ -220,7 +220,7 @@ if (dropdown) {
           closeDropdown();
         });
         item.addEventListener("keydown", function (e) {
-          if (dropdownButton.classList.contains("dropdown__toggle--active") && e.key === "Enter") {
+          if (dropdownButton.classList.contains("dropdown-filter__toggle--active") && e.key === "Enter") {
             getDataOption(e.target);
             closeDropdown();
           }

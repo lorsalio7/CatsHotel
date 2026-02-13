@@ -1532,11 +1532,11 @@ body {
   cursor: pointer;
 }
 
-.dropdown {
+.dropdown-filter {
   position: relative;
 }
 
-.dropdown__toggle {
+.dropdown-filter__toggle {
   position: relative;
   border: none;
   border-radius: 25px;
@@ -1556,7 +1556,7 @@ body {
   cursor: pointer;
 }
 
-.dropdown__toggle::after {
+.dropdown-filter__toggle::after {
   content: "";
   position: absolute;
   right: 14px;
@@ -1577,7 +1577,7 @@ body {
   pointer-events: none;
 }
 
-.dropdown__toggle--active::after {
+.dropdown-filter__toggle--active::after {
   -webkit-transform: translateY(-50%) rotateZ(180deg);
       -ms-transform: translateY(-50%) rotate(180deg);
           transform: translateY(-50%) rotateZ(180deg);
@@ -3121,11 +3121,11 @@ body {
     background-position: left 20px top 9px;
   }
 
-  .dropdown__toggle::after {
+  .dropdown-filter__toggle::after {
     right: 19px;
   }
 
-  .dropdown__toggle {
+  .dropdown-filter__toggle {
     padding: 8px 47px 10px 30px;
     min-width: 174px;
     background-position: left 19px top 10px;

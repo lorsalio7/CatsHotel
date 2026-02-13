@@ -1,8 +1,8 @@
-.dropdown {
+.dropdown-filter {
   position: relative;
 }
 
-.dropdown__toggle {
+.dropdown-filter__toggle {
   position: relative;
   border: none;
   border-radius: 25px;
@@ -47,7 +47,7 @@
   }
 }
 
-.dropdown__toggle--active::after {
+.dropdown-filter__toggle--active::after {
   transform: translateY(-50%) rotateZ(180deg);
 }
 

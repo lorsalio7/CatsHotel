@@ -1,15 +1,15 @@
-const dropdown = document.querySelector(".dropdown");
+const dropdown = document.querySelector(".dropdown-filter");
 
 if(dropdown) {
-  const dropdownButton = dropdown.querySelector(".dropdown__toggle");
+  const dropdownButton = dropdown.querySelector(".dropdown-filter__toggle");
   const dropdownList = dropdown.querySelector(".dropdown-filter__list");
   const dropdownOptions = dropdown.querySelectorAll(".dropdown-filter__option");
 
   dropdownButton.addEventListener("click", () => {
-    dropdownButton.classList.toggle("dropdown__toggle--active");
+    dropdownButton.classList.toggle("dropdown-filter__toggle--active");
     dropdownButton.setAttribute("aria-expanded", "true");
 
-    if(dropdownButton.classList.contains("dropdown__toggle--active")) {
+    if(dropdownButton.classList.contains("dropdown-filter__toggle--active")) {
       openDropdown();
       dropdownOptions.forEach(item => {
         item.addEventListener("click", () => {
@@ -18,7 +18,7 @@ if(dropdown) {
         });
 
         item.addEventListener("keydown", (e) => {
-          if(dropdownButton.classList.contains("dropdown__toggle--active") && e.key === "Enter") {
+          if(dropdownButton.classList.contains("dropdown-filter__toggle--active") && e.key === "Enter") {
             getDataOption(e.target);
             closeDropdown();
           }
@@ -34,7 +34,7 @@ if(dropdown) {
   }
 
   function closeDropdown() {
-    dropdownButton.classList.remove("dropdown__toggle--active");
+    dropdownButton.classList.remove("dropdown-filter__toggle--active");
     dropdownList.classList.remove("dropdown-filter__list--active");
     dropdownButton.setAttribute("aria-expanded", "false");
   }
