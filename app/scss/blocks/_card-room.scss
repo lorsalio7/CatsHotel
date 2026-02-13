@@ -33,8 +33,13 @@
 }
 
 .card-room__content {
+  display: flex;
+  flex-direction: column-reverse;
+
   @include min-sm {
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
   }
 }
 
