@@ -2072,7 +2072,7 @@ body {
   color: var(--color-mirage);
 }
 
-.promo-banner__heading--accent {
+.promo-banner__accent {
   font-size: 37px;
   line-height: 1;
 }
@@ -2756,7 +2756,7 @@ body {
     font-size: 30px;
   }
 
-  .promo-banner__heading--accent {
+  .promo-banner__accent {
     font-size: 46px;
   }
 
@@ -3159,7 +3159,7 @@ body {
     font-size: 36px;
   }
 
-  .promo-banner__heading--accent {
+  .promo-banner__accent {
     font-size: 56px;
   }
 
